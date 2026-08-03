@@ -1,3 +1,5 @@
+/* Full hero styling */
+
 .hero {
 
     background-size: cover;
@@ -36,8 +38,8 @@
 
 .hero-cta {
 
-    background-color: var(--dark-charcoal);
-    color: var(--white);
+    background-color: var(--burgundy);
+    color: var(--light-grey);
     border: 3px solid var(--brand-grey);
     padding: 20px 50px;
     border-radius: 8px;
@@ -48,4 +50,38 @@
     cursor: pointer;
     transition: background-color 0.4s ease;
 
+}
+
+.hero-cta:hover {
+
+    background-color: #cccccc;
+    border: 3px solid #b52026;
+    color: #b52026;
+    box-shadow: 2px 2px 5px black;
+
+
+
+}
+
+/* Intro Section */
+
+.section-intro {
+    margin-top: 150px;
+}
+
+.section-heading {
+    font-size: 64px;
+    text-align: center;
+}
+
+.section-intro-image {
+    margin-top: 50px;
+    margin-left: 365px;
+    margin-right: 365px;
+}
+
+.section-image {
+    width: 100%;
+    display: block;
+    height: 200px;
 }

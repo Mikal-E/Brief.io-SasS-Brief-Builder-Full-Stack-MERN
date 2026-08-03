@@ -17,13 +17,23 @@ function HomePage() {
                     <p className="hero-subhead">Aped eos solupta tureped ut explaut qui
                     <br />
                     debis sum autest parum et et offic</p>
-                    <button className="hero-cta">Button CTA</button>
+                    <button className="hero-cta">Get Started</button>
 
                 </div>
 
             </section>
 
-            <section></section>
+            <section className="section-intro">
+
+                <h2 className="section-heading">Sed ut perspiciatis unde omnis iste natus</h2>
+
+                <div className="section-intro-image">
+                    
+                <img src={landscape} alt="Placeholder" className="section-image" />
+
+                </div>
+
+            </section>
 
         </div>
 

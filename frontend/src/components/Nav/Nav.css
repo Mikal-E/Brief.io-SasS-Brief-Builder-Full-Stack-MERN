@@ -3,9 +3,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 32px;
+    padding: 16px 175px;
     position: fixed;
-    top: 0;
+    top: 20px;
     left: 0;
     width: 100%;
     z-index: 100;
@@ -23,6 +23,10 @@
 
     display: flex;
     gap: 24px;
+    font-size: 24px;
+    font-family: var(--font-main);
+    font-weight: 500;
+    color: var(--text-dark);
 
 }
 
@@ -31,5 +35,29 @@
     display: flex;
     align-items: center;
     gap: 16px;
+
+}
+
+.nav-signin {
+
+    background-color: var(--burgundy);
+    color: var(--light-grey);
+    border: 2px solid var(--brand-grey);
+    border-radius: 6px;
+    font-family: var(--font-main);
+    font-size: 21px;
+    font-weight: 600;
+    padding: 8px 20px;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+
+}
+
+.nav-signin:hover {
+
+    background-color: var(--brand-grey);
+    color: var(--burgundy);
+    border: 2px solid var(--burgundy);
 
 }
