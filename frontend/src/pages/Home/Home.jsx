@@ -99,7 +99,13 @@ function HomePage() {
 
                 reverse={true}
 
-            />                       
+            />
+
+            <section className="section-intro">
+                
+                <h2>Sed ut perspiciatis unde omnis iste natus</h2>
+
+            </section>                       
 
         </div>
 
