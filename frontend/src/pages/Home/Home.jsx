@@ -1,5 +1,7 @@
 import "./Home.css"
 import landscape from "../../assets/landscape.jpg"
+import square from "../../assets/square.jpg"
+import FeatureBlock from "../../components/FeatureBlock/FeatureBlock"
 
 function HomePage() {
 
@@ -28,12 +30,32 @@ function HomePage() {
                 <h2 className="section-heading">Sed ut perspiciatis unde omnis iste natus</h2>
 
                 <div className="section-intro-image">
-                    
+
                 <img src={landscape} alt="Placeholder" className="section-image" />
 
                 </div>
 
             </section>
+
+            <FeatureBlock
+
+            image={square}
+            imageAlt="Placeholder"
+            heading="Ut enim ad minima quis"
+            items={
+
+                [
+
+                    "Nemo enim ipsam voluptatem quia",
+                    "Nemo enim ipsam voluptatem quia",
+                    "Nemo enim ipsam voluptatem quia"
+
+
+                ]
+
+            }
+
+            />
 
         </div>
 

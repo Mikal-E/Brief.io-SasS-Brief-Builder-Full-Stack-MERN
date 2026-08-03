@@ -1,0 +1,54 @@
+/* This CSS styles the component that makes up the section right after the intro under the hero. There are four staggered element blocks of an
+image on one side, and accompanying text next to the image. That component handles all 4 staggered element blocks and controlled by a prop.
+This is the CSS for that component. */
+
+.feature-block {
+
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 150px;
+    gap: 60px;
+
+}
+
+.feature-block-image {
+
+    flex: 1;
+
+}
+
+.feature-block-image img {
+
+    width: 75%;
+    display: block;
+
+}
+
+.feature-block-text {
+
+    flex: 1;
+
+}
+
+.feature-block-heading {
+
+    font-size: 48px;
+
+}
+
+.feature-block-list {
+
+    list-style: none;
+    padding: 0;
+    margin-top: 32px;
+
+}
+
+.feature-block-list li {
+
+    font-size: 32px;
+    margin-bottom: 32px;
+    
+}
