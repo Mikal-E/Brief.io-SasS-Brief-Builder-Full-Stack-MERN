@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 import logo from "../../assets/brief.io-logo-placeholder.png"
 import "./Nav.css"
 
-/* Nav component will be used across the Home, Pricing, and Contact Pages. It will no be used on the landing page as those
-types of pages are free from exit features to assist in boosting conversions. It will also no be used on Login and Registration Pages as they are fouced also. */
+/* Nav component will be used across the Home, Pricing, and Contact Pages. It will not be used on the landing page as those types of pages are free
+from exit features to assist in boosting conversions. It will also not be used on Login and Registration Pages as they have a single-intent. */
 
 function Nav() {
 
