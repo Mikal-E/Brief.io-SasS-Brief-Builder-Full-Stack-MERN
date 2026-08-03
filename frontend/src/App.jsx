@@ -1,5 +1,8 @@
+import { Routes, Route } from "react-router-dom"
 import Nav from "./components/Nav/Nav"
 import Footer from "./components/Footer/Footer"
+import Home from "./pages/Home/Home"
+import Pricing from "./pages/Pricing/Pricing"
 
 
 function App() {
@@ -9,7 +12,14 @@ function App() {
     <>
 
       <Nav />
-      <h1>Brief.io Begins!</h1>
+
+      <Routes>
+
+        <Route path="/" element={ <Home /> } />
+        <Route path="/pricing" element={ <Pricing /> } />
+
+      </Routes>
+
       <Footer />
 
     </>
