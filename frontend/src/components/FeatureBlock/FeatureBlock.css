@@ -52,3 +52,11 @@ This is the CSS for that component. */
     margin-bottom: 32px;
     
 }
+
+/* Using flex-direction: row-reverse to flip the order of the two flex children (image and text), in order to create the staggered layout. */
+
+.feature-block-reverse {
+
+    flex-direction: row-reverse;
+
+}

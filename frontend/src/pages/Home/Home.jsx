@@ -39,23 +39,67 @@ function HomePage() {
 
             <FeatureBlock
 
-            image={square}
-            imageAlt="Placeholder"
-            heading="Ut enim ad minima quis"
-            items={
+                image={square}
+                imageAlt="Placeholder"
+                heading="Ut enim ad minima quis"
+                items={[
 
-                [
+                        "Nemo enim ipsam voluptatem quia",
+                        "Nemo enim ipsam voluptatem quia",
+                        "Nemo enim ipsam voluptatem quia"
 
-                    "Nemo enim ipsam voluptatem quia",
-                    "Nemo enim ipsam voluptatem quia",
-                    "Nemo enim ipsam voluptatem quia"
-
-
-                ]
-
-            }
+                ]}
 
             />
+
+            <FeatureBlock
+
+                image={square}
+                imageAlt="Placeholder"
+                heading="Ut enim ad minima quis"
+                items={[
+
+                        "Nemo enim ipsam voluptatem quia",
+                        "Nemo enim ipsam voluptatem quia",
+                        "Nemo enim ipsam voluptatem quia"
+
+                ]}
+
+                reverse={true}
+
+            />
+
+            <FeatureBlock
+
+                image={square}
+                imageAlt="Placeholder"
+                heading="Ut enim ad minima quis"
+                items={[
+
+                        "Nemo enim ipsam voluptatem quia",
+                        "Nemo enim ipsam voluptatem quia",
+                        "Nemo enim ipsam voluptatem quia"
+
+                ]}
+
+            />
+
+            <FeatureBlock
+
+                image={square}
+                imageAlt="Placeholder"
+                heading="Ut enim ad minima quis"
+                items={[
+
+                        "Nemo enim ipsam voluptatem quia",
+                        "Nemo enim ipsam voluptatem quia",
+                        "Nemo enim ipsam voluptatem quia"
+
+                ]}
+
+                reverse={true}
+
+            />                       
 
         </div>
 
