@@ -1,12 +1,16 @@
+import Nav from "./components/Nav/Nav"
+
+
 function App() {
 
   return (
 
-    <div>
+    <>
 
+      <Nav />
       <h1>Brief.io Begins!</h1>
 
-    </div>
+    </>
 
   )
 
