@@ -1,0 +1,67 @@
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 48px 32px;
+
+}
+
+.footer-brand {
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.footer-logo-img {
+
+    height: 32px;
+
+}
+
+.footer-name {
+
+    font-weight: bold;
+
+}
+
+.footer-column {
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.footer-column-title {
+
+    font-weight: bold;
+    margin-bottom: 4px;
+
+}
+
+.footer-divider {
+
+    width: 100%;
+    border: none;
+    border-top: 1px solid #d0d0d0;
+    margin-top: 24px;
+
+}
+
+.footer-copyright {
+
+    width: 100%;
+    text-align: center;
+
+}
+
+.footer-social-icons {
+
+    display: flex;
+    gap: 12px;
+
+}

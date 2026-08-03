@@ -1,0 +1,29 @@
+.nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+
+}
+
+.nav-logo-img {
+
+    height: 40px;
+
+}
+
+.nav-links {
+
+    display: flex;
+    gap: 24px;
+
+}
+
+.nav-actions {
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}

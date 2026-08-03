@@ -56,17 +56,25 @@ function Footer() {
                 <a href="#">Blog</a>
                 <a href="#">Templates</a>
 
+            </div>
+
             <div className="footer-column">
 
                 <p className="footer-column-title">Social</p>
 
-                <a href="#"><i className="fa-brands fa-square-linkedin"></i></a>
-                <a href="#"><i className="fa-brands fa-square-instagram"></i></a>
-                <a href="#"><i className="fa-brands fa-square-threads"></i></a>             
+                <div className="footer-social-icons">
+
+                    <a href="#"><i className="fa-brands fa-square-linkedin"></i></a>
+                    <a href="#"><i className="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i className="fa-brands fa-square-threads"></i></a>
+
+                </div>
+             
                 
             </div>               
                 
-            </div>                      
+            <hr className="footer-divider"/>
+            <p className="footer-copyright">© 2026 Brief.io</p>                                  
 
         </footer>
 
