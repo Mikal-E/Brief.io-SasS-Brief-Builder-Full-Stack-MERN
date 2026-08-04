@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./TabbedFeatureDashboard.css"
 import landscape from "../../assets/landscape.jpg"
+import "../../styles/section-heading.css"
 
 /* This is the second tabbed element on Home.jsx that displays different blocks of content based on the tab that was clicked. It is positioned right
 above the reviews and the CTA that are at the bottom of the page.

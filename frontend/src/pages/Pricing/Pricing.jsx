@@ -1,6 +1,8 @@
 import "../../styles/hero.css"
+import "../../styles/section-heading.css"
 import landscape from "../../assets/landscape.jpg"
 import PricingCards from "../../components/PricingCards/PricingCards"
+import TrustedLogos from "../../components/TrustedLogos/TrustedLogos"
 
 function PricingPage() {
 
@@ -25,6 +27,8 @@ function PricingPage() {
             </section>
 
             <PricingCards />
+
+            <TrustedLogos />
 
         </div>
 

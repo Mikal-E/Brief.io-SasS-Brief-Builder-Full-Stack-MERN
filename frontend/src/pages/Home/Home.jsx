@@ -1,5 +1,6 @@
 import "./Home.css"
 import "../../styles/hero.css"
+import "../../styles/section-heading.css"
 import landscape from "../../assets/landscape.jpg"
 import square from "../../assets/square.jpg"
 import portrait from "../../assets/portrait.jpg"

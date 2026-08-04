@@ -1,4 +1,5 @@
 import "./CtaBlock.css"
+import "../../styles/section-heading.css"
 
 /* This is the CTA block that sits above the reviews at the bottom of the Home.jsx page. It is also used on Landing.jsx and therefore controlled by props. */
 

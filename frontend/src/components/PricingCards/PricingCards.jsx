@@ -1,4 +1,5 @@
 import "./PricingCards.css"
+import "../../styles/section-heading.css"
 
 /* This is the PricingCards component for the pricing section right below the hero in Pricing.jsx.
 Elected to use ternary operator in the classNames this time unlike TabbedFeatureDocOutput.jsx where class names

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./TabbedFeatureDocOutput.css"
 import portrait from "../../assets/portrait.jpg"
+import "../../styles/section-heading.css"
 
 /* This is the first tabbed element on Home.jsx that displays different blocks of content based on the tab that was clicked. It is positioned right
 after the staggered content with 4 content blocks.

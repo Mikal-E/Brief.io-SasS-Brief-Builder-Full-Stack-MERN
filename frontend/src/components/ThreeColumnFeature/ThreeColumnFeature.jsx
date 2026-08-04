@@ -1,5 +1,6 @@
 import "./ThreeColumnFeature.css"
 import square from "../../assets/square.jpg"
+import "../../styles/section-heading.css"
 
 /* This is the banner section under the first tabbed element on Home.jsx It has the section heading, then 3 columns: image, column heading, and <p> in each column. */
 
