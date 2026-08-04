@@ -1,7 +1,9 @@
 import "./Home.css"
 import landscape from "../../assets/landscape.jpg"
 import square from "../../assets/square.jpg"
+import portrait from "../../assets/portrait.jpg"
 import FeatureBlock from "../../components/FeatureBlock/FeatureBlock"
+import TabbedFeatureDocOutput from "../../components/TabbedFeatureDocOutput/TabbedFeatureDocOutput"
 
 function HomePage() {
 
@@ -101,11 +103,7 @@ function HomePage() {
 
             />
 
-            <section className="section-intro">
-                
-                <h2>Sed ut perspiciatis unde omnis iste natus</h2>
-
-            </section>                       
+            <TabbedFeatureDocOutput />                       
 
         </div>
 
