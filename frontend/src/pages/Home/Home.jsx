@@ -7,6 +7,7 @@ import TabbedFeatureDocOutput from "../../components/TabbedFeatureDocOutput/Tabb
 import ThreeColumnFeature from "../../components/ThreeColumnFeature/ThreeColumnFeature"
 import TabbedFeatureDashboard from "../../components/TabbedFeatureDashboard/TabbedFeatureDashboard"
 import CtaBlock from "../../components/CtaBlock/CtaBlock"
+import Reviews from "../../components/Reviews/Reviews"
 
 function HomePage() {
 
@@ -237,6 +238,8 @@ function HomePage() {
                 ctaText="BUTTON CTA"
 
             />
+
+            <Reviews />
 
         </div>
 

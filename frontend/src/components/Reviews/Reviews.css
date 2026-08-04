@@ -1,0 +1,58 @@
+/* This styling is for the reviews content block at the bottom of Home.jsx. */
+
+.reviews {
+
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding-left: 175px;
+    padding-right: 175px;
+
+}
+
+.reviews-grid {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+
+}
+
+.review-card {
+
+    background-color: var(--light-grey);
+    border-radius: 8px;
+    padding: 32px;
+
+}
+
+.review-stars {
+
+    color: var(--burgundy);
+    font-size: 18px;
+    margin-bottom: 16px;
+
+}
+
+.review-stars i {
+
+    margin-right: 4px;
+}
+
+.review-text {
+
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 24px;
+
+}
+
+.review-avatar {
+
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--dark-charcoal);
+    object-fit: cover;
+    border: 1px solid var(--text-muted);
+
+}
