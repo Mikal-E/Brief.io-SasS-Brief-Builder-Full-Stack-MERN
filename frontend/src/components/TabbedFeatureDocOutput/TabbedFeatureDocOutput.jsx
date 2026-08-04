@@ -6,31 +6,42 @@ import portrait from "../../assets/portrait.jpg"
 after the staggered content with 4 content blocks.
 
 It uses useState to track which tab is active. 
-The multiple variables to change the classes of the buttons will be refactored later using ternary operators in the classes. 
-con */
+The multiple variables to change the classes of the buttons will be refactored later using ternary operators in the classes. */
 
 function TabbedFeatureDocOutput() {
 
     const [activeTab, setActiveTab] = useState(1)
 
     let tab1Class = ""
+
     if (activeTab === 1) {
+
         tab1Class = "tab-active"
+
     }
 
     let tab2Class = ""
+
     if (activeTab === 2) {
+
         tab2Class = "tab-active"
+
     }
 
     let tab3Class = ""
+
     if (activeTab === 3) {
+
         tab3Class = "tab-active"
+
     }
 
     let tab4Class = ""
+
     if (activeTab === 4) {
+
         tab4Class = "tab-active"
+        
     }
 
 const tabContent = [

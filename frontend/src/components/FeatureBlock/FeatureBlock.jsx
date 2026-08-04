@@ -1,7 +1,7 @@
 import "./FeatureBlock.css"
 
 /* This is the component that makes up the section right after the intro under the hero. There are four staggered element blocks of an
-image on one side, and accompanying text next to the image. The component handles all 4 staggered element blocks and controlled by a prop. */
+image on one side, and accompanying text next to the image. The component handles all 4 staggered element blocks and is controlled by props. */
 
 function FeatureBlock({ image, imageAlt, heading, items, reverse }) {
 

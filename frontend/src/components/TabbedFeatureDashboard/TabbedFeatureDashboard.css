@@ -1,0 +1,70 @@
+/* This styling is for the second tabbed element on Home.jsx that displays different blocks of content based on the tab that was clicked. It is positioned right
+above the reviews and the CTA that are at the bottom of the page. */
+
+.tabbed-feature-dashboard {
+
+    margin-top: 150px;
+
+}
+
+.tabbed-feature-dashboard-nav {
+
+    margin-left: 365px;
+    margin-right: 365px;
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+    background-color: var(--light-grey);
+    border-radius: 35px;
+    padding: 8px;
+
+}
+
+.tabbed-feature-dashboard-nav button {
+
+    font-family: var(--font-main);
+    font-size: 21px;
+    font-weight: 600;
+    padding: 12px 0;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--light-grey);
+    color: var(--text-dark);
+    cursor: pointer;
+    flex: 1;
+
+}
+
+.tabbed-feature-dashboard-nav button.tab-active {
+    background-color: var(--burgundy);
+    color: var(--white);
+    border: 2px solid var(--burgundy);
+}
+
+.tabbed-feature-dashboard-grid {
+    margin-left: 175px;
+    margin-right: 175px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.tabbed-feature-dashboard-grid-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 28px;
+}
+
+.tabbed-feature-dashboard-image {
+    margin-left: 175px;
+    margin-right: 175px;
+    margin-top: 50px;
+}
+
+.tabbed-feature-dashboard-image img {
+    width: 100%;
+    display: block;
+    height: 600px
+}

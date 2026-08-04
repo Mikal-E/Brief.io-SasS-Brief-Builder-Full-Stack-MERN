@@ -5,8 +5,111 @@ import portrait from "../../assets/portrait.jpg"
 import FeatureBlock from "../../components/FeatureBlock/FeatureBlock"
 import TabbedFeatureDocOutput from "../../components/TabbedFeatureDocOutput/TabbedFeatureDocOutput"
 import ThreeColumnFeature from "../../components/ThreeColumnFeature/ThreeColumnFeature"
+import TabbedFeatureDashboard from "../../components/TabbedFeatureDashboard/TabbedFeatureDashboard"
 
 function HomePage() {
+
+    const briefsTabContent = [
+
+        {
+            image: landscape,
+            items: [
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+            ]
+        },
+
+        {
+            image: landscape,
+            items: [
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+            ]
+        },
+
+        {
+            image: landscape,
+            items: [
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+            ]
+        }
+
+    ]
+
+    const teamTabContent = [
+
+        {
+            image: landscape,
+            items: [
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+            ]
+        },
+
+        {
+            image: landscape,
+            items: [
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+            ]
+        },
+
+        {
+            image: landscape,
+            items: [
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+            ]
+        }
+
+    ]
+
+    const activityTabContent = [
+
+        {
+            image: landscape,
+            items: [
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+            ]
+        },
+
+        {
+            image: landscape,
+            items: [
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+            ]
+        },
+
+        {
+            image: landscape,
+            items: [
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+            ]
+        }
+
+    ]
 
     return (
 
@@ -119,6 +222,10 @@ function HomePage() {
                 </div>
 
             </section>
+
+            <TabbedFeatureDashboard tabContent={briefsTabContent} />
+            <TabbedFeatureDashboard tabContent={teamTabContent} />
+            <TabbedFeatureDashboard tabContent={activityTabContent} />
 
         </div>
 
