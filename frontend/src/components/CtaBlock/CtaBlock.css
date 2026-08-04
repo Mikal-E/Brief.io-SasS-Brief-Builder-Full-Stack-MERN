@@ -1,0 +1,78 @@
+/* This styling is for the CTA block that sits above the reviews at the bottom of the Home.jsx page. It is also used on Landing.jsx. */
+
+.cta-block {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 150px;
+    gap: 60px;
+    box-sizing: border-box;
+    background-color: var(--light-grey);
+
+}
+
+.cta-block-content {
+
+    flex: 1;
+
+}
+
+.cta-block-heading {
+
+    font-size: 64px;
+    line-height: 1;
+
+}
+
+.cta-block-subheading {
+
+    margin-top: 20px;
+    font-size: 32px;
+
+}
+
+.cta-block-button {
+
+    background-color: var(--burgundy);
+    color: var(--light-grey);
+    border: 3px solid var(--brand-grey);
+    padding: 20px 50px;
+    border-radius: 8px;
+    font-family: var(--font-main);
+    font-size: 21px;
+    font-weight: 700;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    margin-top: 30px;
+
+}
+
+.cta-block-button:hover {
+
+    background-color: var(--brand-grey);
+    border: 3px solid var(--burgundy);
+    color: var(--burgundy);
+    box-shadow: 2px 2px 5px black;
+
+}
+
+.cta-block-image {
+
+    flex: 1
+
+}
+
+.cta-block-img {
+
+    width: 100%;
+    height: 700px;
+    display: block;
+    border: 1px solid var(--text-muted);
+
+}

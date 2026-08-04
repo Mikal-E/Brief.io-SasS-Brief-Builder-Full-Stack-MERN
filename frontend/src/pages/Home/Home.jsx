@@ -6,6 +6,7 @@ import FeatureBlock from "../../components/FeatureBlock/FeatureBlock"
 import TabbedFeatureDocOutput from "../../components/TabbedFeatureDocOutput/TabbedFeatureDocOutput"
 import ThreeColumnFeature from "../../components/ThreeColumnFeature/ThreeColumnFeature"
 import TabbedFeatureDashboard from "../../components/TabbedFeatureDashboard/TabbedFeatureDashboard"
+import CtaBlock from "../../components/CtaBlock/CtaBlock"
 
 function HomePage() {
 
@@ -226,6 +227,16 @@ function HomePage() {
             <TabbedFeatureDashboard tabContent={briefsTabContent} />
             <TabbedFeatureDashboard tabContent={teamTabContent} />
             <TabbedFeatureDashboard tabContent={activityTabContent} />
+
+            <CtaBlock
+
+                image={square}
+                imageAlt="Placeholder"
+                heading="Omnis iste natus enim ipsam luptatem"
+                subheading="Ut enim ad minima quis Nostrum exercitationem ullam corporis suscipit laboriosam"
+                ctaText="BUTTON CTA"
+
+            />
 
         </div>
 
