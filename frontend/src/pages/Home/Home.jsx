@@ -4,6 +4,7 @@ import square from "../../assets/square.jpg"
 import portrait from "../../assets/portrait.jpg"
 import FeatureBlock from "../../components/FeatureBlock/FeatureBlock"
 import TabbedFeatureDocOutput from "../../components/TabbedFeatureDocOutput/TabbedFeatureDocOutput"
+import ThreeColumnFeature from "../../components/ThreeColumnFeature/ThreeColumnFeature"
 
 function HomePage() {
 
@@ -103,7 +104,21 @@ function HomePage() {
 
             />
 
-            <TabbedFeatureDocOutput />                       
+            <TabbedFeatureDocOutput />
+
+            <ThreeColumnFeature />
+
+            <section className="section-intro">
+
+                <h2 className="section-heading">Sed ut perspiciatis unde omnis iste natus</h2>
+
+                <div className="section-intro-image">
+
+                    <img src={landscape} alt="Placeholder" className="section-image" />
+
+                </div>
+
+            </section>
 
         </div>
 
