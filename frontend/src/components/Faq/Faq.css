@@ -1,0 +1,75 @@
+/* This styling is for the FAQ section and will go at the bottom of Pricing.jsx and Contact.jsx. */
+
+.faq {
+
+    background-color: var(--white);
+    margin-top: 150px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 175px;
+    padding-right: 175px;
+    display: flex;
+    gap: 64px;
+
+}
+
+.faq-heading {
+
+    font-size: 64px;
+    flex: 1;
+
+}
+
+.faq-list {
+
+    flex: 2;
+
+}
+
+.faq-item {
+
+    border-bottom: 1px solid var(--border-grey);
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+
+.faq-question {
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--font-main);
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--text-dark);
+    text-align: left;
+    width: 100%;
+    padding: 0;
+
+}
+
+.faq-icon-open {
+
+    transform: rotate(90deg);
+
+}
+
+.faq-question i {
+
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+
+}
+
+.faq-answer {
+
+    margin-top: 16px;
+    margin-left: 52px;
+    font-size: 18px;
+    color: var(--text-muted);
+
+}

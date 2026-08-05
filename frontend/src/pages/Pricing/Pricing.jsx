@@ -4,6 +4,7 @@ import landscape from "../../assets/landscape.jpg"
 import PricingCards from "../../components/PricingCards/PricingCards"
 import TrustedLogos from "../../components/TrustedLogos/TrustedLogos"
 import PricingTable from "../../components/PricingTable/PricingTable"
+import Faq from "../../components/Faq/Faq"
 
 function PricingPage() {
 
@@ -32,6 +33,8 @@ function PricingPage() {
             <TrustedLogos />
 
             <PricingTable />
+
+            <Faq />
 
         </div>
 
