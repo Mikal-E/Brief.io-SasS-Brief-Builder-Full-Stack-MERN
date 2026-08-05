@@ -1,19 +1,19 @@
 /* These styles are for the 50/50 split-screen layout. */
 
-.login-page {
+.registration-page {
 
     display: flex;
     min-height: 100vh;
 
 }
 
-.login-form-side {
+.registration-form-side {
 
     width: 50%;
 
 }
 
-.login-image-side {
+.registration-image-side {
 
     width: 50%;
     background-image: url("../../assets/portrait.jpg");
