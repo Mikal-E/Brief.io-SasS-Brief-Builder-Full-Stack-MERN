@@ -1,0 +1,166 @@
+/* The styling for LoginForm.jsx component will share many of the same conventions as the ContactForm.jsx, and of course SigninForm.jsx when it exist. */
+
+.login-form-card {
+
+    background-color: var(--cool-white);
+    padding-top: 50px;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+
+.logo-placeholder {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    
+}
+
+.login-icon {
+
+    margin-top: 125px;
+    font-size: 42px;
+
+}
+
+.login-heading {
+
+    margin-top: 35px;
+    font-size: 36px;
+
+}
+
+.login-form-field {
+
+    margin-top: 15px;
+    text-align: left;
+
+}
+
+.login-form-field label {
+
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+
+}
+
+form .login-form-field:first-of-type {
+
+    margin-top: 92px;
+
+}
+
+.login-input-with-icon {
+
+    position: relative;
+
+}
+
+.login-input-with-icon i {
+
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--brand-grey);
+
+}
+
+.login-input-with-icon input {
+
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+    padding-right: 14px;
+    border: 1px solid var(--brand-grey);
+    border-radius: 6px;
+    font-family: var(--font-main);
+    font-size: 14px;
+    color: var(--text-dark);
+    background-color: var(--light-grey);
+
+}
+
+.login-input-with-icon input::placeholder {
+
+    color: var(--brand-grey);
+
+}
+
+.login-input-with-icon input:focus {
+
+    outline: none;
+    border: 1px solid var(--burgundy);
+
+}
+
+.login-form-checkbox {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    text-align: left;
+
+}
+
+.login-form-checkbox label {
+
+    font-size: 12px;
+
+}
+
+.login-form-submit {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font: normal 700 20px/1.5 'Roboto', sans-serif;
+    background-color: var(--burgundy);
+    padding: 8px 50px;
+    color: var(--white);
+    border: 3px solid var(--brand-grey);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+
+}
+
+.login-form-submit:hover {
+
+    background-color: var(--brand-grey);
+    border: 3px solid var(--burgundy);
+    color: var(--burgundy);
+    box-shadow: 2px 2px 5px black;
+
+}
+
+.login-create-account-link {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-main);
+    color: var(--text-dark);
+
+}
+
+.login-create-account-link i {
+
+    margin-right: 5px;
+    color: var(--burgundy);
+
+}

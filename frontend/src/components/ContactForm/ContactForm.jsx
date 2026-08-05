@@ -43,11 +43,11 @@ function ContactForm() {
 
             <form onSubmit={handleSubmit}>
 
-                <div className="form-field">
+                <div className="contact-form-field">
 
                     <label htmlFor="preferredContact">Preferred Contact Method</label>
 
-                    <div className="input-with-icon">
+                    <div className="contact-input-with-icon">
 
                         <i className="fa-solid fa-thumbs-up"></i>
 
@@ -70,11 +70,11 @@ function ContactForm() {
 
                 </div>
 
-                <div className="form-field">
+                <div className="contact-form-field">
 
                     <label htmlFor="fullName">Full Name</label>
 
-                    <div className="input-with-icon">
+                    <div className="contact-input-with-icon">
 
                         <i className="fa-solid fa-circle-user"></i>
 
@@ -93,11 +93,11 @@ function ContactForm() {
 
                 </div>
 
-                <div className="form-field">
+                <div className="contact-form-field">
 
                     <label htmlFor="email">Email</label>
 
-                    <div className="input-with-icon">
+                    <div className="contact-input-with-icon">
 
                         <i className="fa-solid fa-envelope"></i>
 
@@ -116,11 +116,11 @@ function ContactForm() {
 
                 </div>
 
-                <div className="form-field">
+                <div className="contact-form-field">
 
                     <label htmlFor="phone">Phone Number</label>
 
-                    <div className="input-with-icon">
+                    <div className="contact-input-with-icon">
 
                         <i className="fa-solid fa-square-phone"></i>
 
@@ -139,11 +139,11 @@ function ContactForm() {
 
                 </div>
 
-                <div className="form-field">
+                <div className="contact-form-field">
 
                     <label htmlFor="message">Message</label>
 
-                    <div className="input-with-icon">
+                    <div className="contact-input-with-icon">
 
                         <i className="fa-solid fa-message"></i>
 
@@ -161,7 +161,7 @@ function ContactForm() {
 
                 </div>
 
-                <div className="form-checkbox">
+                <div className="contact-form-checkbox">
 
                     <input
 
@@ -177,7 +177,7 @@ function ContactForm() {
 
                 </div>
 
-                <button type="submit" className="form-submit">Send Message</button>
+                <button type="submit" className="contact-form-submit">Send Message</button>
 
             </form>
 
