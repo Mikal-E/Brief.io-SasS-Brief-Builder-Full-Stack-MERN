@@ -1,0 +1,78 @@
+.pricing-table {
+
+    margin-top: 100px;
+    padding-left: 365px;
+    padding-right: 365px;
+
+}
+
+.pricing-table table {
+
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.pricing-table thead th {
+
+    text-align: left;
+    font-size: 24px;
+    padding: 24px 16px;
+    border-bottom: 1px solid var(--border-grey);
+
+}
+
+.pricing-table thead th span {
+
+    display: block;
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text-muted);
+    margin-top: 4px;
+
+}
+
+.pricing-table-group-row td {
+
+    font-weight: 700;
+    padding: 24px 16px 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--text-muted);
+
+}
+
+.pricing-table tbody td {
+
+    padding: 16px;
+    border-bottom: 1px solid var(--border-grey);
+    text-align: center;
+
+}
+
+.pricing-table-feature-col {
+
+    text-align: left !important;
+
+}
+
+.pricing-table-starter-col {
+
+    background-color: #faf2f2;
+
+}
+
+.pricing-table tbody i.fa-circle-check {
+
+    color: var(--burgundy);
+    font-size: 18px;
+
+}
+
+.pricing-table tbody i.fa-circle-xmark {
+
+    color: var(--border-grey);
+    font-size: 18px;
+
+}

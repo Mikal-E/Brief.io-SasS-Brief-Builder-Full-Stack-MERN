@@ -3,6 +3,7 @@ import "../../styles/section-heading.css"
 import landscape from "../../assets/landscape.jpg"
 import PricingCards from "../../components/PricingCards/PricingCards"
 import TrustedLogos from "../../components/TrustedLogos/TrustedLogos"
+import PricingTable from "../../components/PricingTable/PricingTable"
 
 function PricingPage() {
 
@@ -29,6 +30,8 @@ function PricingPage() {
             <PricingCards />
 
             <TrustedLogos />
+
+            <PricingTable />
 
         </div>
 
