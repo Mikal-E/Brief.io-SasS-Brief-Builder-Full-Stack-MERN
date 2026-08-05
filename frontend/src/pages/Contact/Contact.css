@@ -1,0 +1,27 @@
+.hero-content-centered {
+
+    text-align: center;
+    margin-top: 0;
+    width: 100%
+
+}
+
+.hero:has(.hero-content-centered) {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.contact-intro {
+
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+
+.contact-page-background {
+
+    background-color: var(--white);
+
+}
