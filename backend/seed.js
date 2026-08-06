@@ -9,6 +9,8 @@ import Activity from "./models/Activity.js";
 
 dotenv.config();
 
+// Old comments below from using this middleware before. Comments left for my own reference when I refactor.
+
 const seedDatabase = async () => {
 
     try {
