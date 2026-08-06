@@ -6,13 +6,14 @@ import Pricing from "./pages/Pricing/Pricing"
 import Contact from "./pages/Contact/Contact"
 import Login from "./pages/Login/Login"
 import Registration from "./pages/Registration/Registration"
+import Landing from "./pages/Landing/Landing"
 
 /* Utilized useLocation, const location, const hideNavFooter  */
 
 function App() {
 
   const location = useLocation()
-  const hideNavFooter = ["/login", "/register"].includes(location.pathname)
+  const hideNavFooter = ["/login", "/register", "/try-brief-builder"].includes(location.pathname)
 
   return (
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/contact" element={ <Contact /> } />
         <Route path="/login" element={ <Login /> } />
         <Route path="/register" element={ <Registration /> } />
+        <Route path="/try-brief-builder" element={ <Landing /> } />
 
       </Routes>
 
