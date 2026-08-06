@@ -2,6 +2,9 @@ import "dotenv/config"
 import express from "express"
 import mongoose from "mongoose"
 import cors from "cors"
+import briefsRouter from "./routes/briefs.js"
+import activitiesRouter from "./routes/activities.js"
+import teamMembersRouter from "./routes/teamMembers.js"
  
 const app = express()
 const PORT = process.env.PORT || 3001
@@ -16,6 +19,10 @@ mongoose.connect(process.env.MONGODB_URI)
     .catch(function(error) {
         console.log("MongoDB connection error:", error.message)
     })
+
+app.use("/api/briefs", briefsRouter)
+app.use("/api/activities", activitiesRouter)
+app.use("/api/teamMembers", teamMembersRouter)    
  
 app.get("/", function(req, res) {
     res.send("Brief.io API is running")
