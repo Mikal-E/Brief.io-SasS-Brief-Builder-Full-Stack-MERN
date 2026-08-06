@@ -28,12 +28,40 @@ function RegistrationForm() {
 
     }
 
-    function handleSubmit(event) {
+    async function handleSubmit(event) {
 
         event.preventDefault()
 
-        // Placeholder until the real POST /api/auth/register route exists
-        console.log("Registration form submitted:", formData)
+        try {
+
+            const response = await fetch("http://localhost:3001/api/auth/register", {
+
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    password: formData.password
+                })
+
+            })
+
+            const data = await response.json()
+
+            if (!response.ok) {
+
+                throw new Error(data.message || "Registration failed")
+                
+            }
+
+            localStorage.setItem("token", data.token)
+            console.log("Registered successfully:", data.user)
+
+        } catch (error) {
+
+            console.error("Registration error:", error.message)
+
+        }
 
     }
 
