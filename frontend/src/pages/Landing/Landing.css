@@ -113,10 +113,21 @@
 
 .campaign-brief-builder-wrapper {
 
-    padding: 150px 20px;
+    padding: 150px 20px 0 20px;
 
 }
 
+.landing-page .three-column-feature {
+
+    background-color: transparent;
+
+}
+
+.landing-page .cta-block {
+
+    margin-bottom: 150px;
+
+}
 
 .landing-footer {
 

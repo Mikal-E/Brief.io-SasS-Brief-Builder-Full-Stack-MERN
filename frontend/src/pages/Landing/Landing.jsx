@@ -1,9 +1,13 @@
 import "./Landing.css"
 import "../../styles/section-heading.css"
 import landscape from "../../assets/landscape.jpg"
+import square from "../../assets/square.jpg"
 import LandingFeatureContentBlock from "../../components/LandingFeatureContentBlock/LandingFeatureContentBlock"
 import CampaignBriefBuilder from "../../components/CampaignBriefBuilder/CampaignBriefBuilder"
 import DocOutputPreview from "../../components/DocOutputPreview/DocOutputPreview"
+import ThreeColumnFeature from "../../components/ThreeColumnFeature/ThreeColumnFeature"
+import TrustedLogos from "../../components/TrustedLogos/TrustedLogos"
+import CtaBlock from "../../components/CtaBlock/CtaBlock"
 import footerLogo from "../../assets/brief.io-logo-placeholder.png"
 
 /* This is a landing page for marketing and therefor is not linked to the website's navigation. It also strips away clicking of a logo
@@ -13,7 +17,7 @@ function Landing() {
 
     return (
 
-        <div>
+        <div className="landing-page">
 
             <section className="landing-hero" style={{ backgroundImage: `url(${landscape})` }}>
 
@@ -102,7 +106,20 @@ function Landing() {
             </div>
 
             <DocOutputPreview />
+
+            <ThreeColumnFeature />
             
+            <TrustedLogos />
+
+            <CtaBlock
+
+                image={square}
+                imageAlt="Placeholder"
+                heading="Omnis iste natus enim ipsam luptatem"
+                subheading="Ut enim ad minima quis Nostrum exercitationem ullam corporis suscipit laboriosam"
+                ctaText="BUTTON CTA"
+
+            />
 
             <footer className="landing-footer">
 
