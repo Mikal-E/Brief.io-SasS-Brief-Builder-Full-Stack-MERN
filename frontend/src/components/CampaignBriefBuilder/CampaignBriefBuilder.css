@@ -192,3 +192,125 @@
     color: var(--burgundy);
 
 }
+
+/* Campaign Brief Builder - Document Output */
+
+.brief-builder-header-output {
+
+    background-color: var(--dark-charcoal);
+
+}
+
+.brief-builder-output-actions {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 24px 30px 24px;
+    margin: -40px -32px 0 -32px;
+    border-bottom: 1px solid var(--border-grey);
+    background-color: var(--dark-charcoal);
+
+}
+
+.brief-builder-output-actions-left {
+
+    display: flex;
+    gap: 12px;
+
+}
+
+.brief-builder-regenerate-button,
+.brief-builder-edit-button {
+
+    background-color: var(--light-grey);
+    color: var(--burgundy);
+    border: 2px solid var(--burgundy);
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.brief-builder-regenerate-button:hover,
+.brief-builder-edit-button:hover {
+
+    background-color: var(--burgundy);
+    color: var(--white);
+    border: 2px solid var(--light-grey);
+
+}
+
+.brief-builder-card-view-button {
+
+    background-color: var(--burgundy);
+    color: var(--light-grey);
+    border: 2px solid var(--brand-grey);
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.brief-builder-card-view-button:hover {
+
+    background-color: var(--brand-grey);
+    color: var(--burgundy);
+    border: 2px solid var(--burgundy);
+
+}
+
+.brief-builder-output-content {
+
+    padding-top: 24px;
+
+}
+
+.brief-output-section-title {
+
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--burgundy);
+    margin-top: 24px;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border-grey);
+
+}
+
+.brief-field-label {
+
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    margin-bottom: 2px;
+    margin-top: 12px;
+
+}
+
+.brief-field-value {
+
+    font-size: 15px;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+
+}
+
+.brief-date {
+
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 32px;
+
+}
