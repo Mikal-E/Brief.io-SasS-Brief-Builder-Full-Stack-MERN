@@ -27,13 +27,39 @@ function LoginForm() {
 
     }
     
-    function handleSubmit(event) {
+    async function handleSubmit(event) {
 
         event.preventDefault()
 
-        // Placeholder until the real POST /api/auth/login route exists
-        console.log("Login form submitted:", formData)
+        try {
 
+            const response = await fetch("http://localhost:3001/api/auth/login", {
+
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    email: formData.email,
+                    password: formData.password
+                })
+
+            })
+
+            const data = await response.json()
+
+            if (!response.ok) {
+
+                throw new Error(data.message || "Login failed")
+                
+            }
+
+            localStorage.setItem("token", data.token)
+            console.log("Logged in successfully:", data.user)
+
+        } catch (error) {
+
+            console.error("Login error:", error.message)
+
+        }
     }
 
     return (
