@@ -95,6 +95,22 @@
 
 }
 
+.landing-brief-intro {
+
+    margin-top: 150px;
+    text-align: center;
+    margin-left: 365px;
+    margin-right: 365px;
+
+}
+
+.landing-brief-intro-subheading {
+
+    font-size: 32px;
+    margin-top: 32px;
+
+}
+
 .campaign-brief-builder-wrapper {
 
     padding: 150px 20px;

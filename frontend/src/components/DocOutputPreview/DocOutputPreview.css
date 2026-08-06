@@ -1,0 +1,56 @@
+.doc-output-preview {
+
+    margin-top: 150px;
+    margin-left: 365px;
+    margin-right: 365px;
+
+}
+
+.doc-output-preview-content {
+
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.doc-output-preview-text {
+
+    flex: 1;
+
+}
+
+.doc-output-preview-text h3 {
+
+    font-size: 48px;
+
+}
+
+.doc-output-preview-text ul {
+
+    list-style: none;
+    padding: 0;
+    margin-top: 32px;
+
+}
+
+.doc-output-preview-text li {
+
+    font-size: 28px;
+    margin-bottom: 28px;
+
+}
+
+.doc-output-preview-image {
+
+    flex: 1;
+
+}
+
+.doc-output-preview-image img {
+
+    width: 100%;
+    display: block;
+
+}

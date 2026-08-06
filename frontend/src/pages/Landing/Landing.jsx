@@ -1,7 +1,9 @@
 import "./Landing.css"
+import "../../styles/section-heading.css"
 import landscape from "../../assets/landscape.jpg"
 import LandingFeatureContentBlock from "../../components/LandingFeatureContentBlock/LandingFeatureContentBlock"
 import CampaignBriefBuilder from "../../components/CampaignBriefBuilder/CampaignBriefBuilder"
+import DocOutputPreview from "../../components/DocOutputPreview/DocOutputPreview"
 import footerLogo from "../../assets/brief.io-logo-placeholder.png"
 
 /* This is a landing page for marketing and therefor is not linked to the website's navigation. It also strips away clicking of a logo
@@ -85,11 +87,21 @@ function Landing() {
 
             </section>
 
+            <section className="landing-brief-intro">
+
+                <h2 className="section-heading">Sed ut perspiciatis unde omnis iste natus</h2>
+
+                <p className="landing-brief-intro-subheading">Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+
+            </section>
+
             <div className="campaign-brief-builder-wrapper">
 
                 <CampaignBriefBuilder />
 
             </div>
+
+            <DocOutputPreview />
             
 
             <footer className="landing-footer">
