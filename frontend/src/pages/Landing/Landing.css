@@ -1,3 +1,100 @@
+/* Hero Section is scoped for Landing.jsx with no nav above it. */
+
+.landing-hero {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.landing-hero-content {
+
+    max-width: 100%;
+    padding-left: 225px;
+    padding-right: 225px;
+
+}
+
+.landing-hero-headline {
+
+    font-size: 80px;
+    margin-bottom: 20px;
+    line-height: 1;
+
+}
+
+.landing-hero-subhead {
+
+    font-size: 42px;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+
+}
+
+.landing-hero-cta {
+
+    background-color: var(--burgundy);
+    color: var(--light-grey);
+    border: 3px solid var(--brand-grey);
+    padding: 20px 50px;
+    border-radius: 8px;
+    font-family: var(--font-main);
+    font-size: 21px;
+    font-weight: 700;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+
+}
+
+.landing-hero-cta:hover {
+
+    background-color: #cccccc;
+    border: 3px solid #b52026;
+    color: #b52026;
+    box-shadow: 2px 2px 5px black;
+
+}
+
+/* Landing Page intro section consisting of heading, and large content block. */
+
+.landing-feature-intro {
+
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 175px;
+    margin-right: 175px;
+
+}
+
+.landing-feature-intro-heading {
+
+    font-size: 64px;
+
+}
+
+.landing-feature-intro-large {
+
+    grid-column: 2;
+
+}
+
+.landing-feature-intro-grid {
+
+    grid-column: 1 / -1;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+
 .campaign-brief-builder-wrapper {
 
     padding: 150px 20px;

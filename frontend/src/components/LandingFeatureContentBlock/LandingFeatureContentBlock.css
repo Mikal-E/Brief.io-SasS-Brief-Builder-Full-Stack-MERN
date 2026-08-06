@@ -1,0 +1,30 @@
+/* Styling for Landing Page intro section 5 content blocks. */
+
+.landing-feature-content-block {
+
+    background-color: var(--light-grey);
+    padding: 60px;
+
+}
+
+.landing-feature-content-block i {
+
+    font-size: 64px;
+    color: var(--burgundy);
+
+}
+
+.landing-feature-content-block-heading {
+
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+}
+
+.landing-feature-content-block-text {
+
+    font-size: 16px;
+    color: var(--text-muted);
+
+}
