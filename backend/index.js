@@ -6,6 +6,7 @@ import briefsRouter from "./routes/briefs.js"
 import activitiesRouter from "./routes/activities.js"
 import teamMembersRouter from "./routes/teamMembers.js"
 import authRouter from "./routes/auth.js"
+import contactsRouter from "./routes/contacts.js"
  
 const app = express()
 const PORT = process.env.PORT || 3001
@@ -30,7 +31,8 @@ mongoose.connect(process.env.MONGODB_URI)
 app.use("/api/briefs", briefsRouter)
 app.use("/api/activities", activitiesRouter)
 app.use("/api/teamMembers", teamMembersRouter) 
-app.use("/api/auth", authRouter)   
+app.use("/api/auth", authRouter)
+app.use("/api/contacts", contactsRouter)   
  
 app.get("/", function(req, res) {
 
@@ -41,5 +43,5 @@ app.get("/", function(req, res) {
 app.listen(PORT, function() {
 
     console.log(`Server running on port ${PORT}`)
-    
+
 })
