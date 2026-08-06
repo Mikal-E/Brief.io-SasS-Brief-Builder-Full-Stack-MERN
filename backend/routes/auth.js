@@ -2,7 +2,10 @@ import express from "express";
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 
-/* Register and Login routes: /register - checks for a duplicate email, creates a user, and issues a token. /login - checks the email, password, and issues a token. */
+/* Register and Login routes: /register - checks for a duplicate email, creates a user, and issues a token. /login - checks the email, password, and issues a token.
+ThunderClient: Tested POST /api/auth/register using an object with name, email, and password to create a user. Tested POST /api/auth/login using email and password.
+
+*/
 
 const router = express.Router();
 
