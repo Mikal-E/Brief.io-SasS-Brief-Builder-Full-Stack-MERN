@@ -1,0 +1,102 @@
+.dashnav-sidebar {
+
+    width: 260px;
+    background-color: var(--ui-paneling);
+    border-right: 1px solid var(--border-line);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.dashnav-header {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 100px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-line);
+
+}
+
+.dashnav-header img {
+
+    height: 30px;
+    width: auto;
+
+}
+
+.dashnav-nav {
+
+padding: 0 20px;
+
+}
+
+.dashnav-nav ul {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    
+
+}
+
+.dashnav-link {
+
+    color: var(--text-dark);
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+
+}
+
+.dashnav-link i {
+
+    color: var(--burgundy);
+
+}
+
+.dashnav-link.active {
+
+    font-weight: 700;
+
+}
+
+.dashnav-footer {
+
+    width: 100%;
+    margin-top: auto;
+    border-top: 1px solid var(--border-line);
+    padding: 30px 16px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.dashnav-footer p {
+
+    font-size: 14px;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin: 0;
+
+}
+
+.dashnav-footer p i {
+
+    color: var(--burgundy);
+
+}

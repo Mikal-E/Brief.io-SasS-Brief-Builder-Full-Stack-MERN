@@ -7,13 +7,14 @@ import Contact from "./pages/Contact/Contact"
 import Login from "./pages/Login/Login"
 import Registration from "./pages/Registration/Registration"
 import Landing from "./pages/Landing/Landing"
+import DashboardLayout from "./pages/Dashboard/DashboardLayout"
 
 /* Utilized useLocation, const location, const hideNavFooter  */
 
 function App() {
 
   const location = useLocation()
-  const hideNavFooter = ["/login", "/register", "/try-brief-builder"].includes(location.pathname)
+  const hideNavFooter = ["/login", "/register", "/try-brief-builder"].includes(location.pathname) || location.pathname.startsWith("/dashboard")
 
   return (
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/login" element={ <Login /> } />
         <Route path="/register" element={ <Registration /> } />
         <Route path="/try-brief-builder" element={ <Landing /> } />
+        <Route path="/dashboard/*" element={ <DashboardLayout /> } />
 
       </Routes>
 
