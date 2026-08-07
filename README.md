@@ -18,19 +18,19 @@ Brief.io lets business admins log in, submit and manage campaign briefs, maintai
 
 
 
-Authentication — user registration and login with hashed passwords (bcrypt) and JWT-based auth
+Authentication - user registration and login with hashed passwords (bcrypt) and JWT-based auth.
 
-Briefs Dashboard — create, view, update, and delete campaign briefs
+Briefs Dashboard - create, view, update, and delete campaign briefs.
 
-Team Directory — browse, search, and invite team members
+Team Directory - browse, search, and invite team members.
 
-Activity Feed — live log of brief status changes, assignments, and comments, with unread/read visual state
+Activity Feed - live log of brief status changes, assignments, and comments, with unread/read visual state.
 
-Contact Form — submits directly to the backend and is stored in the database
+Contact Form - submits directly to the backend and is stored in the database.
 
 
 
-Tech Stack
+###### **Tech Stack**
 
 
 
@@ -38,11 +38,80 @@ Front-End: React, React Router, CSS
 
 Back-End: Node.js, Express
 
-Database: MongoDB, Mongoose (MongoDB Atlas)
+Database: MongoDB, Mongoose
 
 Auth: JWT, bcrypt
 
 
 
-Project Structure
+###### **Project Structure**
+
+
+
+capstone-project/
+
+&#x09;backend/
+
+&#x09;backend/config/
+
+&#x09;backend/data/
+
+&#x09;backend/middleware/
+
+&#x09;backend/models/
+
+&#x09;backend/routes/
+
+&#x09;index.js
+
+
+
+&#x09;frontend/
+
+&#x09;src/
+
+&#x09;components/
+
+&#x09;pages/
+
+
+
+README.md
+
+
+
+###### **Routes**
+
+
+
+Briefs - GET, GET/:id, POST, PATCH, DELETE
+
+Contacts - GET, GET/:id, POST, PATCH, DELETE
+
+Team Members - GET, GET/:id, POST, PATCH, DELETE
+
+Activities - GET, GET/:id, POST, PATCH, DELETE
+
+
+
+###### **Getting Started**
+
+
+
+1\. Clone the repo
+
+2\. In `backend/`, run `npm install`, create a `.env` file with `MONGODB\\\_URI` and `JWT\\\_SECRET`, then run `npm start`
+
+3\. In `frontend/`, run `npm install`, then `npm run dev`
+
+
+
+###### **Future Iterations**
+
+
+
+* AI-powered brief generation (currently rule-based logic)
+* PDF export and email delivery of generated briefs
+
+
 
