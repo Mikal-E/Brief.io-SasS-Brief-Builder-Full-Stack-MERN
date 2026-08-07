@@ -24,12 +24,16 @@ const contactSchema = new mongoose.Schema(
             required: true,
             enum: ["Email", "Phone"],
         },
-        
+
         status: {
             type: String,
             required: true,
             enum: ["Active", "Inactive"],
             default: "Active",
+        },
+
+        message: {
+            type: String,
         },
     },
 

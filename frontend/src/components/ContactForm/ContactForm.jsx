@@ -28,12 +28,43 @@ function ContactForm() {
 
         }
 
-    function handleSubmit(event) {
+    async function handleSubmit(event) {
 
             event.preventDefault()
 
-            // Placeholder until the real POST /api/contacts route exists
-            console.log("Contact form submitted:", formData)
+            try {
+
+                const response = await fetch("http://localhost:3001/api/contacts", {
+
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+
+                        name: formData.fullName,
+                        email: formData.email,
+                        phone: formData.phone,
+                        preferredContact: formData.preferredContact === "email" ? "Email" : "Phone",
+                        message: formData.message
+
+                    })
+
+                })
+
+                const data = await response.json()
+
+                if (!response.ok) {
+
+                    throw new Error(data.message || "Submission failed")
+
+                }
+
+                console.log("Contact submitted successfully:", data)
+
+            } catch (error) {
+
+                console.error("Contact submission error:", error.message)
+
+            }
 
         }
 
