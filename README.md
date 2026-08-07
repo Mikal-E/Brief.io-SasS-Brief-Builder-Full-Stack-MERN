@@ -94,13 +94,41 @@ Activities - GET, GET/:id, POST, PATCH, DELETE
 
 
 
+###### **Pages**
+
+
+
+/
+
+/pricing
+
+/contact
+
+/login
+
+/register
+
+/try-brief-builder
+
+/dashboard/briefs
+
+/dashboard/team
+
+/dashboard/activities
+
+/dashboard/brief-builder
+
+
+
+
+
 ###### **Getting Started**
 
 
 
 1\. Clone the repo
 
-2\. In `backend/`, run `npm install`, create a `.env` file with `MONGODB\\\_URI` and `JWT\\\_SECRET`, then run `npm start`
+2\. In `backend/`, run `npm install`, create a `.env` file with `MONGODB\\\\\\\_URI` and `JWT\\\\\\\_SECRET`, then run `npm start`
 
 3\. In `frontend/`, run `npm install`, then `npm run dev`
 
@@ -112,6 +140,4 @@ Activities - GET, GET/:id, POST, PATCH, DELETE
 
 * AI-powered brief generation (currently rule-based logic)
 * PDF export and email delivery of generated briefs
-
-
 
