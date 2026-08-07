@@ -97,6 +97,7 @@
 
 .member-card:hover {
 
+    background-color: var(--cool-white);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     transform: translateY(-3px);
 
@@ -285,3 +286,8 @@
 #submit-invite-button:hover {
 
     background-color: var(--brand-grey);
+    color: var(--burgundy);
+    border: 2px solid var(--burgundy);
+
+
+}

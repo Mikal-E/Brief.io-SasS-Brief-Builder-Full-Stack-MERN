@@ -30,7 +30,7 @@
 
 .brief-card {
 
-    background-color: var(--white);
+    background-color: var(--ui-paneling);
     border: 1px solid var(--border-grey);
     border-radius: 10px;
     padding: 24px 20px;
@@ -43,6 +43,7 @@
 
 .brief-card:hover {
 
+    background-color: var(--cool-white);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     transform: translateY(-3px);
 
@@ -56,10 +57,11 @@
     padding: 10px 14px;
     font-family: var(--font-main);
     font-size: 14px;
-    border: 2px solid var(--border-grey);
+    border: 1px solid var(--brand-grey);
     border-radius: 6px;
     margin-bottom: 16px;
     color: var(--text-dark);
+    background-color: var(--ui-paneling);
     outline: none;
     transition: border-color 0.3s ease;
 

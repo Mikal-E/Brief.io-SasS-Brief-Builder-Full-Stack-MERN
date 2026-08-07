@@ -11,6 +11,7 @@ import DashboardLayout from "./pages/Dashboard/DashboardLayout"
 import CampaignBriefBuilder from "../../frontend/src/components/CampaignBriefBuilder/CampaignBriefBuilder"
 import Briefs from "./pages/Dashboard/Briefs/Briefs"
 import Team from "./pages/Dashboard/Team/Team"
+import Activities from "./pages/Dashboard/Activities/Activities";
 
 /* Utilized useLocation, const location, const hideNavFooter  */
 
@@ -38,6 +39,7 @@ function App() {
 
             <Route path="briefs" element={ <Briefs /> } />
             <Route path="team" element={ <Team /> } />
+            <Route path="activities" element={<Activities />} />
             <Route path="brief-builder" element={ <CampaignBriefBuilder /> } />
 
         </Route>

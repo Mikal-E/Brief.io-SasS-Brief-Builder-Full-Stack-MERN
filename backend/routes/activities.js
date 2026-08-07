@@ -20,7 +20,8 @@ router
 
             }
 
-            const activities = await Activity.find(filter);
+            const activities = await Activity.find(filter).populate("brief").populate("teamMember").sort({ createdAt: -1 });
+            // const activities = await Activity.find(filter);
             res.json(activities);
             
         } catch (error) {

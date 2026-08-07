@@ -1,0 +1,43 @@
+.activities-page {
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.activities-page h1 {
+  color: var(--burgundy);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.activities-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.activity-item {
+  background-color: var(--white);
+  border: 1px solid var(--border-grey);
+  border-radius: 8px;
+  padding: 14px 18px;
+}
+
+.activity-item.unread {
+  border-left: 4px solid var(--burgundy);
+  background-color: var(--light-grey);
+}
+
+.activity-message {
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.activity-meta {
+  font-size: 13px;
+  color: var(--text-muted);
+}
