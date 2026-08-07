@@ -8,6 +8,8 @@ export const teamMembers = [
         email: "swelch@brief.io",
         department: "Marketing (Integrated)",
         status: "Active",
+        image: "square.jpg",
+        phone: "(212) 845-5800",
     },
     
     {
@@ -16,6 +18,8 @@ export const teamMembers = [
         email: "mstansfield@brief.io",
         department: "Creative (Integrated)",
         status: "Active",
+        image: "square.jpg",
+        phone: "(212) 845-5800",
     },
 
     {
@@ -24,6 +28,8 @@ export const teamMembers = [
         email: "dosei@brief.io",
         department: "Creative (Integrated)",
         status: "Active",
+        image: "square.jpg",
+        phone: "(212) 845-5800",
     },
 
     {
@@ -32,6 +38,8 @@ export const teamMembers = [
         email: "pchandrasekaran@brief.io",
         department: "Creative (Integrated)",
         status: "Active",
+        image: "square.jpg",
+        phone: "(212) 845-5800",
     },
 
     {
@@ -39,7 +47,9 @@ export const teamMembers = [
         role: "Account Manager",
         email: "triordan@brief.io",
         department: "Client Services",
-        status: "Inactive"
+        status: "Inactive",
+        image: "square.jpg",
+        phone: "(212) 845-5800",
     },
 
 ];

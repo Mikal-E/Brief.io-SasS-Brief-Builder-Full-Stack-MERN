@@ -32,7 +32,16 @@ const teamMemberSchema = new mongoose.Schema(
                 type: String,
                 required: true,
                 enum: ["Active", "Inactive"],
+            },
+
+            image: {
+            type: String,
+            },
+
+            phone: {
+                type: String,
             }
+            
         }
 
 );
