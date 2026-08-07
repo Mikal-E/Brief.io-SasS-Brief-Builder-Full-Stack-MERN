@@ -9,6 +9,7 @@ import Registration from "./pages/Registration/Registration"
 import Landing from "./pages/Landing/Landing"
 import DashboardLayout from "./pages/Dashboard/DashboardLayout"
 import CampaignBriefBuilder from "../../frontend/src/components/CampaignBriefBuilder/CampaignBriefBuilder"
+import Briefs from "./pages/Dashboard/Briefs/Briefs"
 
 /* Utilized useLocation, const location, const hideNavFooter  */
 
@@ -34,8 +35,9 @@ function App() {
         
         <Route path="/dashboard" element={ <DashboardLayout /> }>
 
+            <Route path="briefs" element={ <Briefs /> } />
             <Route path="brief-builder" element={ <CampaignBriefBuilder /> } />
-            
+
         </Route>
 
       </Routes>
