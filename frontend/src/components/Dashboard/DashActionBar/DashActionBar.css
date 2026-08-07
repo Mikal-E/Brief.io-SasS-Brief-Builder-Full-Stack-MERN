@@ -1,0 +1,12 @@
+.dashaction-bar {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    background-color: var(--dark-charcoal);
+    padding: 16px 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+
+}

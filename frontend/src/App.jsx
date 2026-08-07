@@ -8,6 +8,7 @@ import Login from "./pages/Login/Login"
 import Registration from "./pages/Registration/Registration"
 import Landing from "./pages/Landing/Landing"
 import DashboardLayout from "./pages/Dashboard/DashboardLayout"
+import CampaignBriefBuilder from "../../frontend/src/components/CampaignBriefBuilder/CampaignBriefBuilder"
 
 /* Utilized useLocation, const location, const hideNavFooter  */
 
@@ -30,7 +31,12 @@ function App() {
         <Route path="/login" element={ <Login /> } />
         <Route path="/register" element={ <Registration /> } />
         <Route path="/try-brief-builder" element={ <Landing /> } />
-        <Route path="/dashboard/*" element={ <DashboardLayout /> } />
+        
+        <Route path="/dashboard" element={ <DashboardLayout /> }>
+
+            <Route path="brief-builder" element={ <CampaignBriefBuilder /> } />
+            
+        </Route>
 
       </Routes>
 

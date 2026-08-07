@@ -14,7 +14,12 @@ function DashboardLayout() {
             <div className="dash-main">
 
                 <TopBar />
-                <Outlet />
+
+                <main className="dash-content">
+
+                    <Outlet />
+                    
+                </main>
 
             </div>
 
