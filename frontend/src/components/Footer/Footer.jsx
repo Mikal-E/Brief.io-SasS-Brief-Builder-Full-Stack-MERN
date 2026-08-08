@@ -1,5 +1,6 @@
 import logo from "../../assets/brief.io-logo-placeholder.png"
 import "./Footer.css"
+import { Link } from "react-router-dom";
 
 /* Footer component will be used across the Home, Pricing, and Contact Pages. It will not be used on the landing page as those types of pages are free
 from exit features to assist in boosting conversions. It will also not be used on Login and Registration Pages as they have a single-intent.
@@ -31,7 +32,7 @@ function Footer() {
                 <p className="footer-column-title">Product</p>
 
                 <a href="#">Docs</a>
-                <a href="#">Pricing</a>
+                <Link to="/pricing">Pricing</Link>
                 <a href="#">Case Studies</a>
                 <a href="#">White Papers</a>
                 
@@ -41,10 +42,9 @@ function Footer() {
 
                 <p className="footer-column-title">Company</p>
 
-                <a href="#">Contact</a>
+                <Link to="/contact">Contact</Link>
                 <a href="#">Careers</a>
                 <a href="#">Terms</a>
-                <a href="#">Pricing</a>
                 <a href="#">Press</a>                
                 
             </div>
@@ -64,7 +64,7 @@ function Footer() {
 
                 <div className="footer-social-icons">
 
-                    <a href="#"><i className="fa-brands fa-square-linkedin"></i></a>
+                    <a href="#"><i className="fa-brands fa-linkedin"></i></a>
                     <a href="#"><i className="fa-brands fa-square-instagram"></i></a>
                     <a href="#"><i className="fa-brands fa-square-threads"></i></a>
 

@@ -14,6 +14,7 @@ import Briefs from "./pages/Dashboard/Briefs/Briefs"
 import Team from "./pages/Dashboard/Team/Team"
 import Activities from "./pages/Dashboard/Activities/Activities";
 import NotFound from "./pages/NotFound/NotFound"
+import ResetToTopOnNavigate from "./components/ResetToTopOnNavigate/ResetToTopOnNavigate"
 
 /* Utilized useLocation, const location, const hideNavFooter  */
 
@@ -28,6 +29,8 @@ function App() {
 
     <>
 
+      <ResetToTopOnNavigate />
+      
       {!hideNavFooter && <Nav solidBackground={isNotFound} />}
 
 
