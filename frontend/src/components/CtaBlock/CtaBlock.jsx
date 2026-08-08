@@ -1,5 +1,6 @@
 import "./CtaBlock.css"
 import "../../styles/section-heading.css"
+import { Link } from "react-router-dom";
 
 /* This is the CTA block that sits above the reviews at the bottom of the Home.jsx page. It is also used on Landing.jsx and therefore controlled by props. */
 
@@ -13,7 +14,7 @@ function CtaBlock({ image, imageAlt, heading, subheading, ctaText }) {
 
                 <h2 className="cta-block-heading">{heading}</h2>
                 <p className="cta-block-subheading">{subheading}</p>
-                <button className="cta-block-button">{ctaText}</button>
+                <Link to="/register" className="cta-block-button">{ctaText}</Link>
 
             </div>
 

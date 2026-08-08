@@ -5,6 +5,7 @@ import PricingCards from "../../components/PricingCards/PricingCards"
 import TrustedLogos from "../../components/TrustedLogos/TrustedLogos"
 import PricingTable from "../../components/PricingTable/PricingTable"
 import Faq from "../../components/Faq/Faq"
+import { Link } from "react-router-dom";
 
 function PricingPage() {
 
@@ -22,7 +23,7 @@ function PricingPage() {
                     <p className="hero-subhead">Aped eos solupta tureped ut explaut qui
                     <br />
                     debis sum autest parum et et offic</p>
-                    <button className="hero-cta">Get Started</button>
+                    <Link to="/register" className="hero-cta">Get Started</Link>
 
                 </div>
 

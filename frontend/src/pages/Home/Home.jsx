@@ -10,6 +10,7 @@ import ThreeColumnFeature from "../../components/ThreeColumnFeature/ThreeColumnF
 import TabbedFeatureDashboard from "../../components/TabbedFeatureDashboard/TabbedFeatureDashboard"
 import CtaBlock from "../../components/CtaBlock/CtaBlock"
 import Reviews from "../../components/Reviews/Reviews"
+import { Link } from "react-router-dom";
 
 function HomePage() {
 
@@ -129,7 +130,7 @@ function HomePage() {
                     <p className="hero-subhead">Aped eos solupta tureped ut explaut qui
                     <br />
                     debis sum autest parum et et offic</p>
-                    <button className="hero-cta">Get Started</button>
+                    <Link to="/register" className="hero-cta">Get Started</Link>
 
                 </div>
 
@@ -237,7 +238,7 @@ function HomePage() {
                 imageAlt="Placeholder"
                 heading="Omnis iste natus enim ipsam luptatem"
                 subheading="Ut enim ad minima quis Nostrum exercitationem ullam corporis suscipit laboriosam"
-                ctaText="BUTTON CTA"
+                ctaText="Get Started"
 
             />
 

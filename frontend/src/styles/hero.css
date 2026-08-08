@@ -38,6 +38,7 @@
 
 .hero-cta {
 
+    display: inline-block;
     background-color: var(--burgundy);
     color: var(--light-grey);
     border: 3px solid var(--brand-grey);

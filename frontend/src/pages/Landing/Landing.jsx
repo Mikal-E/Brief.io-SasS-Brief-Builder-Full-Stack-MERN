@@ -9,6 +9,7 @@ import ThreeColumnFeature from "../../components/ThreeColumnFeature/ThreeColumnF
 import TrustedLogos from "../../components/TrustedLogos/TrustedLogos"
 import CtaBlock from "../../components/CtaBlock/CtaBlock"
 import footerLogo from "../../assets/brief.io-logo-placeholder.png"
+import { Link } from "react-router-dom";
 
 /* This is a landing page for marketing and therefor is not linked to the website's navigation. It also strips away clicking of a logo
 to redirect a user back to the home page and the footer links as well, to remove exititng attempts and distractions. */
@@ -21,6 +22,8 @@ function Landing() {
 
             <section className="landing-hero" style={{ backgroundImage: `url(${landscape})` }}>
 
+                <img src={footerLogo} alt="Brief.io" className="landing-hero-logo" />
+
                 <div className="landing-hero-content">
 
                     <h1 className="landing-hero-headline">Ra que verist et
@@ -31,7 +34,7 @@ function Landing() {
                     
 
                     debis sum autest parum et et offic</p>
-                    <button className="landing-hero-cta">Get Started</button>
+                    <Link to="/register" className="hero-cta">Get Started</Link>
 
                 </div>
 
@@ -117,7 +120,7 @@ function Landing() {
                 imageAlt="Placeholder"
                 heading="Omnis iste natus enim ipsam luptatem"
                 subheading="Ut enim ad minima quis Nostrum exercitationem ullam corporis suscipit laboriosam"
-                ctaText="BUTTON CTA"
+                ctaText="Get Started"
 
             />
 
