@@ -1,4 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom"
+import { Navigate } from "react-router-dom";
 import Nav from "./components/Nav/Nav"
 import Footer from "./components/Footer/Footer"
 import Home from "./pages/Home/Home"
@@ -12,19 +13,23 @@ import CampaignBriefBuilder from "../../frontend/src/components/CampaignBriefBui
 import Briefs from "./pages/Dashboard/Briefs/Briefs"
 import Team from "./pages/Dashboard/Team/Team"
 import Activities from "./pages/Dashboard/Activities/Activities";
+import NotFound from "./pages/NotFound/NotFound"
 
 /* Utilized useLocation, const location, const hideNavFooter  */
 
 function App() {
 
   const location = useLocation()
+  const isNotFound = !["/", "/pricing", "/contact", "/login", "/register", "/try-brief-builder"].includes(location.pathname) 
+  && !location.pathname.startsWith("/dashboard")
   const hideNavFooter = ["/login", "/register", "/try-brief-builder"].includes(location.pathname) || location.pathname.startsWith("/dashboard")
 
   return (
 
     <>
 
-      {!hideNavFooter && <Nav />}
+      {!hideNavFooter && <Nav solidBackground={isNotFound} />}
+
 
       <Routes>
 
@@ -37,6 +42,7 @@ function App() {
         
         <Route path="/dashboard" element={ <DashboardLayout /> }>
 
+            <Route index element={<Navigate to="briefs" replace />} />
             <Route path="briefs" element={ <Briefs /> } />
             <Route path="team" element={ <Team /> } />
             <Route path="activities" element={<Activities />} />
@@ -44,6 +50,7 @@ function App() {
 
         </Route>
 
+      <Route path="*" element={ <NotFound /> } />
       </Routes>
 
       {!hideNavFooter && <Footer />}

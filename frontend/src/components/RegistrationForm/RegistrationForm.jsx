@@ -1,10 +1,14 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logoPlaceholder from "../../assets/brief.io-logo-placeholder.png"
 import "./RegistrationForm.css"
 
 /* The RegistrationForm.jsx component will share many of the same conventions as the ContactForm.jsx, and of course LoginForm.jsx. */
 
 function RegistrationForm() {
+
+    const navigate = useNavigate();
 
     const [formData, setFormData] = useState({
 
@@ -56,6 +60,7 @@ function RegistrationForm() {
 
             localStorage.setItem("token", data.token)
             console.log("Registered successfully:", data.user)
+            navigate("/dashboard")
 
         } catch (error) {
 
@@ -170,11 +175,11 @@ function RegistrationForm() {
 
             </form>
 
-            <button type="button" className="registration-login-link">
+                <Link to="/login" className="registration-login-link">
 
-                Login <i className="fa-solid fa-arrow-right-to-bracket"></i>
-
-            </button>
+                    Login <i className="fa-solid fa-arrow-right-to-bracket"></i>
+                    
+                </Link>
 
         </div>
 

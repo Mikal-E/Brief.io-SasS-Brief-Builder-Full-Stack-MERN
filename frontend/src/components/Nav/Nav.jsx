@@ -5,11 +5,12 @@ import "./Nav.css"
 /* Nav component will be used across the Home, Pricing, and Contact Pages. It will not be used on the landing page as those types of pages are free
 from exit features to assist in boosting conversions. It will also not be used on Login and Registration Pages as they have a single-intent. */
 
-function Nav() {
+function Nav({ solidBackground }) {
 
     return (
 
-        <nav className="nav">
+        // <nav className="nav" | Updated with prop above and ternary operator below, in order to use on a 404 page where the nav has a background.>
+        <nav className={`nav ${solidBackground ? "nav-solid" : ""}`}>
 
             <Link to="/" className="nav-logo">
             

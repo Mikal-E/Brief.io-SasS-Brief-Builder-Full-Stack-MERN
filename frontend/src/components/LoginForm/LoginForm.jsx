@@ -1,10 +1,14 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./LoginForm.css"
 import logoPlaceholder from "../../assets/brief.io-logo-placeholder.png"
 
 /* The LoginForm.jsx component will share many of the same conventions as the ContactForm.jsx, and of course SigninForm.jsx when it exist. */
 
 function LoginForm() {
+
+    const navigate = useNavigate();
 
     const [formData, setFormData] = useState({
 
@@ -54,6 +58,7 @@ function LoginForm() {
 
             localStorage.setItem("token", data.token)
             console.log("Logged in successfully:", data.user)
+            navigate("/dashboard")
 
         } catch (error) {
 
@@ -144,11 +149,11 @@ function LoginForm() {
 
             </form>
 
-            <button type="button" className="login-create-account-link">
+            <Link to="/register" className="login-create-account-link">
 
                 <i className="fa-solid fa-id-card"></i> Create Account
-
-            </button>
+                
+            </Link>
 
         </div>
 

@@ -1,5 +1,6 @@
 import "./PricingCards.css"
 import "../../styles/section-heading.css"
+import { Link } from "react-router-dom";
 
 /* This is the PricingCards component for the pricing section right below the hero in Pricing.jsx.
 Elected to use ternary operator in the classNames this time unlike TabbedFeatureDocOutput.jsx where class names
@@ -70,7 +71,7 @@ function PricingCards() {
                         <h3 className="pricing-card-name">{plan.name}</h3>
                         <p className="pricing-card-price">{plan.price} <span>/mo</span></p>
                         <p className="pricing-card-description">{plan.description}</p>
-                        <button className="pricing-card-button">{plan.cta}</button>
+                        <Link to="/register" className="pricing-card-button">{plan.cta}</Link>
 
                         <ul className="pricing-card-features">
 
