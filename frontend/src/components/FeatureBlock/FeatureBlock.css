@@ -53,6 +53,12 @@ This is the CSS for that component. */
     
 }
 
+.feature-block-list i {
+
+    padding-right: 10px;
+
+}
+
 /* Using flex-direction: row-reverse to flip the order of the two flex children (image and text), in order to create the staggered layout. */
 
 .feature-block-reverse {

@@ -61,6 +61,46 @@
 
 }
 
+.pulse-logo-container {
+
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.pulse-logo {
+
+    height: 2em;
+    width: auto;
+
+}
+
+.pulse-logo-container h3 {
+
+    color: var(--cool-white);
+    font-size: 25px;
+    padding-left: 5px;
+
+}
+
+.pulse-logo-container sup {
+
+    font-size: 13px;
+    color: var(--burgundy);
+    margin-left: 4px;
+
+}
+
+.pulse-logo-container i {
+
+    /* display: flex; */
+    color: var(--cool-white);
+    font-size: 12px;
+    padding-left: 10px;
+
+}
+
 .footer-divider {
 
     width: calc(100% + 350px);

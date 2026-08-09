@@ -1,4 +1,5 @@
 import logo from "../../assets/brief.io-logo-placeholder.png"
+import pulseLogo from "../../assets/pulse-logo.png"
 import "./Footer.css"
 import { Link } from "react-router-dom";
 
@@ -55,6 +56,15 @@ function Footer() {
 
                 <a href="#">Blog</a>
                 <a href="#">Templates</a>
+
+                <div className="pulse-logo-container">
+
+                    <img src={pulseLogo} alt="Pulse logo" className="pulse-logo"/>
+
+                    <h3>Pulse<sup>by Brief.io<i className="fa-solid fa-arrow-up-right-from-square"></i></sup></h3>
+                    
+
+                </div>
 
             </div>
 

@@ -29,8 +29,6 @@ function Nav({ solidBackground }) {
             <div className="nav-actions">
 
                 <Link to="/login" className="nav-signin">Sign In</Link>
-                {/* <Link to="/register" className="nav-cta">Get Started</Link> */}
-
 
             </div>
 
