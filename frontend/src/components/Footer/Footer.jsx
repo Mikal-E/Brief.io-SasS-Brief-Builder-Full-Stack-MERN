@@ -57,14 +57,14 @@ function Footer() {
                 <a href="#">Blog</a>
                 <a href="#">Templates</a>
 
-                <div className="pulse-logo-container">
+                <a href="http://localhost:5174" target="_blank" rel="noopener noreferrer" className="pulse-logo-container">
 
                     <img src={pulseLogo} alt="Pulse logo" className="pulse-logo"/>
 
                     <h3>Pulse<sup>by Brief.io<i className="fa-solid fa-arrow-up-right-from-square"></i></sup></h3>
                     
 
-                </div>
+                </a>
 
             </div>
 

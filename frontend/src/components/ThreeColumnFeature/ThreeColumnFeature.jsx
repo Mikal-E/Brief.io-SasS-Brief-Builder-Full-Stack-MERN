@@ -1,5 +1,8 @@
 import "./ThreeColumnFeature.css"
 import square from "../../assets/square.jpg"
+import bannerContentBlock1 from "../../assets/banner-content-block-1.jpg"
+import bannerContentBlock2 from "../../assets/banner-content-block-2.jpg"
+import bannerContentBlock3 from "../../assets/banner-content-block-3.jpg"
 import "../../styles/section-heading.css"
 
 /* This is the banner section under the first tabbed element on Home.jsx It has the section heading, then 3 columns: image, column heading, and <p> in each column. */
@@ -9,19 +12,19 @@ function ThreeColumnFeature() {
     const columns = [
 
         {
-            image: square,
+            image: bannerContentBlock1,
             heading: "Ut enim ad minima quis",
             text: "Nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi"
         },
 
         {
-            image: square,
+            image: bannerContentBlock2,
             heading: "Ut enim ad minima quis",
             text: "Nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi"
         },
 
         {
-            image: square,
+            image: bannerContentBlock3,
             heading: "Ut enim ad minima quis",
             text: "Nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi"
         }

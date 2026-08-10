@@ -1,6 +1,10 @@
 import { useState } from "react";
 import "./TabbedFeatureDocOutput.css"
 import portrait from "../../assets/portrait.jpg"
+import tabbedFeaturedDocOutput1 from "../../assets/tabbed-featured-doc-output-1.png"
+import tabbedFeaturedDocOutput2 from "../../assets/tabbed-featured-doc-output-2.png"
+import tabbedFeaturedDocOutput3 from "../../assets/tabbed-featured-doc-output-3.png"
+import tabbedFeaturedDocOutput4 from "../../assets/tabbed-featured-doc-output-4.png"
 import "../../styles/section-heading.css"
 
 /* This is the first tabbed element on Home.jsx that displays different blocks of content based on the tab that was clicked. It is positioned right
@@ -48,42 +52,42 @@ function TabbedFeatureDocOutput() {
 const tabContent = [
 
     {
-        heading: "Ut enim ad minima quis",
-        image: portrait,
+        heading: "1. Ut enim ad minima quis",
+        image: tabbedFeaturedDocOutput1,
         items: [
-            "Nemo enim ipsam voluptatem quia",
-            "Nemo enim ipsam voluptatem quia",
-            "Nemo enim ipsam voluptatem quia"
+            "1.Nemo enim ipsam voluptatem quia",
+            "1. Nemo enim ipsam voluptatem quia",
+            "1. Nemo enim ipsam voluptatem quia"
         ]
     },
 
     {
-        heading: "Ut enim ad minima quis",
-        image: portrait,
+        heading: "2. Ut enim ad minima quis",
+        image: tabbedFeaturedDocOutput2,
         items: [
-            "Nemo enim ipsam voluptatem quia",
-            "Nemo enim ipsam voluptatem quia",
-            "Nemo enim ipsam voluptatem quia"
+            "2. Nemo enim ipsam voluptatem quia",
+            "2. Nemo enim ipsam voluptatem quia",
+            "2. Nemo enim ipsam voluptatem quia"
         ]
     },
 
     {
-        heading: "Ut enim ad minima quis",
-        image: portrait,
+        heading: "3. Ut enim ad minima quis",
+        image: tabbedFeaturedDocOutput3,
         items: [
-            "Nemo enim ipsam voluptatem quia",
-            "Nemo enim ipsam voluptatem quia",
-            "Nemo enim ipsam voluptatem quia"
+            "3. Nemo enim ipsam voluptatem quia",
+            "3. Nemo enim ipsam voluptatem quia",
+            "3. Nemo enim ipsam voluptatem quia"
         ]
     },
 
     {
-        heading: "Ut enim ad minima quis",
-        image: portrait,
+        heading: "4. Ut enim ad minima quis",
+        image: tabbedFeaturedDocOutput4,
         items: [
-            "Nemo enim ipsam voluptatem quia",
-            "Nemo enim ipsam voluptatem quia",
-            "Nemo enim ipsam voluptatem quia"
+            "4. Nemo enim ipsam voluptatem quia",
+            "4. Nemo enim ipsam voluptatem quia",
+            "4. Nemo enim ipsam voluptatem quia"
         ]
     }
 

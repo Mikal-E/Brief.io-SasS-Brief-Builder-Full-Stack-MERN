@@ -21,15 +21,17 @@
 
 .three-column-feature-column {
 
-flex: 1;
+    flex: 1;
 
 }
 
 .three-column-feature-column img {
 
-width: 100%;
-display: block;
-border: 1px solid var(--text-muted);
+    width: 100%;
+    display: block;
+    border: 5px solid var(--burgundy);
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px var(--text-muted);
 
 }
 

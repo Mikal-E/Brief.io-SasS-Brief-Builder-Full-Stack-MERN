@@ -2,6 +2,23 @@ import "./Home.css"
 import "../../styles/hero.css"
 import "../../styles/section-heading.css"
 import landscape from "../../assets/landscape.jpg"
+import headerMockup from "../../assets/header-mockup.jpg"
+import section1IntroImage from "../../assets/section-1-intro-image.jpg"
+import projectInfo from "../../assets/project-info.png"
+import audience from "../../assets/audience.png"
+import strategy from "../../assets/strategy.png"
+import scope from "../../assets/scope.png"
+import team from "../../assets/young-creative-people-in-modern-office.jpg"
+import briefsDashboard1 from "../../assets/briefs-dashboard-1.jpg"
+import briefsDashboard2 from "../../assets/briefs-dashboard-2.jpg"
+import briefsDashboard3 from "../../assets/briefs-dashboard-3.jpg"
+import teamDashboard1 from "../../assets/team-dashboard-1.jpg"
+import teamDashboard2 from "../../assets/team-dashboard-2.jpg"
+import teamDashboard3 from "../../assets/team-dashboard-3.jpg"
+import activitiesDashboard1 from "../../assets/activities-dashboard-1.jpg"
+import activitiesDashboard2 from "../../assets/activities-dashboard-2.jpg"
+import activitiesDashboard3 from "../../assets/activities-dashboard-3.jpg"
+import cta from "../../assets/cta.jpg"
 import square from "../../assets/square.jpg"
 import portrait from "../../assets/portrait.jpg"
 import FeatureBlock from "../../components/FeatureBlock/FeatureBlock"
@@ -17,32 +34,32 @@ function HomePage() {
     const briefsTabContent = [
 
         {
-            image: landscape,
+            image: briefsDashboard1,
             items: [
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+                "1. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "2. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "3. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "4. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
             ]
         },
 
         {
-            image: landscape,
+            image: briefsDashboard2,
             items: [
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+                "5. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "6. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "7. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "8. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
             ]
         },
 
         {
-            image: landscape,
+            image: briefsDashboard3,
             items: [
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+                "9. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "10. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "11. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "12. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
             ]
         }
 
@@ -51,32 +68,32 @@ function HomePage() {
     const teamTabContent = [
 
         {
-            image: landscape,
+            image: teamDashboard1,
             items: [
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+                "1. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "2. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "3. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "4. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
             ]
         },
 
         {
-            image: landscape,
+            image: teamDashboard2,
             items: [
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+                "5. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "6. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "7. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "8. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
             ]
         },
 
         {
-            image: landscape,
+            image: teamDashboard3,
             items: [
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+                "9. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "10. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "11. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "12. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
             ]
         }
 
@@ -85,32 +102,32 @@ function HomePage() {
     const activityTabContent = [
 
         {
-            image: landscape,
+            image: activitiesDashboard1,
             items: [
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+                "1. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "2. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "3. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "4. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
             ]
         },
 
         {
-            image: landscape,
+            image: activitiesDashboard2,
             items: [
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+                "5. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "6. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "7. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "8. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
             ]
         },
 
         {
-            image: landscape,
+            image: activitiesDashboard3,
             items: [
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+                "9. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "10. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "11. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
+                "12. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
             ]
         }
 
@@ -120,7 +137,7 @@ function HomePage() {
 
         <div>
 
-            <section className="hero" style={{ backgroundImage: `url(${landscape})` }}>
+            <section className="hero" style={{ backgroundImage: `url(${headerMockup})` }}>
 
                 <div className="hero-content">
 
@@ -142,7 +159,7 @@ function HomePage() {
 
                 <div className="section-intro-image">
 
-                <img src={landscape} alt="Placeholder" className="section-image" />
+                <img src={section1IntroImage} alt="Placeholder" className="section-image" />
 
                 </div>
 
@@ -150,7 +167,7 @@ function HomePage() {
 
             <FeatureBlock
 
-                image={square}
+                image={projectInfo}
                 imageAlt="Placeholder"
                 heading="Ut enim ad minima quis"
                 items={[
@@ -165,7 +182,7 @@ function HomePage() {
 
             <FeatureBlock
 
-                image={square}
+                image={audience}
                 imageAlt="Placeholder"
                 heading="Ut enim ad minima quis"
                 items={[
@@ -182,7 +199,7 @@ function HomePage() {
 
             <FeatureBlock
 
-                image={square}
+                image={strategy}
                 imageAlt="Placeholder"
                 heading="Ut enim ad minima quis"
                 items={[
@@ -197,7 +214,7 @@ function HomePage() {
 
             <FeatureBlock
 
-                image={square}
+                image={scope}
                 imageAlt="Placeholder"
                 heading="Ut enim ad minima quis"
                 items={[
@@ -222,7 +239,7 @@ function HomePage() {
 
                 <div className="section-intro-image">
 
-                    <img src={landscape} alt="Placeholder" className="section-image" />
+                    <img src={team} alt="Placeholder" className="section-image" />
 
                 </div>
 
@@ -234,7 +251,7 @@ function HomePage() {
 
             <CtaBlock
 
-                image={square}
+                image={cta}
                 imageAlt="Placeholder"
                 heading="Omnis iste natus enim ipsam luptatem"
                 subheading="Ut enim ad minima quis Nostrum exercitationem ullam corporis suscipit laboriosam"

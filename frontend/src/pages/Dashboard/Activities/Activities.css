@@ -20,7 +20,7 @@
 }
 
 .activity-item {
-  background-color: var(--white);
+  background-color: var(--light-grey);
   border: 1px solid var(--border-grey);
   border-radius: 8px;
   padding: 14px 18px;
@@ -28,7 +28,7 @@
 
 .activity-item.unread {
   border-left: 4px solid var(--burgundy);
-  background-color: var(--light-grey);
+  background-color: var(--white);
 }
 
 .activity-message {
