@@ -1,6 +1,7 @@
 import "../../styles/hero.css"
 import "../../styles/section-heading.css"
 import landscape from "../../assets/landscape.jpg"
+import headerMockup from "../../assets/header-mockup.jpg"
 import PricingCards from "../../components/PricingCards/PricingCards"
 import TrustedLogos from "../../components/TrustedLogos/TrustedLogos"
 import PricingTable from "../../components/PricingTable/PricingTable"
@@ -13,7 +14,7 @@ function PricingPage() {
 
         <div>
 
-            <section className="hero" style={{ backgroundImage: `url(${landscape})` }}>
+            <section className="hero" style={{ backgroundImage: `url(${headerMockup})` }}>
 
                 <div className="hero-content">
 

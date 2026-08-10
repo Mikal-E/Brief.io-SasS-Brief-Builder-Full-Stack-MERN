@@ -2,6 +2,8 @@ import "./Landing.css"
 import "../../styles/section-heading.css"
 import landscape from "../../assets/landscape.jpg"
 import square from "../../assets/square.jpg"
+import headerMockupAlt700 from "../../assets/header-mockup-alt-1-700.jpg"
+import cta from "../../assets/cta.jpg"
 import LandingFeatureContentBlock from "../../components/LandingFeatureContentBlock/LandingFeatureContentBlock"
 import CampaignBriefBuilder from "../../components/CampaignBriefBuilder/CampaignBriefBuilder"
 import DocOutputPreview from "../../components/DocOutputPreview/DocOutputPreview"
@@ -20,7 +22,7 @@ function Landing() {
 
         <div className="landing-page">
 
-            <section className="landing-hero" style={{ backgroundImage: `url(${landscape})` }}>
+            <section className="landing-hero" style={{ backgroundImage: `url(${headerMockupAlt700})` }}>
 
                 <img src={footerLogo} alt="Brief.io" className="landing-hero-logo" />
 
@@ -116,7 +118,7 @@ function Landing() {
 
             <CtaBlock
 
-                image={square}
+                image={cta}
                 imageAlt="Placeholder"
                 heading="Omnis iste natus enim ipsam luptatem"
                 subheading="Ut enim ad minima quis Nostrum exercitationem ullam corporis suscipit laboriosam"

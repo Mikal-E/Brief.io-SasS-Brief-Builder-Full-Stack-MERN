@@ -1,6 +1,8 @@
 import "./DocOutputPreview.css"
 import portrait from "../../assets/portrait.jpg"
+import docOutputPreview from "../../assets/tabbed-featured-doc-output-1.png"
 import "../../styles/section-heading.css"
+
 
 function DocOutputPreview() {
 
@@ -28,7 +30,7 @@ function DocOutputPreview() {
 
                 <div className="doc-output-preview-image">
 
-                    <img src={portrait} alt="Placeholder" />
+                    <img src={docOutputPreview} alt="Placeholder" />
                     
                 </div>
 

@@ -2,6 +2,7 @@ import "./Contact.css"
 import "../../styles/hero.css"
 import "../../styles/section-heading.css"
 import landscape from "../../assets/landscape.jpg"
+import headerMockupAlt1 from "../../assets/header-mockup-alt-1.jpg"
 import ContactForm from "../../components/ContactForm/ContactForm"
 import Faq from "../../components/Faq/Faq"
 
@@ -11,7 +12,7 @@ function ContactPage() {
 
         <div className="contact-page-background">
 
-            <section className="hero" style={{ backgroundImage: `url(${landscape})` }}>
+            <section className="hero" style={{ backgroundImage: `url(${headerMockupAlt1})` }}>
 
                 <div className="hero-content hero-content-centered">
 
