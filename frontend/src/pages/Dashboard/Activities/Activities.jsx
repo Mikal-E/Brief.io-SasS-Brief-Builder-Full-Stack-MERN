@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { API_URL } from "../config";
 import "./Activities.css";
 
 function Activities() {
@@ -13,7 +14,8 @@ function Activities() {
 
       try {
 
-        const res = await fetch("http://localhost:3001/api/activities");
+        // const res = await fetch("http://localhost:3001/api/activities");
+        const res = await fetch(`${API_URL}/api/activities`);
 
         if (!res.ok) throw new Error("Failed to fetch activities");
         const data = await res.json();

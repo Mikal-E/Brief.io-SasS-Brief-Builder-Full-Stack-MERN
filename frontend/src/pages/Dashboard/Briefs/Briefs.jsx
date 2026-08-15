@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { API_URL } from "../config";
 import "./Briefs.css"
 
 function Briefs() {
@@ -19,7 +20,8 @@ function Briefs() {
 
         try {
 
-            const response = await fetch("http://localhost:3001/api/briefs")
+            // const response = await fetch("http://localhost:3001/api/briefs")
+            const res = await fetch(`${API_URL}/api/activities`);
             const data = await response.json()
             setBriefs(data)
 
@@ -49,7 +51,8 @@ function Briefs() {
 
         try {
 
-            const response = await fetch("http://localhost:3001/api/briefs", {
+            // const response = await fetch("http://localhost:3001/api/briefs", {
+            const res = await fetch(`${API_URL}/api/activities`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData)

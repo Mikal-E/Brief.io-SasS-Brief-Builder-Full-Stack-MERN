@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { API_URL } from "../config";
 import squarePlaceholder from "../../../assets/square.jpg"
 import "./Team.css"
 
@@ -22,7 +23,8 @@ function Team() {
 
         try {
 
-            const response = await fetch("http://localhost:3001/api/teamMembers")
+            // const response = await fetch("http://localhost:3001/api/teamMembers")
+            const res = await fetch(`${API_URL}/api/activities`);
             const data = await response.json()
             setMembers(data)
 
@@ -58,7 +60,8 @@ function Team() {
 
         try {
 
-            const response = await fetch("http://localhost:3001/api/teamMembers", {
+            // const response = await fetch("http://localhost:3001/api/teamMembers", {
+            const res = await fetch(`${API_URL}/api/activities`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ ...formData, status: "Active", image: "square.jpg" })
