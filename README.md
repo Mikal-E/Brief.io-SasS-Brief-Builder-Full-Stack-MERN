@@ -6,6 +6,12 @@ A full-stack MERN application built as the capstone project. Brief.io is a ficti
 
 
 
+###### **Live Deployment**
+
+https://briefio-sass-brief-builder-full-stack-mern-igtxqqec5.vercel.app/
+
+
+
 ###### **Description**
 
 
@@ -130,7 +136,7 @@ Activities - GET, GET/:id, POST, PATCH, DELETE
 
 1\. Clone the repo
 
-2\. In `backend/`, run `npm install`, create a `.env` file with `MONGODB\\\\\\\\\\\\\\\_URI` and `JWT\\\\\\\\\\\\\\\_SECRET`, then run `npm start`
+2\. In `backend/`, run `npm install`, create a `.env` file with `MONGODB\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_URI` and `JWT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_SECRET`, then run `npm start`
 
 3\. In `frontend/`, run `npm install`, then `npm run dev`
 
