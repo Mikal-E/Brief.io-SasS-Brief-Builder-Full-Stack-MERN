@@ -63,7 +63,7 @@
 }
 
 /* Styling to overide nav having a transparent background in order to use on a 404 page where the nav does have a background. */
-.nav-solid {
+/* .nav-solid {
     background-color: #f7f8f9;
     top: 0;
-}
+} */
