@@ -7,11 +7,20 @@ import activitiesRouter from "./routes/activities.js"
 import teamMembersRouter from "./routes/teamMembers.js"
 import authRouter from "./routes/auth.js"
 import contactsRouter from "./routes/contacts.js"
+import cors from "cors"
  
 const app = express()
 const PORT = process.env.PORT || 3001
- 
-app.use(cors())
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://briefio-sass-brief-builder-full-sta.vercel.app"
+]
+
+app.use(cors({
+  origin: allowedOrigins
+}))
+// app.use(cors())
 app.use(express.json())
  
 mongoose.connect(process.env.MONGODB_URI)
