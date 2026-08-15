@@ -8,6 +8,12 @@ A full-stack MERN application built as the capstone project. Brief.io is a ficti
 
 ###### **Live Deployment**
 
+
+
+**Deployed via Vercel. Be aware that when visiting the url the site will take 30 seconds to 1 minute to spin-up/wake-up, as this is Vercel's standard handling of deployments after 15 minutes of inactivity.**
+
+
+
 https://briefio-sass-brief-builder-full-stack-mern-igtxqqec5.vercel.app/
 
 
