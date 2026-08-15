@@ -1,9 +1,10 @@
 import { useState } from "react"
 import "./CampaignBriefBuilder.css"
-import BriefBuilderProjectInfo from "../BriefBuilderSteps/BriefBuilderProjectInfo"
+{/* import BriefBuilderProjectInfo from "../BriefBuilderSteps/BriefBuilderProjectInfo"
 import BriefBuilderAudience from "../BriefBuilderSteps/BriefBuilderAudience"
 import BriefBuilderStrategy from "../BriefBuilderSteps/BriefBuilderStrategy"
-import BriefBuilderScope from "../BriefBuilderSteps/BriefBuilderScope"
+import BriefBuilderScope from "../BriefBuilderSteps/BriefBuilderScope" Imports now line within BriefBuilderStepController.jsx. */}
+import BriefBuilderStepController from "../BriefBuilderStepController/BriefBuilderStepController"
 
 /* CampaignBriefBuilder.jsx is the brief builder users put their campaign information into, in order to have a brief generated.
 It starts with a form and when submitted produces a document. It is the core product of Brief.io. */
@@ -158,7 +159,7 @@ function CampaignBriefBuilder() {
 
                     <form id="brief-builder-form" onSubmit={handleSubmit} noValidate>
 
-                        <div>
+                        {/* <div>
                             
                             <BriefBuilderProjectInfo formData={formData} handleChange={handleChange} errors={errors} />
                         
@@ -167,10 +168,24 @@ function CampaignBriefBuilder() {
                             <BriefBuilderStrategy formData={formData} handleChange={handleChange} handleToneChange={handleToneChange} errors={errors} />
 
                             <BriefBuilderScope formData={formData} handleChange={handleChange} handleDeliverablesChange={handleDeliverablesChange} errors={errors} />
-                            
-                        </div>
 
-                        <button className="brief-builder-form-button" type="submit">Generate Brief</button>
+                        </div> 
+                        
+                        Below is the refactor using BriefBuilderStepController to display the individual steps for the multistep experience. */}
+
+                        <BriefBuilderStepController
+
+                            formData={formData}
+                            handleChange={handleChange}
+                            handleToneChange={handleToneChange}
+                            handleDeliverablesChange={handleDeliverablesChange}
+                            errors={errors}
+
+                        />
+
+                        {/* <button className="brief-builder-form-button" type="submit">Generate Brief</button> 
+                        
+                        The button now lives in BriefBuilderStepController.jsx. */}
 
                     </form>
 
