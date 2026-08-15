@@ -88,6 +88,10 @@ capstone-project/
 
 
 
+&#x09;**vercel.json** - **is a configuration file to override Vercel's default routing behavior.** There is a landing page /try-brief-builder and a 404 page that are not connected to the nav, and Vercel can not find them when they are hit directly. The rewrite rule/routing rule override's Vercel's default behavior, catches all paths, and falls back to a **Single-Page Application** routing behavior which allows the pages to show.
+
+
+
 README.md
 
 
@@ -142,7 +146,7 @@ Activities - GET, GET/:id, POST, PATCH, DELETE
 
 1\. Clone the repo
 
-2\. In `backend/`, run `npm install`, create a `.env` file with `MONGODB\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_URI` and `JWT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_SECRET`, then run `npm start`
+2\. In `backend/`, run `npm install`, create a `.env` file with `MONGODB\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_URI` and `JWT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_SECRET`, then run `npm start`
 
 3\. In `frontend/`, run `npm install`, then `npm run dev`
 
