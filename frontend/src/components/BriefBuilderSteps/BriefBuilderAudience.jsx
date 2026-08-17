@@ -1,5 +1,3 @@
-import "./BriefBuilderAudience.css"
-
 /* This component is for refactoring the original brief builder component/format (CampaignBriefBuilder.jsx) of 1 long form, where the user needs to scroll in order to fill out the entire form,
 into a multistep form. The multistep iteration is for a better user experience. This component is the second section of the form - Audience. */
 
