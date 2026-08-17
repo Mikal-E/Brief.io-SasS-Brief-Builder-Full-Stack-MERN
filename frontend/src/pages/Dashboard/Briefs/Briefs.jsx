@@ -21,7 +21,7 @@ function Briefs() {
         try {
 
             // const response = await fetch("http://localhost:3001/api/briefs")
-            const res = await fetch(`${API_URL}/api/activities`);
+            const response = await fetch(`${API_URL}/api/briefs`);
             const data = await response.json()
             setBriefs(data)
 
@@ -52,7 +52,7 @@ function Briefs() {
         try {
 
             // const response = await fetch("http://localhost:3001/api/briefs", {
-            const res = await fetch(`${API_URL}/api/activities`, {
+            const response = await fetch(`${API_URL}/api/briefs`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData)

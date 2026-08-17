@@ -16,8 +16,11 @@ function CampaignBriefBuilder() {
         projectName: "",
         projectType: "",
         timeline: "",
+        stakeholderName: "",
+        stakeholderContact: "",
         targetAudience: "",
         geographicFocus: "",
+        painPoints: [],
         objectives: "",
         goals: "",
         toneVoice: [],
@@ -83,6 +86,26 @@ function CampaignBriefBuilder() {
 
     }
 
+    function handlePainPointsChange(event) {
+
+        const { value, checked } = event.target
+
+        setFormData(function(prevData) {
+
+            if (checked) {
+
+                return { ...prevData, painPoints: [...prevData.painPoints, value] }
+
+            } else {
+
+                return { ...prevData, painPoints: prevData.painPoints.filter(function(item) { return item !== value }) }
+
+            }
+
+        })
+
+    }
+
     function handleSubmit(event) {
 
         event.preventDefault()
@@ -101,12 +124,24 @@ function CampaignBriefBuilder() {
             newErrors.timeline = "Please select a timeline."
         }
 
+        if (formData.stakeholderName === "") {
+            newErrors.stakeholderName = "Please provide a stakeholder name and job title."
+        }
+
+        if (formData.stakeholderContact === "") {
+            newErrors.stakeholderContact = "Please provide stakeholder contact information."
+        }
+
         if (formData.targetAudience === "") {
             newErrors.targetAudience = "Please provide the target audience."
         }
 
         if (formData.geographicFocus === "") {
             newErrors.geographicFocus = "Please provide the target area/s."
+        }
+
+        if (formData.painPoints.length === 0) {
+            newErrors.painPoints = "Please select at least one pain point."
         }
 
         if (formData.objectives === "") {
@@ -141,7 +176,7 @@ function CampaignBriefBuilder() {
 
     return (
 
-        <section className="brief-builder-wrapper">
+        <section className={isSubmitted ? "brief-builder-wrapper brief-builder-wrapper-output" : "brief-builder-wrapper"}>
 
             <div className={isSubmitted ? "brief-builder-header brief-builder-header-output" : "brief-builder-header"}>
 
@@ -177,6 +212,7 @@ function CampaignBriefBuilder() {
 
                             formData={formData}
                             handleChange={handleChange}
+                            handlePainPointsChange={handlePainPointsChange}
                             handleToneChange={handleToneChange}
                             handleDeliverablesChange={handleDeliverablesChange}
                             errors={errors}
@@ -219,6 +255,10 @@ function CampaignBriefBuilder() {
                                 <p className="brief-field-value">{formData.projectType}</p>
                                 <p className="brief-field-label">Timeline</p>
                                 <p className="brief-field-value">{formData.timeline}</p>
+                                <p className="brief-field-label">Key Stakeholders and/or Point of Contact</p>
+                                <p className="brief-field-value">{formData.stakeholderName}</p>
+                                <p className="brief-field-label">Contact Information</p>
+                                <p className="brief-field-value">{formData.stakeholderContact}</p>
 
                             </div>
 
@@ -229,6 +269,8 @@ function CampaignBriefBuilder() {
                                 <p className="brief-field-value">{formData.targetAudience}</p>
                                 <p className="brief-field-label">Geographic Focus</p>
                                 <p className="brief-field-value">{formData.geographicFocus}</p>
+                                <p className="brief-field-label">Pain Points</p>
+                                <p className="brief-field-value">{formData.painPoints.join(", ")}</p>
 
                             </div>
 

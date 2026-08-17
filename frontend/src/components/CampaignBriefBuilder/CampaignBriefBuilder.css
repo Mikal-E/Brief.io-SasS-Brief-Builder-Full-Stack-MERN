@@ -2,7 +2,8 @@
 
     background-color: var(--white);
     width: 100%;
-    max-width: 760px;
+    max-width: 1200px;
+    height: 800px;
     margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
@@ -30,6 +31,7 @@
 .brief-builder-body {
 
     padding: 40px 32px;
+    position: relative;
 
 }
 
@@ -105,6 +107,14 @@
 .brief-builder-form-group select:focus {
 
     border-color: var(--burgundy);
+
+}
+
+.brief-builder-form-group-row {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 
 }
 
@@ -201,6 +211,12 @@
 
 }
 
+.brief-builder-wrapper-output {
+
+    height: auto;
+
+}
+
 .brief-builder-output-actions {
 
     display: flex;
@@ -220,7 +236,28 @@
 
 }
 
-.brief-builder-regenerate-button,
+/* Temporary styling to indicate an unavailable feature. It will be updated when functional */
+.brief-builder-regenerate-button {
+
+    background-color: var(--brand-grey);
+    color: var(--text-muted);
+    border: 2px solid var(--border-grey);
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: not-allowed;
+    box-shadow: 2px 2px 5px black;
+
+}
+
+/* .brief-builder-regenerate-button:hover {
+
+
+
+} */
+
 .brief-builder-edit-button {
 
     background-color: var(--light-grey);
@@ -237,7 +274,6 @@
 
 }
 
-.brief-builder-regenerate-button:hover,
 .brief-builder-edit-button:hover {
 
     background-color: var(--burgundy);

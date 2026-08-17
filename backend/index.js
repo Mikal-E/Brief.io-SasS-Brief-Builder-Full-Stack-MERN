@@ -7,7 +7,6 @@ import activitiesRouter from "./routes/activities.js"
 import teamMembersRouter from "./routes/teamMembers.js"
 import authRouter from "./routes/auth.js"
 import contactsRouter from "./routes/contacts.js"
-import cors from "cors"
  
 const app = express()
 const PORT = process.env.PORT || 3001

@@ -24,7 +24,7 @@ function Team() {
         try {
 
             // const response = await fetch("http://localhost:3001/api/teamMembers")
-            const res = await fetch(`${API_URL}/api/activities`);
+            const response = await fetch(`${API_URL}/api/teamMembers`);
             const data = await response.json()
             setMembers(data)
 
@@ -61,7 +61,7 @@ function Team() {
         try {
 
             // const response = await fetch("http://localhost:3001/api/teamMembers", {
-            const res = await fetch(`${API_URL}/api/activities`, {
+            const response = await fetch(`${API_URL}/api/activities`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ ...formData, status: "Active", image: "square.jpg" })
