@@ -10,19 +10,21 @@ function DocOutputPreview() {
 
         <section className="doc-output-preview">
 
-            <h2 className="section-heading">Sed ut perspiciatis unde omnis iste natus</h2>
+            <h2 className="section-heading">That's your brief. Don't lose it!</h2>
+            <p className="in-progress">In progress - Output version of brief displays above, conversion is to get brief emailed as a pdf and gain access to full features of the free plan: Puppeteer PDF gen + Nodemailer, wired to auth
+</p>
 
             <div className="doc-output-preview-content">
 
                 <div className="doc-output-preview-text">
 
-                    <h3>Ut enim ad minima quis</h3>
+                    <h3>A Brief, Not a Wall of Text</h3>
 
                     <ul>
 
-                        <li><i className="fa-solid fa-circle-check"></i> Nemo enim ipsam voluptatem quia</li>
-                        <li><i className="fa-solid fa-circle-check"></i> Nemo enim ipsam voluptatem quia</li>
-                        <li><i className="fa-solid fa-circle-check"></i> Nemo enim ipsam voluptatem quia</li>
+                        <li><i className="fa-solid fa-circle-check"></i> Every field organized under Project Info, Audience, Strategy, and Scope</li>
+                        <li><i className="fa-solid fa-circle-check"></i> Formatted consistently with no version drift between different project briefs</li>
+                        <li><i className="fa-solid fa-circle-check"></i> Built to be shared while maintaining consistent workflows</li>
 
                     </ul>
 

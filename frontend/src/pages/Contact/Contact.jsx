@@ -24,7 +24,12 @@ function ContactPage() {
 
             <section className="contact-intro">
 
-                <h2 className="section-heading">Omnis iste natus enim ipsam luptatem</h2>
+                <h2 className="section-heading">Provide as much detail as possible,
+
+                <br />
+                your inquiry is important to us
+
+                </h2>
 
            </section>
 

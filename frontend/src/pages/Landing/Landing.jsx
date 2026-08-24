@@ -28,15 +28,11 @@ function Landing() {
 
                 <div className="landing-hero-content">
 
-                    <h1 className="landing-hero-headline">Ra que verist et
-                    
-
-                    omniet a ducipitis di</h1>
-                    <p className="landing-hero-subhead">Aped eos solupta tureped ut explaut qui
-                    
-
-                    debis sum autest parum et et offic</p>
-                    <Link to="/register" className="hero-cta">Get Started</Link>
+                    <h1 className="landing-hero-headline">Witness the power of Brief.io
+                        <br />
+                        for free prior to signing up</h1>
+                    <p className="landing-hero-subhead">Fill it out below. Watch it instantly generate.</p>
+                    <Link to="/register" className="hero-cta">Try It Free</Link>
 
                 </div>
 
@@ -44,15 +40,19 @@ function Landing() {
 
             <section className="landing-feature-intro">
 
-                <h2 className="landing-feature-intro-heading">Sed ut perspiciatis unde omnis iste natus</h2>
+                <h2 className="landing-feature-intro-heading">Go from raw ideas to clean airtight
+                <br />
+                briefs. Turn scattered docs into
+                <br />
+                a unified brief.</h2>
 
                 <div className="landing-feature-intro-large">
 
                     <LandingFeatureContentBlock
 
                         icon="fa-lightbulb"
-                        heading="Ut enim ad minima quis"
-                        text="Nostrum exercitationem ullam corporis cipit laboriosam, nisi ut aliquid ex ea commodi ullut ut ex expercitis veliqui"
+                        heading="Start With the Basics"
+                        text="Name your project and easily find it later without digging through folders. Choose the campaign type, timeline, and add key stakeholders."
 
                     />
 
@@ -60,37 +60,45 @@ function Landing() {
 
                 <div className="landing-feature-intro-grid">
 
+                    <div className="landing-feature-intro-small">
                     <LandingFeatureContentBlock
 
                         icon="fa-lightbulb"
-                        heading="Ut enim ad minima quis"
-                        text="Nostrum exercitationem ullam corporis cipit laboriosam, nisi ut aliquid ex ea commodi"
+                        heading="Drill Down The Targeting"
+                        text="Define the target audience, geographic focus, and identify your audience's pain points for precise targeting."
 
                     />
+                    </div>
 
+                    <div className="landing-feature-intro-small">
                     <LandingFeatureContentBlock
 
                         icon="fa-lightbulb"
-                        heading="Ut enim ad minima quis"
-                        text="Nostrum exercitationem ullam corporis cipit laboriosam, nisi ut aliquid ex ea commodi"
+                        heading="Align Execution to Goals"
+                        text="Clarify initiative objectives, define clear goals and what success actually looks like, specify tone and voice. "
 
                     />
+                    </div>
 
+                    <div className="landing-feature-intro-small">
                     <LandingFeatureContentBlock
 
                         icon="fa-lightbulb"
-                        heading="Ut enim ad minima quis"
-                        text="Nostrum exercitationem ullam corporis cipit laboriosam, nisi ut aliquid ex ea commodi"
+                        heading="Map Out the Initiative's Work"
+                        text="Choose key deliverables, lay out your milestones, include additional pertinent info, and generate your brief."
 
                     />
+                    </div>
 
+                    <div className="landing-feature-intro-small">
                     <LandingFeatureContentBlock
 
                         icon="fa-lightbulb"
-                        heading="Ut enim ad minima quis"
-                        text="Nostrum exercitationem ullam corporis cipit laboriosam, nisi ut aliquid ex ea commodi"
+                        heading="Brief.io Packed With Features"
+                        text="Fast creation and editing. AI-Powered brief generation. Dashboards for briefs, team management, and notifications."
 
                     />
+                    </div>
 
                 </div>
 
@@ -98,9 +106,9 @@ function Landing() {
 
             <section className="landing-brief-intro">
 
-                <h2 className="section-heading">Sed ut perspiciatis unde omnis iste natus</h2>
+                <h2 className="section-heading">Create your next brief in minutes </h2>
 
-                <p className="landing-brief-intro-subheading">Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                <p className="landing-brief-intro-subheading">After generating your brief, quickly sign up to gain access to more features</p>
 
             </section>
 
@@ -120,9 +128,9 @@ function Landing() {
 
                 image={cta}
                 imageAlt="Placeholder"
-                heading="Omnis iste natus enim ipsam luptatem"
-                subheading="Ut enim ad minima quis Nostrum exercitationem ullam corporis suscipit laboriosam"
-                ctaText="Get Started"
+                heading="Enable your team with rock-solid briefs"
+                subheading="Execute internal or external-facing initiatives with optimal clarity, alignment, and efficiency"
+                ctaText="Try It Free"
 
             />
 

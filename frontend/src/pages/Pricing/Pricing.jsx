@@ -18,12 +18,12 @@ function PricingPage() {
 
                 <div className="hero-content">
 
-                    <h1 className="hero-headline">Ra que verist et
+                    <h1 className="hero-headline">Simple pricing.
                     <br />
-                    omniet a ducipitis di</h1>
-                    <p className="hero-subhead">Aped eos solupta tureped ut explaut qui
+                    No surprises.</h1>
+                    <p className="hero-subhead">Start for free, and easily upgrade at any
                     <br />
-                    debis sum autest parum et et offic</p>
+                    time for more powerful features</p>
                     <Link to="/register" className="hero-cta">Get Started</Link>
 
                 </div>

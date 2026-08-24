@@ -60,7 +60,7 @@ function PricingCards() {
 
         <section className="pricing-cards">
 
-            <h2 className="section-heading">Omnis iste natus enim ipsam luptatem</h2>
+            <h2 className="section-heading">Select your plan, add your team, and witness the power of <span className="brand-highlight">Brief.io</span></h2>
 
             <div className="pricing-cards-grid">
 

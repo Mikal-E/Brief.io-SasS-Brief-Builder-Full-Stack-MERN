@@ -6,6 +6,13 @@
 
 }
 
+.in-progress {
+
+    font-size: 32px;
+    margin-top: 20px;
+
+}
+
 .doc-output-preview-content {
 
     margin-top: 50px;
@@ -24,6 +31,12 @@
 .doc-output-preview-text h3 {
 
     font-size: 48px;
+
+}
+
+.doc-output-preview-text i {
+
+    color: var(--burgundy);
 
 }
 
