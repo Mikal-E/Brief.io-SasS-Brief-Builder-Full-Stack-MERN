@@ -13,20 +13,20 @@ function ThreeColumnFeature() {
 
         {
             image: bannerContentBlock1,
-            heading: "Ut enim ad minima quis",
-            text: "Nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi"
+            heading: "Fast creation, editing, with reliable consistency",
+            text: "Create beautifully formatted briefs in minutes, make fast edits, and maintain consistent formatting between all initiatives"
         },
 
         {
             image: bannerContentBlock2,
-            heading: "Ut enim ad minima quis",
-            text: "Nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi"
+            heading: "AI-Powered brief generation and edits",
+            text: "AI-Mode streamlines creation of comprehensive briefs when flushing out details for complex and highly-important projects"
         },
 
         {
             image: bannerContentBlock3,
-            heading: "Ut enim ad minima quis",
-            text: "Nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi"
+            heading: "Centralized and supremely organized",
+            text: "Brief.io's user interface is equipped with dashboards for your briefs, team management, activities, and brief creation"
         }
 
     ]
@@ -35,7 +35,7 @@ function ThreeColumnFeature() {
 
         <section className="three-column-feature">
 
-            <h2 className="section-heading">Omnis iste natus enim ipsam luptatem</h2>
+            <h2 className="section-heading">Project briefs supercharged with powerful features</h2>
 
             <div className="three-column-feature-columns">
 

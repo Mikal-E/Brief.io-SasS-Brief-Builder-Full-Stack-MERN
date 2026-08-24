@@ -41,43 +41,43 @@ function TabbedFeatureDocOutput() {
 
     }
 
-    let tab4Class = ""
+    // let tab4Class = ""
 
-    if (activeTab === 4) {
+    // if (activeTab === 4) {
 
-        tab4Class = "tab-active"
+    //     tab4Class = "tab-active"
         
-    }
+    // }
 
 const tabContent = [
 
     {
-        heading: "1. Ut enim ad minima quis",
+        heading: "A Brief, Not a Wall of Text",
         image: tabbedFeaturedDocOutput1,
         items: [
-            "1.Nemo enim ipsam voluptatem quia",
-            "1. Nemo enim ipsam voluptatem quia",
-            "1. Nemo enim ipsam voluptatem quia"
+            "Every field organized under Project Info, Audience, Strategy, and Scope",
+            "Formatted consistently with no version drift between different project briefs",
+            "Built to be shared while maintaining consistent workflows"
         ]
     },
 
     {
-        heading: "2. Ut enim ad minima quis",
+        heading: "Fast and Power Editing",
         image: tabbedFeaturedDocOutput2,
         items: [
-            "2. Nemo enim ipsam voluptatem quia",
-            "2. Nemo enim ipsam voluptatem quia",
-            "2. Nemo enim ipsam voluptatem quia"
+            "Easily correct mistakes, spelling, grammar issues, or add important info that was omitted",
+            "Brief.io displays all the original content so you never have to start from scratch",
+            "Leverage the power of AI to regenerate the brief for better alignment or more comprehensive strategy - AI API Coming Soon!"
         ]
     },
 
     {
-        heading: "3. Ut enim ad minima quis",
+        heading: "Two Output Format Options",
         image: tabbedFeaturedDocOutput3,
         items: [
-            "3. Nemo enim ipsam voluptatem quia",
-            "3. Nemo enim ipsam voluptatem quia",
-            "3. Nemo enim ipsam voluptatem quia"
+            "Switch between full Document View and a scannable Card View",
+            "Read the whole brief top to bottom, or read it in sections",
+            "One brief with viewing options for the individual user"
         ]
     },
 
@@ -99,7 +99,7 @@ const currentTab = tabContent[activeTab - 1]
 
         <section className="tabbed-feature-doc-output">
 
-            <h2 className="section-heading">Sed ut perspiciatis unde omnis iste natus</h2>
+            <h2 className="section-heading">Fill in the form and instantly get a professional, cleanly-formatted brief</h2>
 
             {/* Lives in Home.jsx instead <h2 className="tabbed-feature-doc-output-heading">Sed ut perspiciatis unde omnis iste natus</h2> */}
 
@@ -109,7 +109,7 @@ const currentTab = tabContent[activeTab - 1]
                 <button onClick={() => setActiveTab(1)} className={tab1Class}>Tab 1</button>
                 <button onClick={() => setActiveTab(2)} className={tab2Class}>Tab 2</button>
                 <button onClick={() => setActiveTab(3)} className={tab3Class}>Tab 3</button>
-                <button onClick={() => setActiveTab(4)} className={tab4Class}>Tab 4</button>
+                {/* <button onClick={() => setActiveTab(4)} className={tab4Class}>Tab 4</button> */}
 
             </div>
 

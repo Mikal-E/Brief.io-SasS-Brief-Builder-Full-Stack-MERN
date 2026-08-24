@@ -36,20 +36,20 @@ function HomePage() {
         {
             image: briefsDashboard1,
             items: [
-                "1. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "2. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "3. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "4. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+                "Every brief, one view, + instant new brief creation",
+                "See what's Active, On Hold, or Completed",
+                "No status meetings required to know where things stand",
+                "Built for teams juggling more than one project at a time"
             ]
         },
 
         {
             image: briefsDashboard2,
             items: [
-                "5. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "6. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "7. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "8. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+                "Add a new brief straight from the dashboard",
+                "Status updates in real time, visible to everyone with access",
+                "One place to track every campaign in motion",
+                "Edit and resave any brief without starting from scratch"
             ]
         },
 
@@ -70,20 +70,20 @@ function HomePage() {
         {
             image: teamDashboard1,
             items: [
-                "1. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "2. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "3. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "4. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+                "Your team at a glance",
+                "Browse every team member in one searchable view",
+                "Find who you need by name, in seconds",
+                "No outdated spreadsheet, no guessing who's still on the project"
             ]
         },
 
         {
             image: teamDashboard2,
             items: [
-                "5. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "6. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "7. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "8. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+                "Know who is who with general details",
+                "Click into any profile for role, department, and contact info",
+                "Invite new team members directly from the directory",
+                "Built for small teams and those that continue to grow"
             ]
         },
 
@@ -104,20 +104,20 @@ function HomePage() {
         {
             image: activitiesDashboard1,
             items: [
-                "1. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "2. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "3. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "4. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+                "Know what changed, without asking",
+                "Status changes, assignments, and comments as they happen",
+                "Every update tied to the brief and the person behind it",
+                "Unread activities flagged, so nothing slips past"
             ]
         },
 
         {
             image: activitiesDashboard2,
             items: [
-                "5. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "6. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "7. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit",
-                "8. Nemo enim ipsam voluptatem quia Lorem ipsum dolor sit"
+                "All real context and no noise",
+                "A feed built around your briefs and not a general inbox",
+                "Catch reassignments or status changes with no surprises",
+                "No more uncertainties when returning from time off"
             ]
         },
 
@@ -141,13 +141,13 @@ function HomePage() {
 
                 <div className="hero-content">
 
-                    <h1 className="hero-headline">Ra que verist et
+                    <h1 className="hero-headline">From raw ideas to
                     <br />
-                    omniet a ducipitis di</h1>
-                    <p className="hero-subhead">Aped eos solupta tureped ut explaut qui
+                    clean airtight briefs</h1>
+                    <p className="hero-subhead">Brief.io turns scattered notes and docs
                     <br />
-                    debis sum autest parum et et offic</p>
-                    <Link to="/register" className="hero-cta">Get Started</Link>
+                    into a unified brief for optimal clarity </p>
+                    <Link to="/register" className="hero-cta">Try It Free</Link>
 
                 </div>
 
@@ -155,7 +155,7 @@ function HomePage() {
 
             <section className="section-intro">
 
-                <h2 className="section-heading">Sed ut perspiciatis unde omnis iste natus</h2>
+                <h2 className="section-heading">No templates to hunt for or formatting to fix, just a perfectly outlined brief</h2>
 
                 <div className="section-intro-image">
 
@@ -169,12 +169,13 @@ function HomePage() {
 
                 image={projectInfo}
                 imageAlt="Placeholder"
-                heading="Ut enim ad minima quis"
+                heading="Start With the Basics"
                 items={[
 
-                        "Nemo enim ipsam voluptatem quia",
-                        "Nemo enim ipsam voluptatem quia",
-                        "Nemo enim ipsam voluptatem quia"
+                        "Name your project and easily find it later without digging through folders",
+                        "Choose from a range of campaign types, or define your own",
+                        "Set a timeline from common ranges or enter a custom timelines",
+                        "Add key stakeholders and/or point of contacts"
 
                 ]}
 
@@ -184,12 +185,13 @@ function HomePage() {
 
                 image={audience}
                 imageAlt="Placeholder"
-                heading="Ut enim ad minima quis"
+                heading="Drill Down Targeting"
                 items={[
 
-                        "Nemo enim ipsam voluptatem quia",
-                        "Nemo enim ipsam voluptatem quia",
-                        "Nemo enim ipsam voluptatem quia"
+                        "Define target audience demographics, behaviors, and more",
+                        "Set your geographic focus, from hyper-local to global",
+                        "Identify pain points to connect with audiences and move the needle",
+                        "The more specific the input, the sharper the brief"
 
                 ]}
 
@@ -201,12 +203,13 @@ function HomePage() {
 
                 image={strategy}
                 imageAlt="Placeholder"
-                heading="Ut enim ad minima quis"
+                heading="Align Execution to Goals"
                 items={[
 
-                        "Nemo enim ipsam voluptatem quia",
-                        "Nemo enim ipsam voluptatem quia",
-                        "Nemo enim ipsam voluptatem quia"
+                        "Clarify initiative objectives that ladder up to the bigger goal",
+                        "Define what success actually looks like",
+                        "Stay true to your brand's voice",
+                        "Pinpoint how the initiative should be delivered and received"
 
                 ]}
 
@@ -216,12 +219,13 @@ function HomePage() {
 
                 image={scope}
                 imageAlt="Placeholder"
-                heading="Ut enim ad minima quis"
+                heading="Map Out the Work"
                 items={[
 
-                        "Nemo enim ipsam voluptatem quia",
-                        "Nemo enim ipsam voluptatem quia",
-                        "Nemo enim ipsam voluptatem quia"
+                        "Choose key deliverables from social, video, print, and beyond",
+                        "Lay out milestones from kickoff to close",
+                        "Include additional pertinent info your team should know",
+                        "Let the magic happen and generate your brief"
 
                 ]}
 
@@ -235,7 +239,7 @@ function HomePage() {
 
             <section className="section-intro">
 
-                <h2 className="section-heading">Sed ut perspiciatis unde omnis iste natus</h2>
+                <h2 className="section-heading">Elevate your team's alignment and execution with the power of Brief.io</h2>
 
                 <div className="section-intro-image">
 
@@ -253,9 +257,9 @@ function HomePage() {
 
                 image={cta}
                 imageAlt="Placeholder"
-                heading="Omnis iste natus enim ipsam luptatem"
-                subheading="Ut enim ad minima quis Nostrum exercitationem ullam corporis suscipit laboriosam"
-                ctaText="Get Started"
+                heading="Enable your team with rock-solid briefs"
+                subheading="Execute internal or external-facing initiatives with optimal clarity, alignment, and efficiency"
+                ctaText="Try It Free"
 
             />
 

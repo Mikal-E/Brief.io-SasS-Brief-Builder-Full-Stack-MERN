@@ -72,6 +72,12 @@ after the staggered content with 4 content blocks. */
 
 }
 
+.tabbed-feature-doc-output-text i {
+
+    color: var(--burgundy);
+
+}
+
 .tabbed-feature-doc-output-text li {
 
     font-size: 28px;

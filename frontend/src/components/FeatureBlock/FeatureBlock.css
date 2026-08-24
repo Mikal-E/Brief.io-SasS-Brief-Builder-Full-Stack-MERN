@@ -56,6 +56,7 @@ This is the CSS for that component. */
 .feature-block-list i {
 
     padding-right: 10px;
+    color: var(--burgundy);
 
 }
 

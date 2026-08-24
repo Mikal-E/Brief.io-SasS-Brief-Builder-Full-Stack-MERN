@@ -1,13 +1,14 @@
 /* Intro Section */
 
 .section-intro {
-    margin-top: 150px;
+    /* margin-top: 150px; */
+    margin: 150px 365px 0 365px;
 }
 
 .section-intro-image {
     margin-top: 50px;
-    margin-left: 365px;
-    margin-right: 365px;
+    /* margin-left: 365px;
+    margin-right: 365px; */
 }
 
 .section-image {

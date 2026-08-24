@@ -7,6 +7,12 @@ above the reviews and the CTA that are at the bottom of the page. */
 
 }
 
+.tabbed-feature-dashboard h2 {
+
+    margin: 0 365px 0 365px;
+
+}
+
 .tabbed-feature-dashboard-nav {
 
     margin-left: 365px;
@@ -55,6 +61,12 @@ above the reviews and the CTA that are at the bottom of the page. */
     align-items: center;
     gap: 12px;
     font-size: 28px;
+}
+
+.tabbed-feature-dashboard-grid-item i {
+
+    color: var(--burgundy);
+
 }
 
 .tabbed-feature-dashboard-image {

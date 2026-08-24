@@ -42,8 +42,9 @@ const currentTab = tabContent[activeTab - 1]
     return (
 
     <section className="tabbed-feature-dashboard">
-
-        <h2 className="section-heading">Sed ut perspiciatis unde omnis iste natus</h2>
+        
+        {/* <h2 className="section-heading">Superclean dashboards for focused and efficient workflows</h2> */}
+        <h2 className="section-heading">This component is currently being updated - Sed ut perspiciatis unde omnis iste natus</h2>
 
         <div className="tabbed-feature-dashboard-nav">
 
