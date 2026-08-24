@@ -62,8 +62,18 @@
 
 }
 
-/* Styling to overide nav having a transparent background in order to use on a 404 page where the nav does have a background. */
-/* .nav-solid {
-    background-color: #f7f8f9;
-    top: 0;
+.nav-scrolled {
+    background-color: var(--cool-white);
+    border-radius: 100px;
+    width: calc(100% - 400px);
+    left: 200px;
+    transition: background-color 0.4s ease, width 0.4s ease, left 0.4s ease;
+    box-shadow: 1px 1px 3px var(--text-muted);
+}
+
+/* .nav-scrolled .nav-links a,
+.nav-scrolled .nav-logo {
+
+    color: var(--cool-white);
+
 } */
