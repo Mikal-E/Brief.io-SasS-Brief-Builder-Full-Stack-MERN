@@ -34,18 +34,18 @@ router
 /* Requirments - Create POST routes for data, as appropriate, using appropriate insertion commands to add data to the database. At least one data collection should allow for client creation via a POST request. Weight 10%
 2 of 3 - This one briefs.js */
 
-    .post(async (req, res) => {
+    .post(requireAuth, async (req, res) => {
 
         try {
 
-            const newBrief = new Brief(req.body);
+            const newBrief = new Brief({ ...req.body, user: req.user.id });
             const savedBrief = await newBrief.save();
             res.status(201).json(savedBrief);
-            
+ 
         } catch (error) {
 
             res.status(400).json({ message: error.message});
-            
+ 
         }
     }
 );
