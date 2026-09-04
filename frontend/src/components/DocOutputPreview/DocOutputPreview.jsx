@@ -1,5 +1,4 @@
 import "./DocOutputPreview.css"
-import portrait from "../../assets/portrait.jpg"
 import docOutputPreview from "../../assets/tabbed-featured-doc-output-1.png"
 import "../../styles/section-heading.css"
 
