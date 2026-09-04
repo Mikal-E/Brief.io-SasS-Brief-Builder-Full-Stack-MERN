@@ -22,15 +22,65 @@ const briefSchema = new mongoose.Schema(
             required: true,
         },
 
+        user: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User",
+            required: true,
+        },
+
+        stakeholderName: {
+            type: String,
+        },
+
+        stakeholderContact: {
+            type: String,
+        },
+
         targetAudience: {
             type: String,
             required: true,
+        },
+
+        geographicFocus: {
+            type: String,
+        },
+
+        painPoints: {
+            type: [String],
+            default: [],
+        },
+
+        objectives: {
+            type: String,
+        },
+
+        goals: {
+            type: String,
+        },
+
+        toneVoice: {
+            type: [String],
+            default: [],
+        },
+
+        keyDeliverables: {
+            type: [String],
+            default: [],
+        },
+
+        milestones: {
+            type: String,
+        },
+
+        additionalInformation: {
+            type: String,
         },
 
         status: {
             type: String,
             required: true,
             enum: ["Not Started", "Active", "On Hold", "Completed", "Cancelled"],
+            default: "Not Started",
         },
 
         assignedTo: {
@@ -46,6 +96,7 @@ const briefSchema = new mongoose.Schema(
 2 of 3 - This one Briefs.js*/
 
 briefSchema.index({ status: 1 });
+briefSchema.index({ user: 1 });
 
 const Brief = mongoose.model("Brief", briefSchema);
 
