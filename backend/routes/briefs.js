@@ -2,6 +2,7 @@ import express from "express";
 import Brief from "../models/Brief.js"
 import requireAuth from "../middleware/auth.js";
 import generateBriefPdf from "../utils/generateBriefPdf.js";
+import sendBriefEmail from "../utils/sendBriefEmail.js";
 
 const router = express.Router();
 
@@ -45,7 +46,7 @@ so a PDF failure never crashes the request or blocks the brief from being saved.
             try {
 
                 const pdfBuffer = await generateBriefPdf(savedBrief);
-                // Nodemailer email step goes here
+                await sendBriefEmail(req.user.email, pdfBuffer, savedBrief.projectName);
 
             } catch (pdfError) {
 
