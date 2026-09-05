@@ -1,11 +1,9 @@
 import express from "express";
 import Brief from "../models/Brief.js"
 import requireAuth from "../middleware/auth.js";
+import generateBriefPdf from "../utils/generateBriefPdf.js";
 
 const router = express.Router();
-
-/* Requirements - Create GET routes for all data that should be exposed to the client, using appropriate query commands to retrieve the data from the database. Weight 10%
-2 of 3 - This one briefs.js - GET all briefs */
 
 router
     .route("/")
@@ -32,8 +30,8 @@ router
     }
 )
 
-/* Requirments - Create POST routes for data, as appropriate, using appropriate insertion commands to add data to the database. At least one data collection should allow for client creation via a POST request. Weight 10%
-2 of 3 - This one briefs.js */
+/* The outer try/catch governs the brief save, and if it fails, nothing else runs. The inner try/catch isolates PDF generation specifically,
+so a PDF failure never crashes the request or blocks the brief from being saved. It flips pdfEmailStatus to failed and the response still returns 201 with the saved brief. */
 
     .post(requireAuth, async (req, res) => {
 
@@ -41,7 +39,21 @@ router
 
             const newBrief = new Brief({ ...req.body, user: req.user.id });
             const savedBrief = await newBrief.save();
-            res.status(201).json(savedBrief);
+
+            let pdfEmailStatus = "sent";
+
+            try {
+
+                const pdfBuffer = await generateBriefPdf(savedBrief);
+                // Nodemailer email step goes here
+
+            } catch (pdfError) {
+
+                pdfEmailStatus = "failed";
+
+            }
+
+            res.status(201).json({ brief: savedBrief, pdfEmailStatus });
  
         } catch (error) {
 
@@ -77,9 +89,6 @@ router
     }
 )
 
-/* Requirements - Create PATCH or PUT routes for data, as appropriate, using appropriate update commands to change data in the database. At least one data collection should allow for client manipulation via a PATCH or PUT request. Weight 10%
-2 of 3 - This one briefs.js */
-
     .patch(requireAuth, async (req, res) => {
 
         try {
@@ -101,9 +110,6 @@ router
         }
     }
 )
-
-/* Requirements - Create DELETE routes for data, as appropriate, using appropriate delete commands to remove data from the database. At least one data collection should allow for client deletion via a DELETE request. Weight 10%
-2 of 3 - This one briefs.js */
 
     .delete(requireAuth, async (req, res) => {
 
