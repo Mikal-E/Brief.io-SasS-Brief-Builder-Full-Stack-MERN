@@ -1,16 +1,16 @@
 import { useState } from "react"
 import "./CampaignBriefBuilder.css"
-{/* import BriefBuilderProjectInfo from "../BriefBuilderSteps/BriefBuilderProjectInfo"
-import BriefBuilderAudience from "../BriefBuilderSteps/BriefBuilderAudience"
-import BriefBuilderStrategy from "../BriefBuilderSteps/BriefBuilderStrategy"
-import BriefBuilderScope from "../BriefBuilderSteps/BriefBuilderScope" Imports now line within BriefBuilderStepController.jsx. */}
 import BriefBuilderStepController from "../BriefBuilderStepController/BriefBuilderStepController"
+import { useNavigate } from "react-router-dom"
+import { API_URL } from "../../config"
+import ConversionPanel from "../ConversionPanel/ConversionPanel"
 
 /* CampaignBriefBuilder.jsx is the brief builder users put their campaign information into, in order to have a brief generated.
 It starts with a form and when submitted produces a document. It is the core product of Brief.io. */
 
-function CampaignBriefBuilder() {
+function CampaignBriefBuilder({ isAuthenticated = false }) {
 
+    const navigate = useNavigate()
     const [formData, setFormData] = useState({
 
         projectName: "",
@@ -174,6 +174,51 @@ function CampaignBriefBuilder() {
 
     }
 
+    async function handleConvert(registrationData) {
+
+        const registerResponse = await fetch(`${API_URL}/api/auth/register`, {
+
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(registrationData)
+
+        })
+
+        const registerData = await registerResponse.json()
+
+        if (!registerResponse.ok) {
+
+            throw new Error(registerData.message || "Registration failed")
+
+        }
+
+        localStorage.setItem("token", registerData.token)
+
+        const briefResponse = await fetch(`${API_URL}/api/briefs`, {
+
+            method: "POST",
+            headers: {
+
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${registerData.token}`
+
+            },
+            body: JSON.stringify(formData)
+
+        })
+
+        const briefData = await briefResponse.json()
+
+        if (!briefResponse.ok) {
+
+            throw new Error(briefData.message || "Brief creation failed")
+
+        }
+
+        navigate("/dashboard", { state: { pdfEmailStatus: briefData.pdfEmailStatus } })
+
+    }
+
     return (
 
         <section className={isSubmitted ? "brief-builder-wrapper brief-builder-wrapper-output" : "brief-builder-wrapper"}>
@@ -244,63 +289,73 @@ function CampaignBriefBuilder() {
 
                         </div>
 
-                        <div className="brief-builder-output-content">
+                        <div className="brief-builder-output-row">
+                            
+                            <div className="brief-builder-output-content">
 
-                            <div className="brief-output-section">
+                                <div className="brief-output-section">
 
-                                <h3 className="brief-output-section-title">Project Info</h3>
-                                <p className="brief-field-label">Project Name</p>
-                                <p className="brief-field-value">{formData.projectName}</p>
-                                <p className="brief-field-label">Project Type</p>
-                                <p className="brief-field-value">{formData.projectType}</p>
-                                <p className="brief-field-label">Timeline</p>
-                                <p className="brief-field-value">{formData.timeline}</p>
-                                <p className="brief-field-label">Key Stakeholders and/or Point of Contact</p>
-                                <p className="brief-field-value">{formData.stakeholderName}</p>
-                                <p className="brief-field-label">Contact Information</p>
-                                <p className="brief-field-value">{formData.stakeholderContact}</p>
+                                    <h3 className="brief-output-section-title">Project Info</h3>
+                                    <p className="brief-field-label">Project Name</p>
+                                    <p className="brief-field-value">{formData.projectName}</p>
+                                    <p className="brief-field-label">Project Type</p>
+                                    <p className="brief-field-value">{formData.projectType}</p>
+                                    <p className="brief-field-label">Timeline</p>
+                                    <p className="brief-field-value">{formData.timeline}</p>
+                                    <p className="brief-field-label">Key Stakeholders and/or Point of Contact</p>
+                                    <p className="brief-field-value">{formData.stakeholderName}</p>
+                                    <p className="brief-field-label">Contact Information</p>
+                                    <p className="brief-field-value">{formData.stakeholderContact}</p>
+
+                                </div>
+
+                                <div className="brief-output-section">
+
+                                    <h3 className="brief-output-section-title">Audience</h3>
+                                    <p className="brief-field-label">Target Audience</p>
+                                    <p className="brief-field-value">{formData.targetAudience}</p>
+                                    <p className="brief-field-label">Geographic Focus</p>
+                                    <p className="brief-field-value">{formData.geographicFocus}</p>
+                                    <p className="brief-field-label">Pain Points</p>
+                                    <p className="brief-field-value">{formData.painPoints.join(", ")}</p>
+
+                                </div>
+
+                                <div className="brief-output-section">
+
+                                    <h3 className="brief-output-section-title">Strategy</h3>
+                                    <p className="brief-field-label">Objectives</p>
+                                    <p className="brief-field-value">{formData.objectives}</p>
+                                    <p className="brief-field-label">Goals</p>
+                                    <p className="brief-field-value">{formData.goals}</p>
+                                    <p className="brief-field-label">Tone & Voice</p>
+                                    <p className="brief-field-value">{formData.toneVoice.join(", ")}</p>
+
+                                </div>
+
+                                <div className="brief-output-section">
+
+                                    <h3 className="brief-output-section-title">Scope</h3>
+                                    <p className="brief-field-label">Key Deliverables</p>
+                                    <p className="brief-field-value">{formData.keyDeliverables.join(", ")}</p>
+                                    <p className="brief-field-label">Milestones</p>
+                                    <p className="brief-field-value">{formData.milestones}</p>
+                                    <p className="brief-field-label">Additional Information</p>
+                                    <p className="brief-field-value">{formData.additionalInformation || "None"}</p>
+
+                                </div>
+
+                                <p className="brief-date">Generated: {new Date().toLocaleDateString()}</p>
 
                             </div>
-
-                            <div className="brief-output-section">
-
-                                <h3 className="brief-output-section-title">Audience</h3>
-                                <p className="brief-field-label">Target Audience</p>
-                                <p className="brief-field-value">{formData.targetAudience}</p>
-                                <p className="brief-field-label">Geographic Focus</p>
-                                <p className="brief-field-value">{formData.geographicFocus}</p>
-                                <p className="brief-field-label">Pain Points</p>
-                                <p className="brief-field-value">{formData.painPoints.join(", ")}</p>
-
-                            </div>
-
-                            <div className="brief-output-section">
-
-                                <h3 className="brief-output-section-title">Strategy</h3>
-                                <p className="brief-field-label">Objectives</p>
-                                <p className="brief-field-value">{formData.objectives}</p>
-                                <p className="brief-field-label">Goals</p>
-                                <p className="brief-field-value">{formData.goals}</p>
-                                <p className="brief-field-label">Tone & Voice</p>
-                                <p className="brief-field-value">{formData.toneVoice.join(", ")}</p>
-
-                            </div>
-
-                            <div className="brief-output-section">
-
-                                <h3 className="brief-output-section-title">Scope</h3>
-                                <p className="brief-field-label">Key Deliverables</p>
-                                <p className="brief-field-value">{formData.keyDeliverables.join(", ")}</p>
-                                <p className="brief-field-label">Milestones</p>
-                                <p className="brief-field-value">{formData.milestones}</p>
-                                <p className="brief-field-label">Additional Information</p>
-                                <p className="brief-field-value">{formData.additionalInformation || "None"}</p>
-
-                            </div>
-
-                            <p className="brief-date">Generated: {new Date().toLocaleDateString()}</p>
 
                         </div>
+
+                        {!isAuthenticated && (
+
+                            <ConversionPanel onConvert={handleConvert} />
+
+                        )}
 
                     </div>
                 )}

@@ -52,7 +52,7 @@ function App() {
             <Route path="briefs" element={ <Briefs /> } />
             <Route path="team" element={ <Team /> } />
             <Route path="activities" element={<Activities />} />
-            <Route path="brief-builder" element={ <CampaignBriefBuilder /> } />
+            <Route path="brief-builder" element={ <CampaignBriefBuilder isAuthenticated={!!localStorage.getItem("token")} /> } />
 
         </Route>
 
