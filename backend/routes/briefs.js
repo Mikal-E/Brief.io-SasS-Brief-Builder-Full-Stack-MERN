@@ -1,5 +1,6 @@
 import express from "express";
 import Brief from "../models/Brief.js"
+import requireAuth from "../middleware/auth.js";
 
 const router = express.Router();
 
