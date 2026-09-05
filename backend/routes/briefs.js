@@ -9,7 +9,7 @@ const router = express.Router();
 
 router
     .route("/")
-    .get(async (req, res)=> {
+    .get(requireAuth, async (req, res)=> {
 
         try {
 
@@ -23,11 +23,11 @@ router
 
             const briefs = await Brief.find(filter);
             res.json(briefs);
-            
+ 
         } catch (error) {
 
             res.status(500).json({ message: error.message});
-            
+ 
         }
     }
 )
@@ -55,7 +55,7 @@ router
 
 router
     .route("/:id")
-    .get(async (req, res)=> {
+    .get(requireAuth, async (req, res)=> {
 
         try {
 
@@ -68,11 +68,11 @@ router
             }
 
             res.json(brief);
-            
+ 
         } catch (error) {
 
             res.status(500).json({ message: error.message});
-            
+ 
         }
     }
 )
@@ -80,7 +80,7 @@ router
 /* Requirements - Create PATCH or PUT routes for data, as appropriate, using appropriate update commands to change data in the database. At least one data collection should allow for client manipulation via a PATCH or PUT request. Weight 10%
 2 of 3 - This one briefs.js */
 
-    .patch(async (req, res) => {
+    .patch(requireAuth, async (req, res) => {
 
         try {
 
@@ -105,7 +105,7 @@ router
 /* Requirements - Create DELETE routes for data, as appropriate, using appropriate delete commands to remove data from the database. At least one data collection should allow for client deletion via a DELETE request. Weight 10%
 2 of 3 - This one briefs.js */
 
-    .delete(async (req, res) => {
+    .delete(requireAuth, async (req, res) => {
 
         try {
 
