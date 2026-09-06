@@ -1,9 +1,23 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
+import { useState, useEffect } from "react"
 import Sidebar from "../../components/Dashboard/Sidebar/Sidebar"
 import TopBar from "../../components/Dashboard/TopBar/TopBar"
 import "./DashboardLayout.css"
 
 function DashboardLayout() {
+
+    const location = useLocation()
+    const [pdfEmailStatus, setPdfEmailStatus] = useState(null)
+
+    useEffect(function() {
+
+        if (location.state && location.state.pdfEmailStatus) {
+
+            setPdfEmailStatus(location.state.pdfEmailStatus)
+
+        }
+
+    }, [location.state])
 
     return (
 
@@ -13,7 +27,7 @@ function DashboardLayout() {
 
             <div className="dash-main">
 
-                <TopBar />
+                <TopBar pdfEmailStatus={pdfEmailStatus} onDismiss={function() { setPdfEmailStatus(null) }} />
 
                 <main className="dash-content">
 
