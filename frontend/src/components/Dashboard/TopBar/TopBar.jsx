@@ -22,21 +22,20 @@ function TopBar({ pdfEmailStatus, onDismiss }) {
             <div className="dashtop-bar-row">
 
                 <h2>{getGreeting()}, Conrad</h2>
+
+                {pdfEmailStatus && (
+
+                    <div className={pdfEmailStatus === "sent" ? "dashtop-banner dashtop-banner-success" : "dashtop-banner dashtop-banner-error"}>
+
+                        <p>{pdfEmailStatus === "sent" ? "Your brief has been emailed to you." : "Error emailing your PDF. Please try again."}</p>
+                        <button type="button" className="dashtop-banner-close" onClick={onDismiss}>×</button>
+                        
+                    </div>
+                )}
+
                 <img src={conradAvatar} alt="Conrad McAllister" className="dashtop-avatar"/>
 
             </div>
-
-            {pdfEmailStatus && (
-
-                <div className={pdfEmailStatus === "sent" ? "dashtop-banner dashtop-banner-success" : "dashtop-banner dashtop-banner-error"}>
-
-                    <p>{pdfEmailStatus === "sent" ? "Your brief has been emailed to you." : "Error emailing your PDF. Please try again."}</p>
-
-                    <button type="button" className="dashtop-banner-close" onClick={onDismiss}>×</button>
-
-                </div>
-
-            )}
 
         </header>
 

@@ -221,75 +221,75 @@ function CampaignBriefBuilder({ isAuthenticated = false }) {
 
     return (
 
-        <section className={isSubmitted ? "brief-builder-wrapper brief-builder-wrapper-output" : "brief-builder-wrapper"}>
+        <div className="brief-builder-output-row">
 
-            <div className={isSubmitted ? "brief-builder-header brief-builder-header-output" : "brief-builder-header"}>
+            <section className={isSubmitted ? "brief-builder-wrapper brief-builder-wrapper-output" : "brief-builder-wrapper"}>
 
-                <h1 className="brief-builder-title">Campaign Brief Builder</h1>
+                <div className={isSubmitted ? "brief-builder-header brief-builder-header-output" : "brief-builder-header"}>
 
-            </div>
+                    <h1 className="brief-builder-title">Campaign Brief Builder</h1>
 
-            <div className="brief-builder-body">
+                </div>
 
-                {!isSubmitted ? (
-                
-                <>
-                    <p className="brief-builder-subtitle">Fill out the fields below to generate your campaign brief.</p>
+                <div className="brief-builder-body">
+
+                    {!isSubmitted ? (
+                    
+                    <>
+                        <p className="brief-builder-subtitle">Fill out the fields below to generate your campaign brief.</p>
 
 
-                    <form id="brief-builder-form" onSubmit={handleSubmit} noValidate>
+                        <form id="brief-builder-form" onSubmit={handleSubmit} noValidate>
 
-                        {/* <div>
+                            {/* <div>
+                                
+                                <BriefBuilderProjectInfo formData={formData} handleChange={handleChange} errors={errors} />
                             
-                            <BriefBuilderProjectInfo formData={formData} handleChange={handleChange} errors={errors} />
-                        
-                            <BriefBuilderAudience formData={formData} handleChange={handleChange} errors={errors} />
+                                <BriefBuilderAudience formData={formData} handleChange={handleChange} errors={errors} />
 
-                            <BriefBuilderStrategy formData={formData} handleChange={handleChange} handleToneChange={handleToneChange} errors={errors} />
+                                <BriefBuilderStrategy formData={formData} handleChange={handleChange} handleToneChange={handleToneChange} errors={errors} />
 
-                            <BriefBuilderScope formData={formData} handleChange={handleChange} handleDeliverablesChange={handleDeliverablesChange} errors={errors} />
+                                <BriefBuilderScope formData={formData} handleChange={handleChange} handleDeliverablesChange={handleDeliverablesChange} errors={errors} />
 
-                        </div> 
-                        
-                        Below is the refactor using BriefBuilderStepController to display the individual steps for the multistep experience. */}
+                            </div> 
+                            
+                            Below is the refactor using BriefBuilderStepController to display the individual steps for the multistep experience. */}
 
-                        <BriefBuilderStepController
+                            <BriefBuilderStepController
 
-                            formData={formData}
-                            handleChange={handleChange}
-                            handlePainPointsChange={handlePainPointsChange}
-                            handleToneChange={handleToneChange}
-                            handleDeliverablesChange={handleDeliverablesChange}
-                            errors={errors}
+                                formData={formData}
+                                handleChange={handleChange}
+                                handlePainPointsChange={handlePainPointsChange}
+                                handleToneChange={handleToneChange}
+                                handleDeliverablesChange={handleDeliverablesChange}
+                                errors={errors}
 
-                        />
+                            />
 
-                        {/* <button className="brief-builder-form-button" type="submit">Generate Brief</button> 
-                        
-                        The button now lives in BriefBuilderStepController.jsx. */}
+                            {/* <button className="brief-builder-form-button" type="submit">Generate Brief</button> 
+                            
+                            The button now lives in BriefBuilderStepController.jsx. */}
 
-                    </form>
+                        </form>
 
-                </>
+                    </>
 
-                ) : (
+                    ) : (
 
-                    <div className="brief-builder-output">
+                        <div className="brief-builder-output">
 
-                        <div className="brief-builder-output-actions">
+                            <div className="brief-builder-output-actions">
 
-                            <div className="brief-builder-output-actions-left">
+                                <div className="brief-builder-output-actions-left">
 
-                                <button type="button" className="brief-builder-regenerate-button" onClick={handleSubmit}>Regenerate Brief</button>
-                                <button type="button" className="brief-builder-edit-button" onClick={function() { setIsSubmitted(false) }}>Edit Brief</button>
+                                    <button type="button" className="brief-builder-regenerate-button" onClick={handleSubmit}>Regenerate Brief</button>
+                                    <button type="button" className="brief-builder-edit-button" onClick={function() { setIsSubmitted(false) }}>Edit Brief</button>
+
+                                </div>
+
+                                <button type="button" className="brief-builder-card-view-button">Card View</button>
 
                             </div>
-
-                            <button type="button" className="brief-builder-card-view-button">Card View</button>
-
-                        </div>
-
-                        <div className="brief-builder-output-row">
                             
                             <div className="brief-builder-output-content">
 
@@ -347,22 +347,22 @@ function CampaignBriefBuilder({ isAuthenticated = false }) {
 
                                 <p className="brief-date">Generated: {new Date().toLocaleDateString()}</p>
 
-                            </div>
+                            </div>                       
 
                         </div>
+                    )}
 
-                        {!isAuthenticated && (
+                </div>
 
-                            <ConversionPanel onConvert={handleConvert} />
+            </section>
 
-                        )}
+            {!isAuthenticated && isSubmitted && (
 
-                    </div>
-                )}
+                <ConversionPanel onConvert={handleConvert} />
+                
+            )}
 
-            </div>
-
-        </section>
+        </div>
 
     )
 

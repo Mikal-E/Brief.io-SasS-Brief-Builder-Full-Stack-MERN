@@ -310,12 +310,8 @@
     display: flex;
     gap: 24px;
     align-items: flex-start;
-
-}
-
-.brief-builder-output-row .brief-builder-output-content {
-
-    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
 
 }
 

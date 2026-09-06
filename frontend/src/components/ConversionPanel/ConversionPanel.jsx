@@ -56,9 +56,9 @@ function ConversionPanel({ onConvert }) {
 
         <div className="conversion-panel-card">
 
-            <span className="conversion-panel-badge">Get your PDF</span>
+            <span className="conversion-panel-badge">Get Your PDF</span>
 
-            <h3 className="conversion-panel-heading">Email me this brief</h3>
+            <h3 className="conversion-panel-heading">Email Me This brief</h3>
 
             <p className="conversion-panel-subtitle">Create your free account to get the PDF and unlock dashboards, team tools, and more.</p>
 
@@ -86,7 +86,7 @@ function ConversionPanel({ onConvert }) {
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="name@company.com"
+                        placeholder="Email"
                         value={formData.email}
                         onChange={handleChange}
 
@@ -113,7 +113,7 @@ function ConversionPanel({ onConvert }) {
 
                 <button type="submit" className="conversion-panel-submit" disabled={isSubmitting}>
 
-                    {isSubmitting ? "Sending..." : "Email me the PDF"}
+                    {isSubmitting ? "Sending..." : "Email Me The PDF"}
 
                 </button>
 
