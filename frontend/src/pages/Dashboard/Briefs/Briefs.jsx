@@ -20,8 +20,11 @@ function Briefs() {
 
         try {
 
-            // const response = await fetch("http://localhost:3001/api/briefs")
-            const response = await fetch(`${API_URL}/api/briefs`);
+            const response = await fetch(`${API_URL}/api/briefs`, {
+
+                headers: { "Authorization": `Bearer ${localStorage.getItem("token")}` }
+
+            });
             const data = await response.json()
             setBriefs(data)
 
@@ -51,10 +54,14 @@ function Briefs() {
 
         try {
 
-            // const response = await fetch("http://localhost:3001/api/briefs", {
             const response = await fetch(`${API_URL}/api/briefs`, {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: {
+
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${localStorage.getItem("token")}`
+                
+            },
                 body: JSON.stringify(formData)
 
             })

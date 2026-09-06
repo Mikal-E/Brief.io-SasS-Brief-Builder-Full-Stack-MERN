@@ -3,9 +3,6 @@ import TeamMember from "../models/TeamMember.js";
 
 const router = express.Router();
 
-/* Requirements - Create GET routes for all data that should be exposed to the client, using appropriate query commands to retrieve the data from the database. Weight 10%
-3 of 3 - This one teamMembers.js - GET all team members */
-
 router
     .route("/")
     .get(async (req, res) => {
@@ -22,9 +19,6 @@ router
         }
     }
 )
-
-/* Requirments - Create POST routes for data, as appropriate, using appropriate insertion commands to add data to the database. At least one data collection should allow for client creation via a POST request. Weight 10%
-3 of 3 - This one teamMembers.js */
 
     .post(async (req, res) => {
 
@@ -69,9 +63,6 @@ router
     }
 )
 
-/* Requirements - Create PATCH or PUT routes for data, as appropriate, using appropriate update commands to change data in the database. At least one data collection should allow for client manipulation via a PATCH or PUT request. Weight 10%
-3 of 3 - This one teamMembers.js */
-
     .patch(async (req, res) => {
 
         try {
@@ -93,9 +84,6 @@ router
         }
     }
 )
-
-/* Requirements - Create DELETE routes for data, as appropriate, using appropriate delete commands to remove data from the database. At least one data collection should allow for client deletion via a DELETE request. Weight 10%
-3 of 3 - This one teamMembers.js */
 
     .delete(async (req, res) => {
 
