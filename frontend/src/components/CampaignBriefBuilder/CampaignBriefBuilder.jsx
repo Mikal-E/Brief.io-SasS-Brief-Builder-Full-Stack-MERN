@@ -193,6 +193,7 @@ function CampaignBriefBuilder({ isAuthenticated = false }) {
         }
 
         localStorage.setItem("token", registerData.token)
+        localStorage.setItem("user", JSON.stringify(registerData.user))
 
         const briefResponse = await fetch(`${API_URL}/api/briefs`, {
 

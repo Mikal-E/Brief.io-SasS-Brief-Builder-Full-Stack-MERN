@@ -61,7 +61,7 @@ function RegistrationForm() {
             }
 
             localStorage.setItem("token", data.token)
-            console.log("Registered successfully:", data.user)
+            localStorage.setItem("user", JSON.stringify(data.user))
             navigate("/dashboard")
 
         } catch (error) {

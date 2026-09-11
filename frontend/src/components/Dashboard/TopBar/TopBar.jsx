@@ -15,13 +15,15 @@ function getGreeting() {
 
 function TopBar({ pdfEmailStatus, onDismiss }) {
 
+    const user = JSON.parse(localStorage.getItem("user"));
+
     return (
 
         <header className="dashtop-bar">
 
             <div className="dashtop-bar-row">
 
-                <h2>{getGreeting()}, Conrad</h2>
+                <h2>{getGreeting()}, {user?.name}</h2>
 
                 {pdfEmailStatus && (
 

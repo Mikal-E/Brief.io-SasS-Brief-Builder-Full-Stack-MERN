@@ -59,7 +59,7 @@ function LoginForm() {
             }
 
             localStorage.setItem("token", data.token)
-            console.log("Logged in successfully:", data.user)
+            localStorage.setItem("user", JSON.stringify(data.user))
             navigate("/dashboard")
 
         } catch (error) {
