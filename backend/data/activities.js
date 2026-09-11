@@ -5,7 +5,7 @@ export const activities = [
 
     {
         type: "Status Change",
-        message: "Brief status changed from Not Started to Active.",
+        message: "Project status changed from Not Started to Active.",
         brief: "6a5116e37cfbd7eb288f9641",
         teamMember: "6a5116e37cfbd7eb288f963c",
         read: false,
@@ -29,7 +29,7 @@ export const activities = [
 
      {
         type: "Status Change",
-        message: "Brief status changed from Active to On Hold.",
+        message: "Project status changed from Active to On Hold.",
         brief: "6a5116e37cfbd7eb288f9641",
         teamMember: "6a5116e37cfbd7eb288f963d",
         read: false,

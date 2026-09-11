@@ -107,7 +107,7 @@ function Briefs() {
                         <p><strong>Project Name:</strong> {brief.projectName}</p>
                         <p><strong>Project Type:</strong> {brief.projectType}</p>
                         <p><strong>Timeline:</strong> {brief.timeline}</p>
-                        <p><strong>Brief Status:</strong> {brief.status}</p>
+                        <p><strong>Project Status:</strong> {brief.status}</p>
 
                     </div>
 
