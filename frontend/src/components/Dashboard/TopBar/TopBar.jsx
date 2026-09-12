@@ -1,5 +1,6 @@
 import conradAvatar from "../../../assets/conrad-avatar.jpg"
 import "./TopBar.css"
+import { useUser } from "../../../context/UserContext";
 
 function getGreeting() {
 
@@ -15,7 +16,7 @@ function getGreeting() {
 
 function TopBar({ pdfEmailStatus, onDismiss }) {
 
-    const user = JSON.parse(localStorage.getItem("user"));
+    const { user } = useUser();
 
     return (
 

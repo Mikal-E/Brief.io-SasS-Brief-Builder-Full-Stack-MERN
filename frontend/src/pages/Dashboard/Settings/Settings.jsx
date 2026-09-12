@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { API_URL } from "../../../config";
+import { useUser } from "../../../context/UserContext";
 import "./Settings.css";
 
 /* Selecting a file loads it into an Image object to read its actual dimensions before upload. If under 200x200, it shows a warning but still allows the upload.
-The preview updates immediately using URL.createObjectURL, so the user sees what they picked before committing. On successful upload, updateUser (from UserContext)
+The preview updates immediately using URL.createObjectURL, so the user sees what they picked before committing. On successful upload, updateUser (from useUser/UserContext)
 is called with the new avatarUrl, which updates both the shared user state and localStorage. */
 
 function Settings() {
@@ -12,6 +13,7 @@ function Settings() {
     const [selectedFile, setSelectedFile] = useState(null);
     const [error, setError] = useState("");
     const [isUploading, setIsUploading] = useState(false);
+    const { updateUser } = useUser();
 
     function handleFileChange(event) {
 
@@ -66,8 +68,7 @@ function Settings() {
 
             }
 
-            const storedUser = JSON.parse(localStorage.getItem("user"));
-            localStorage.setItem("user", JSON.stringify({ ...storedUser, avatarUrl: data.avatarUrl }));
+            updateUser({ avatarUrl: data.avatarUrl });
 
             setSelectedFile(null);
 
