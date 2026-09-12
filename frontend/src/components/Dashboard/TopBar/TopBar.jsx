@@ -1,4 +1,3 @@
-import conradAvatar from "../../../assets/conrad-avatar.jpg"
 import "./TopBar.css"
 import { useUser } from "../../../context/UserContext";
 
@@ -36,7 +35,15 @@ function TopBar({ pdfEmailStatus, onDismiss }) {
                     </div>
                 )}
 
-                <img src={conradAvatar} alt="Conrad McAllister" className="dashtop-avatar"/>
+                {user?.avatarUrl ? (
+
+                    <img src={user.avatarUrl} alt={user.name} className="dashtop-avatar"/>
+
+                ) : (
+
+                    <i className="fa-solid fa-circle-user dashtop-avatar-fallback"></i>
+
+                )}
 
             </div>
 
