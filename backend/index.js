@@ -7,6 +7,7 @@ import activitiesRouter from "./routes/activities.js"
 import teamMembersRouter from "./routes/teamMembers.js"
 import authRouter from "./routes/auth.js"
 import contactsRouter from "./routes/contacts.js"
+import usersRouter from "./routes/users.js";
  
 const app = express()
 const PORT = process.env.PORT || 3001
@@ -40,7 +41,8 @@ app.use("/api/briefs", briefsRouter)
 app.use("/api/activities", activitiesRouter)
 app.use("/api/teamMembers", teamMembersRouter) 
 app.use("/api/auth", authRouter)
-app.use("/api/contacts", contactsRouter)   
+app.use("/api/contacts", contactsRouter)  
+app.use("/api/users", usersRouter) 
  
 app.get("/", function(req, res) {
 

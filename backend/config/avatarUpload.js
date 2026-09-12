@@ -16,7 +16,7 @@ const storage = new CloudinaryStorage({
     },
 });
 
-const upload = multer({
+const avatarUpload = multer({
 
     storage: storage,
     limits: { fileSize: 2 * 1024 * 1024 }, // 2MB limit
