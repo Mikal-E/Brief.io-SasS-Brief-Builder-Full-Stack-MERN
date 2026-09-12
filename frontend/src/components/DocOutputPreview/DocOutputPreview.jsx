@@ -10,8 +10,7 @@ function DocOutputPreview() {
         <section className="doc-output-preview">
 
             <h2 className="section-heading">That's your brief. Don't lose it!</h2>
-            <p className="in-progress">In progress - Output version of brief displays above, conversion is to get brief emailed as a pdf and gain access to full features of the free plan: Puppeteer PDF gen + Nodemailer, wired to auth
-</p>
+            <p className="in-progress"></p>
 
             <div className="doc-output-preview-content">
 

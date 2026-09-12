@@ -15,10 +15,9 @@ import Team from "./pages/Dashboard/Team/Team"
 import Activities from "./pages/Dashboard/Activities/Activities";
 import NotFound from "./pages/NotFound/NotFound"
 import ResetToTopOnNavigate from "./components/ResetToTopOnNavigate/ResetToTopOnNavigate"
+import Settings from "./pages/Dashboard/Settings/Settings";
 
-/* Utilized useLocation, const location, const hideNavFooter to.
-
-Client-side routes below are handled by React Router. Direct URL hits (e.g. from ads - landing page /try-brief-builder, and 404 page)
+/* Client-side routes below are handled by React Router. Direct URL hits (e.g. from ads - landing page /try-brief-builder, and 404 page)
 require Vercel's vercel.json rewrite rule to serve index.html first. See README. */
 
 function App() {
@@ -53,6 +52,7 @@ function App() {
             <Route path="team" element={ <Team /> } />
             <Route path="activities" element={<Activities />} />
             <Route path="brief-builder" element={ <CampaignBriefBuilder isAuthenticated={!!localStorage.getItem("token")} /> } />
+            <Route path="settings" element={ <Settings /> } />
 
         </Route>
 

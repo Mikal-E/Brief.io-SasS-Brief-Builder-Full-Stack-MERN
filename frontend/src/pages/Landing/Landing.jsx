@@ -50,7 +50,7 @@ function Landing() {
 
                     <LandingFeatureContentBlock
 
-                        icon="fa-lightbulb"
+                        icon="fa-file-lines"
                         heading="Start With the Basics"
                         text="Name your project and easily find it later without digging through folders. Choose the campaign type, timeline, and add key stakeholders."
 
@@ -63,7 +63,7 @@ function Landing() {
                     <div className="landing-feature-intro-small">
                     <LandingFeatureContentBlock
 
-                        icon="fa-lightbulb"
+                        icon="fa-users-viewfinder"
                         heading="Drill Down The Targeting"
                         text="Define the target audience, geographic focus, and identify your audience's pain points for precise targeting."
 
@@ -73,7 +73,7 @@ function Landing() {
                     <div className="landing-feature-intro-small">
                     <LandingFeatureContentBlock
 
-                        icon="fa-lightbulb"
+                        icon="fa-chart-line"
                         heading="Align Execution to Goals"
                         text="Clarify initiative objectives, define clear goals and what success actually looks like, specify tone and voice. "
 
@@ -83,7 +83,7 @@ function Landing() {
                     <div className="landing-feature-intro-small">
                     <LandingFeatureContentBlock
 
-                        icon="fa-lightbulb"
+                        icon="fa-chart-gantt"
                         heading="Map Out the Initiative's Work"
                         text="Choose key deliverables, lay out your milestones, include additional pertinent info, and generate your brief."
 
@@ -93,7 +93,7 @@ function Landing() {
                     <div className="landing-feature-intro-small">
                     <LandingFeatureContentBlock
 
-                        icon="fa-lightbulb"
+                        icon="fa-ranking-star"
                         heading="Brief.io Packed With Features"
                         text="Fast creation and editing. AI-Powered brief generation. Dashboards for briefs, team management, and notifications."
 

@@ -74,7 +74,11 @@ function Sidebar() {
 
             <div className="dashnav-footer">
 
-                <p><i className="fa-solid fa-gear"></i>Settings</p>
+                <NavLink to="/dashboard/settings" className={({ isActive }) => isActive ? "dashnav-link active" : "dashnav-link"}>
+
+                    <i className="fa-solid fa-gear"></i> Settings
+
+                </NavLink>
                 <button onClick={handleLogout} className="dashnav-logout"><i className="fa-solid fa-right-from-bracket"></i>Log Out</button>
 
             </div>
