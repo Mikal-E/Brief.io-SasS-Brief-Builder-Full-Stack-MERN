@@ -37,6 +37,47 @@
 
 }
 
+.settings-avatar-preview-wrapper {
+
+    position: relative;
+    width: 120px;
+    margin-bottom: 20px;
+
+}
+
+.settings-avatar-preview-wrapper .settings-avatar-preview {
+
+    margin-bottom: 0;
+
+}
+
+.settings-avatar-remove {
+
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--error-red);
+    color: var(--white);
+    border: 2px solid var(--white);
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+
+}
+
+.settings-avatar-remove:hover {
+
+    background-color: #a30000;
+
+}
+
 .settings-avatar-preview {
 
     width: 120px;
@@ -113,5 +154,23 @@
     border: 2px solid var(--border-grey);
     box-shadow: none;
     cursor: not-allowed;
+
+}
+
+/* Added for specificity to override .settings-avatar-section button. */
+
+.settings-avatar-section .settings-avatar-remove {
+
+    background-color: var(--error-red);
+    color: var(--white);
+    border: 2px solid var(--white);
+    box-shadow: none;
+
+}
+
+.settings-avatar-section .settings-avatar-remove:hover {
+
+    color: var(--white);
+    background-color: #a30000;
 
 }

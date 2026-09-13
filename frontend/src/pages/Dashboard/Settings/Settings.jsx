@@ -13,7 +13,7 @@ function Settings() {
     const [selectedFile, setSelectedFile] = useState(null);
     const [error, setError] = useState("");
     const [isUploading, setIsUploading] = useState(false);
-    const { updateUser } = useUser();
+    const { user, updateUser } = useUser();
 
     function handleFileChange(event) {
 
@@ -84,6 +84,36 @@ function Settings() {
 
     }
 
+    async function handleDeleteAvatar() {
+
+        try {
+
+            const response = await fetch(`${API_URL}/api/users/avatar`, {
+
+                method: "DELETE",
+                headers: { "Authorization": `Bearer ${localStorage.getItem("token")}` },
+
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+
+                throw new Error(data.message || "Failed to remove avatar");
+
+            }
+
+            updateUser({ avatarUrl: "", avatarPublicId: "" });
+            setAvatarPreview(null);
+
+        } catch (deleteError) {
+
+            setError(deleteError.message);
+
+        }
+
+    }
+
     return (
 
         <div className="settings-page">
@@ -96,15 +126,36 @@ function Settings() {
 
                 <h3>Profile Picture</h3>
 
-                <div className="settings-avatar-preview">
+                <div className="settings-avatar-preview-wrapper">
 
-                    {avatarPreview ? (
+                    <div className="settings-avatar-preview">
 
-                        <img src={avatarPreview} alt="Avatar preview" />
+                        {(avatarPreview || user?.avatarUrl) ? (
 
-                    ) : (
+                            <img src={avatarPreview || user?.avatarUrl} alt="Avatar preview" />
 
-                        <i className="fa-solid fa-circle-user"></i>
+                        ) : (
+
+                            <i className="fa-solid fa-circle-user"></i>
+
+                        )}
+
+                    </div>
+
+                    {(avatarPreview || user?.avatarUrl) && (
+
+                        <button
+
+                            type="button"
+                            className="settings-avatar-remove"
+                            onClick={handleDeleteAvatar}
+                            aria-label="Remove profile picture"
+
+                        >
+
+                            ×
+
+                        </button>
 
                     )}
 
