@@ -86,3 +86,15 @@
     object-fit: cover;
 
 }
+
+.dashtop-avatar-fallback {
+
+    font-size: 48px;
+    color: var(--brand-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+
+}

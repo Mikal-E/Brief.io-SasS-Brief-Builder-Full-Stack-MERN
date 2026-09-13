@@ -96,21 +96,23 @@
 
 }
 
-.dashnav-footer p {
+.dashnav-footer .dashnav-link {
 
     font-size: 14px;
-    color: var(--text-dark);
-    display: flex;
-    align-items: center;
+    font-weight: 400;
+    padding: 0;
     gap: 10px;
-    cursor: pointer;
-    margin: 0;
 
 }
 
-.dashnav-footer p i {
+.dashnav-footer .dashnav-link.active {
 
-    color: var(--burgundy);
+    background-color: transparent;
+    border-left: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 
 }
 
