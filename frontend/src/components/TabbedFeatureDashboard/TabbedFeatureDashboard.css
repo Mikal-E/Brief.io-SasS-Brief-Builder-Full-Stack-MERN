@@ -21,6 +21,7 @@ above the reviews and the CTA that are at the bottom of the page. */
     display: flex;
     gap: 20px;
     background-color: var(--light-grey);
+    border: 1px solid var(--brand-grey);
     border-radius: 35px;
     padding: 8px;
 
@@ -44,7 +45,8 @@ above the reviews and the CTA that are at the bottom of the page. */
 .tabbed-feature-dashboard-nav button.tab-active {
     background-color: var(--burgundy);
     color: var(--white);
-    border: 2px solid var(--burgundy);
+    border: 2px solid var(--brand-grey);
+    box-shadow: 0 0 3px var(--text-muted);
 }
 
 .tabbed-feature-dashboard-grid {

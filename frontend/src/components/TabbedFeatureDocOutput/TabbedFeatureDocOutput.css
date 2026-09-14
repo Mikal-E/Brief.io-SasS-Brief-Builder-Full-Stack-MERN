@@ -15,6 +15,7 @@ after the staggered content with 4 content blocks. */
     display: flex;
     gap: 20px;
     background-color: var(--light-grey);
+    border: 1px solid var(--brand-grey);
     border-radius: 35px;
     padding: 8px;
 
@@ -40,7 +41,8 @@ after the staggered content with 4 content blocks. */
 .tabbed-feature-doc-output-nav button.tab-active {
     background-color: var(--burgundy);
     color: var(--white);
-    border: 2px solid var(--burgundy);
+    border: 2px solid var(--brand-grey);
+    box-shadow: 0 0 3px var(--text-muted);
 }
 
 .tabbed-feature-doc-output-content {

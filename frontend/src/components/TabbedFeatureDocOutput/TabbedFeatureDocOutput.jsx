@@ -41,14 +41,6 @@ function TabbedFeatureDocOutput() {
 
     }
 
-    // let tab4Class = ""
-
-    // if (activeTab === 4) {
-
-    //     tab4Class = "tab-active"
-        
-    // }
-
 const tabContent = [
 
     {
@@ -101,11 +93,8 @@ const currentTab = tabContent[activeTab - 1]
 
             <h2 className="section-heading">Fill in the form and instantly get a professional, cleanly-formatted brief</h2>
 
-            {/* Lives in Home.jsx instead <h2 className="tabbed-feature-doc-output-heading">Sed ut perspiciatis unde omnis iste natus</h2> */}
-
             <div className="tabbed-feature-doc-output-nav">
 
-                {/* <button onClick={() => setActiveTab(1)} className={activeTab === 1 ? "tab-active" : ""}>Tab 1</button> */}
                 <button onClick={() => setActiveTab(1)} className={tab1Class}>Tab 1</button>
                 <button onClick={() => setActiveTab(2)} className={tab2Class}>Tab 2</button>
                 <button onClick={() => setActiveTab(3)} className={tab3Class}>Tab 3</button>
@@ -114,20 +103,6 @@ const currentTab = tabContent[activeTab - 1]
             </div>
 
             <div className="tabbed-feature-doc-output-content">
-
-                {/* <div className="tabbed-feature-doc-output-text">
-
-                    <h3>Ut enim ad minima quis</h3>
-
-                    <ul>
-
-                        <li><i className="fa-solid fa-circle-check"></i> Nemo enim ipsam voluptatem quia</li>
-                        <li><i className="fa-solid fa-circle-check"></i> Nemo enim ipsam voluptatem quia</li>
-                        <li><i className="fa-solid fa-circle-check"></i> Nemo enim ipsam voluptatem quia</li>
-
-                    </ul>
-
-                </div> */}
 
                 <div className="tabbed-feature-doc-output-text">
 
