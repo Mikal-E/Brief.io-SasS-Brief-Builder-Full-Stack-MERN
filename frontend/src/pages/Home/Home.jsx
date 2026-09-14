@@ -246,9 +246,9 @@ function HomePage() {
 
             </section>
 
-            <TabbedFeatureDashboard tabContent={briefsTabContent} tabTitles={["Briefs Overview", "Add & Track", "Updating Feature"]} />
-            <TabbedFeatureDashboard tabContent={teamTabContent} tabTitles={["Team Overview", "Full Profiles", "Updating Feature"]} />
-            <TabbedFeatureDashboard tabContent={activityTabContent} tabTitles={["Activity Feed", "Focused Updates", "Updating Feature"]} />
+            <TabbedFeatureDashboard tabContent={briefsTabContent} tabTitles={["Briefs Overview", "Add & Track", "Coming Soon"]} />
+            <TabbedFeatureDashboard tabContent={teamTabContent} tabTitles={["Team Overview", "Full Profiles", "Coming Soon"]} />
+            <TabbedFeatureDashboard tabContent={activityTabContent} tabTitles={["Activity Feed", "Focused Updates", "Coming Soon"]} />
 
             <CtaBlock
 
