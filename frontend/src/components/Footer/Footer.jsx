@@ -17,7 +17,7 @@ function Footer() {
 
                 <img src={logo} alt="Brief.io logo" className="footer-logo-img" />
                 
-                <p className="footer-name">Brief.io</p>
+                {/* <p className="footer-name">Brief.io</p> */}
                 <p className="footer-address">
 
                     560 Lexington Ave
