@@ -1,5 +1,4 @@
 import "./ThreeColumnFeature.css"
-import square from "../../assets/square.jpg"
 import bannerContentBlock1 from "../../assets/banner-content-block-1.jpg"
 import bannerContentBlock2 from "../../assets/banner-content-block-2.jpg"
 import bannerContentBlock3 from "../../assets/banner-content-block-3.jpg"

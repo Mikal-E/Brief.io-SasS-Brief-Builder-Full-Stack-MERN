@@ -1,7 +1,6 @@
 import "./Home.css"
 import "../../styles/hero.css"
 import "../../styles/section-heading.css"
-import landscape from "../../assets/landscape.jpg"
 import headerMockup from "../../assets/header-mockup.jpg"
 import section1IntroImage from "../../assets/section-1-intro-image.jpg"
 import projectInfo from "../../assets/project-info.png"
@@ -19,8 +18,6 @@ import activitiesDashboard1 from "../../assets/activities-dashboard-1.jpg"
 import activitiesDashboard2 from "../../assets/activities-dashboard-2.jpg"
 import activitiesDashboard3 from "../../assets/activities-dashboard-3.jpg"
 import cta from "../../assets/cta.jpg"
-import square from "../../assets/square.jpg"
-import portrait from "../../assets/portrait.jpg"
 import FeatureBlock from "../../components/FeatureBlock/FeatureBlock"
 import TabbedFeatureDocOutput from "../../components/TabbedFeatureDocOutput/TabbedFeatureDocOutput"
 import ThreeColumnFeature from "../../components/ThreeColumnFeature/ThreeColumnFeature"
@@ -249,9 +246,9 @@ function HomePage() {
 
             </section>
 
-            <TabbedFeatureDashboard tabContent={briefsTabContent} />
-            <TabbedFeatureDashboard tabContent={teamTabContent} />
-            <TabbedFeatureDashboard tabContent={activityTabContent} />
+            <TabbedFeatureDashboard tabContent={briefsTabContent} tabTitles={["Briefs Overview", "Add & Track", "Updating Feature"]} />
+            <TabbedFeatureDashboard tabContent={teamTabContent} tabTitles={["Team Overview", "Full Profiles", "Updating Feature"]} />
+            <TabbedFeatureDashboard tabContent={activityTabContent} tabTitles={["Activity Feed", "Focused Updates", "Updating Feature"]} />
 
             <CtaBlock
 

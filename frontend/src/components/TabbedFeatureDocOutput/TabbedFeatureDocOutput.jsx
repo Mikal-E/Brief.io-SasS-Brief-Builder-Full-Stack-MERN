@@ -95,9 +95,9 @@ const currentTab = tabContent[activeTab - 1]
 
             <div className="tabbed-feature-doc-output-nav">
 
-                <button onClick={() => setActiveTab(1)} className={tab1Class}>Tab 1</button>
-                <button onClick={() => setActiveTab(2)} className={tab2Class}>Tab 2</button>
-                <button onClick={() => setActiveTab(3)} className={tab3Class}>Tab 3</button>
+                <button onClick={() => setActiveTab(1)} className={tab1Class}>Complete Uniformity</button>
+                <button onClick={() => setActiveTab(2)} className={tab2Class}>Revise & Edit</button>
+                <button onClick={() => setActiveTab(3)} className={tab3Class}>Output Views</button>
                 {/* <button onClick={() => setActiveTab(4)} className={tab4Class}>Tab 4</button> */}
 
             </div>
