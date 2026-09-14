@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { useState, useEffect } from "react"
-import logo from "../../assets/brief.io-logo-placeholder.png"
+import logo from "../../assets/brief-io-logo.png"
 import "./Nav.css"
 
 /* Nav component will be used across the Home, Pricing, and Contact Pages. It will not be used on the landing page as those types of pages are free

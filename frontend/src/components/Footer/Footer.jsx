@@ -1,4 +1,4 @@
-import logo from "../../assets/brief.io-logo-placeholder.png"
+import logo from "../../assets/brief-io-logo.png"
 import pulseLogo from "../../assets/pulse-logo.png"
 import "./Footer.css"
 import { Link } from "react-router-dom";

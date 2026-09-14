@@ -1,7 +1,5 @@
 import "./Landing.css"
 import "../../styles/section-heading.css"
-import landscape from "../../assets/landscape.jpg"
-import square from "../../assets/square.jpg"
 import headerMockupAlt700 from "../../assets/header-mockup-alt-1-700.jpg"
 import cta from "../../assets/cta.jpg"
 import LandingFeatureContentBlock from "../../components/LandingFeatureContentBlock/LandingFeatureContentBlock"
@@ -10,7 +8,7 @@ import DocOutputPreview from "../../components/DocOutputPreview/DocOutputPreview
 import ThreeColumnFeature from "../../components/ThreeColumnFeature/ThreeColumnFeature"
 import TrustedLogos from "../../components/TrustedLogos/TrustedLogos"
 import CtaBlock from "../../components/CtaBlock/CtaBlock"
-import footerLogo from "../../assets/brief.io-logo-placeholder.png"
+import footerLogo from "../../assets/brief-io-logo.png"
 import { Link } from "react-router-dom";
 
 /* This is a landing page for marketing and therefor is not linked to the website's navigation. It also strips away clicking of a logo

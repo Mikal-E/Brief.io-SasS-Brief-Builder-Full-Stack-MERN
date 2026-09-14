@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
-import briefioLogo from "../../../assets/brief.io-logo-placeholder.png"
+import briefioLogo from "../../../assets/brief-io-logo.png"
 import "./Sidebar.css"
 
 function Sidebar() {

@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { API_URL } from "../../config"
-import logoPlaceholder from "../../assets/brief.io-logo-placeholder.png"
+import logoPlaceholder from "../../assets/brief-io-logo.png"
 import "./RegistrationForm.css"
 
 /* The RegistrationForm.jsx component will share many of the same conventions as the ContactForm.jsx, and of course LoginForm.jsx. */
