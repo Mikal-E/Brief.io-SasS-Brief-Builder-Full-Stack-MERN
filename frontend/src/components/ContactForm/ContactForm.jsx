@@ -35,7 +35,6 @@ function ContactForm() {
 
             try {
 
-                // const response = await fetch("http://localhost:3001/api/contacts", {
                 const response = await fetch(`${API_URL}/api/auth/login`, {
 
                     method: "POST",

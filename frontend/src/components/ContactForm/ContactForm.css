@@ -95,7 +95,7 @@
 
 .contact-input-with-icon select {
 
-    appearance: none;
+    /* appearance: none; */
     cursor: pointer;
 
 }
