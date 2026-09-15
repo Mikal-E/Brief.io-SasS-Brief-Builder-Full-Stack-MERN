@@ -230,7 +230,13 @@ function HomePage() {
 
             />
 
-            <TabbedFeatureDocOutput />
+            <TabbedFeatureDocOutput tabTitles={[
+                
+                { icon: "fa-solid fa-layer-group", label: "Complete Uniformity" },
+                { icon: "fa-solid fa-pen-to-square", label: "Revise & Edit" },
+                { icon: "fa-solid fa-file-image", label: "Output Views" } 
+                
+            ]}/>
 
             <ThreeColumnFeature />
 
@@ -246,9 +252,29 @@ function HomePage() {
 
             </section>
 
-            <TabbedFeatureDashboard tabContent={briefsTabContent} tabTitles={["Briefs Overview", "Add & Track", "Coming Soon"]} />
-            <TabbedFeatureDashboard tabContent={teamTabContent} tabTitles={["Team Overview", "Full Profiles", "Coming Soon"]} />
-            <TabbedFeatureDashboard tabContent={activityTabContent} tabTitles={["Activity Feed", "Focused Updates", "Coming Soon"]} />
+            <TabbedFeatureDashboard tabContent={briefsTabContent} tabTitles={[
+                
+                { icon: "fa-solid fa-file-lines", label: "Briefs Overview" },
+                { icon: "fa-solid fa-file-circle-plus", label: "Add & Track" },
+                { icon: "fa-solid fa-file-circle-question", label: "Coming Soon" } 
+                
+            ]}/>
+
+            <TabbedFeatureDashboard tabContent={teamTabContent} tabTitles={[
+                
+                { icon: "fa-solid fa-users", label: "Team Overview" },
+                { icon: "fa-solid fa-address-card", label: "Full Profiles" },
+                { icon: "fa-solid fa-users-gear", label: "Coming Soon" }
+                
+                ]} />
+
+            <TabbedFeatureDashboard tabContent={activityTabContent} tabTitles={[
+                
+                { icon: "fa-solid fa-square-rss", label: "Activity Feed" },
+                { icon: "fa-solid fa-circle-exclamation", label: "Focused Updates" },
+                { icon: "fa-solid fa-bell", label: "Coming Soon" }
+                
+                ]} />
 
             <CtaBlock
 

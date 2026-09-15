@@ -13,7 +13,7 @@ after the staggered content with 4 content blocks.
 It uses useState to track which tab is active. 
 The multiple variables to change the classes of the buttons will be refactored later using ternary operators in the classes. */
 
-function TabbedFeatureDocOutput() {
+function TabbedFeatureDocOutput( { tabTitles } ) {
 
     const [activeTab, setActiveTab] = useState(1)
 
@@ -95,9 +95,9 @@ const currentTab = tabContent[activeTab - 1]
 
             <div className="tabbed-feature-doc-output-nav">
 
-                <button onClick={() => setActiveTab(1)} className={tab1Class}>Complete Uniformity</button>
-                <button onClick={() => setActiveTab(2)} className={tab2Class}>Revise & Edit</button>
-                <button onClick={() => setActiveTab(3)} className={tab3Class}>Output Views</button>
+                <button onClick={() => setActiveTab(1)} className={tab1Class}><i className={tabTitles[0].icon}></i>{tabTitles[0].label}</button>
+                <button onClick={() => setActiveTab(2)} className={tab2Class}><i className={tabTitles[1].icon}></i>{tabTitles[1].label}</button>
+                <button onClick={() => setActiveTab(3)} className={tab3Class}><i className={tabTitles[2].icon}></i>{tabTitles[2].label}</button>
                 {/* <button onClick={() => setActiveTab(4)} className={tab4Class}>Tab 4</button> */}
 
             </div>

@@ -47,9 +47,9 @@ const currentTab = tabContent[activeTab - 1]
 
         <div className="tabbed-feature-dashboard-nav">
 
-            <button onClick={() => setActiveTab(1)} className={tab1Class}>{tabTitles[0]}</button>
-            <button onClick={() => setActiveTab(2)} className={tab2Class}>{tabTitles[1]}</button>
-            <button onClick={() => setActiveTab(3)} className={tab3Class}>{tabTitles[2]}</button>
+            <button onClick={() => setActiveTab(1)} className={tab1Class}><i className={tabTitles[0].icon}></i>{tabTitles[0].label}</button>
+            <button onClick={() => setActiveTab(2)} className={tab2Class}><i className={tabTitles[1].icon}></i>{tabTitles[1].label}</button>
+            <button onClick={() => setActiveTab(3)} className={tab3Class}><i className={tabTitles[2].icon}></i>{tabTitles[2].label}</button>
 
         </div>
 

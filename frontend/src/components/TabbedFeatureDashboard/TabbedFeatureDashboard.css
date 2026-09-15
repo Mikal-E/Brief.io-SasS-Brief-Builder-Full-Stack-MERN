@@ -49,6 +49,10 @@ above the reviews and the CTA that are at the bottom of the page. */
     box-shadow: 0 0 3px var(--text-muted);
 }
 
+.tabbed-feature-dashboard-nav button i {
+    margin-right: 6px;
+}
+
 .tabbed-feature-dashboard-grid {
     margin-left: 175px;
     margin-right: 175px;
