@@ -20,9 +20,9 @@ function DocOutputPreview() {
 
                     <ul>
 
-                        <li><i className="fa-solid fa-circle-check"></i> Every field organized under Project Info, Audience, Strategy, and Scope</li>
-                        <li><i className="fa-solid fa-circle-check"></i> Formatted consistently with no version drift between different project briefs</li>
-                        <li><i className="fa-solid fa-circle-check"></i> Built to be shared while maintaining consistent workflows</li>
+                        <li><i className="fa-solid fa-layer-group"></i> Every field organized under Project Info, Audience, Strategy, and Scope</li>
+                        <li><i className="fa-solid fa-rectangle-list"></i> Formatted consistently with no version drift between different project briefs</li>
+                        <li><i className="fa-solid fa-users"></i> Built to be shared while maintaining consistent workflows</li>
 
                     </ul>
 

@@ -82,17 +82,47 @@ capstone-project/
 
 &#x09;backend/routes/
 
-&#x09;index.js
+&#x09;backend/utils/
+
+&#x09;backend/.env
+
+&#x09;backend.gitignore
+
+&#x09;backend/index.js
+
+&#x09;backend/seed.js
 
 
 
 &#x09;frontend/
 
-&#x09;src/
+&#x09;frontend/public/
 
-&#x09;components/
+&#x09;frontend/src/
 
-&#x09;pages/
+&#x09;frontend/src/assets/
+
+&#x09;frontend/src/components/
+
+&#x09;frontend/src/context/
+
+&#x09;frontend/src/pages/
+
+&#x09;frontend/src/styles/
+
+&#x09;frontend/src/App.jsx
+
+&#x09;frontend/src/config.js
+
+&#x09;frontend/src/index.css
+
+&#x09;frontend/src/main.jsx
+
+&#x09;frontend/.env
+
+&#x09;frontend/.gitignore
+
+&#x09;frontend/index.html
 
 
 
@@ -138,6 +168,8 @@ Activities - GET, GET/:id, POST, PATCH, DELETE
 
 /dashboard/brief-builder
 
+/dashboard/settings
+
 <Route path="\*" element={ <NotFound /> } /
 
 
@@ -150,7 +182,7 @@ Activities - GET, GET/:id, POST, PATCH, DELETE
 
 1\. Clone the repo
 
-2\. In `backend/`, run `npm install`, create a `.env` file with `MONGODB\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_URI` and `JWT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_SECRET`, then run `npm start`
+2\. In `backend/`, run `npm install`, create a `.env` file with `MONGODB\_URI` and `JWT\_SECRET`, then run `npm start`
 
 3\. In `frontend/`, run `npm install`, then `npm run dev`
 
