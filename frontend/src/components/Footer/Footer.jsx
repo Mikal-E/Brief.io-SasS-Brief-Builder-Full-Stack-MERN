@@ -43,10 +43,10 @@ function Footer() {
 
                 <p className="footer-column-title">Company</p>
 
-                <Link to="/contact">Contact</Link>
                 <a href="#">Careers</a>
-                <a href="#">Terms</a>
-                <a href="#">Press</a>                
+                <a href="#">Press</a>
+                <Link to="/terms">Terms</Link>
+                <Link to="/privacy">Privacy</Link>               
                 
             </div>
 
