@@ -117,6 +117,18 @@ form .registration-form-field:first-of-type {
 
 }
 
+.registration-form-checkbox input[type="checkbox"]:checked {
+
+    accent-color: var(--burgundy);
+    
+}
+
+.registration-form-checkbox label a {
+
+    font-weight: 700;
+
+}
+
 .registration-form-submit {
 
     display: block;

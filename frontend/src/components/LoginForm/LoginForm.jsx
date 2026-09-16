@@ -21,12 +21,12 @@ function LoginForm() {
 
     function handleChange(event) {
 
-        const { name, value, type, checked } = event.target
+        const { name, value } = event.target
 
         setFormData({
 
             ...formData,
-            [name]: type === "checkbox" ? checked : value
+            [name]: value
 
         })
 
@@ -38,7 +38,6 @@ function LoginForm() {
 
         try {
 
-            // const response = await fetch("http://localhost:3001/api/auth/login", {
             const response = await fetch(`${API_URL}/api/auth/login`, {
 
                 method: "POST",
@@ -128,22 +127,6 @@ function LoginForm() {
                         />
 
                     </div>
-
-                </div>
-
-                <div className="login-form-checkbox">
-
-                    <input
-
-                        type="checkbox"
-                        id="agreeToTerms"
-                        name="agreeToTerms"
-                        checked={formData.agreeToTerms}
-                        onChange={handleChange}
-
-                    />
-
-                    <label htmlFor="agreeToTerms">Minima quis ullamco laboris ut consectetur</label>
 
                 </div>
 

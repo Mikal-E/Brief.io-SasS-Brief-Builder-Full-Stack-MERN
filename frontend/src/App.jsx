@@ -1,5 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom"
-import { Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom"
 import Nav from "./components/Nav/Nav"
 import Footer from "./components/Footer/Footer"
 import Home from "./pages/Home/Home"
@@ -12,10 +12,12 @@ import DashboardLayout from "./pages/Dashboard/DashboardLayout"
 import CampaignBriefBuilder from "../../frontend/src/components/CampaignBriefBuilder/CampaignBriefBuilder"
 import Briefs from "./pages/Dashboard/Briefs/Briefs"
 import Team from "./pages/Dashboard/Team/Team"
-import Activities from "./pages/Dashboard/Activities/Activities";
+import Activities from "./pages/Dashboard/Activities/Activities"
 import NotFound from "./pages/NotFound/NotFound"
 import ResetToTopOnNavigate from "./components/ResetToTopOnNavigate/ResetToTopOnNavigate"
-import Settings from "./pages/Dashboard/Settings/Settings";
+import Settings from "./pages/Dashboard/Settings/Settings"
+import Terms from './pages/Terms/Terms.jsx'
+import Privacy from './pages/Privacy/Privacy.jsx'
 
 /* Client-side routes below are handled by React Router. Direct URL hits (e.g. from ads - landing page /try-brief-builder, and 404 page)
 require Vercel's vercel.json rewrite rule to serve index.html first. See README. */
@@ -44,6 +46,8 @@ function App() {
         <Route path="/login" element={ <Login /> } />
         <Route path="/register" element={ <Registration /> } />
         <Route path="/try-brief-builder" element={ <Landing /> } />
+        <Route path="/terms" element={ <Terms /> } />
+        <Route path="/privacy" element={ <Privacy /> } />
         
         <Route path="/dashboard" element={ <DashboardLayout /> }>
 

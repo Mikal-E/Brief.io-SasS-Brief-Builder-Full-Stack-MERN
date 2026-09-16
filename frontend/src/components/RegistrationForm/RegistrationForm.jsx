@@ -39,7 +39,6 @@ function RegistrationForm() {
 
         try {
 
-            // const response = await fetch("http://localhost:3001/api/auth/register", {
             const response = await fetch(`${API_URL}/api/auth/register`, {
 
                 method: "POST",
@@ -169,7 +168,7 @@ function RegistrationForm() {
 
                     />
 
-                    <label htmlFor="agreeToTerms">Minima quis ullamco laboris ut consectetur</label>
+                    <label>I agree to the <a href="/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> and <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</label>
 
                 </div>
 

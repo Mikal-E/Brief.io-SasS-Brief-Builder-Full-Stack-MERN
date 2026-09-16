@@ -100,21 +100,6 @@
 
 }
 
-.contact-form-checkbox {
-
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 30px;
-
-}
-
-.contact-form-checkbox label {
-
-    font-size: 14px;
-
-}
-
 .contact-form-submit {
 
     display: block;

@@ -18,12 +18,12 @@ function ContactForm() {
 
     function handleChange(event) {
 
-            const { name, value, type, checked } = event.target
+            const { name, value } = event.target
 
             setFormData({
 
                 ...formData,
-                [name]: type === "checkbox" ? checked : value
+                [name]: value
 
             })
 
@@ -190,22 +190,6 @@ function ContactForm() {
                         ></textarea>
 
                     </div>
-
-                </div>
-
-                <div className="contact-form-checkbox">
-
-                    <input
-
-                        type="checkbox"
-                        id="agreeToTerms"
-                        name="agreeToTerms"
-                        checked={formData.agreeToTerms}
-                        onChange={handleChange}
-
-                    />
-
-                    <label htmlFor="agreeToTerms">Minima quis ullamco laboris ut consectetur</label>
 
                 </div>
 

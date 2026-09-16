@@ -101,22 +101,6 @@ form .login-form-field:first-of-type {
 
 }
 
-.login-form-checkbox {
-
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 30px;
-    text-align: left;
-
-}
-
-.login-form-checkbox label {
-
-    font-size: 12px;
-
-}
-
 .login-form-submit {
 
     display: block;
