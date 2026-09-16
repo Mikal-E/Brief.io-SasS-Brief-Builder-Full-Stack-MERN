@@ -1,5 +1,4 @@
 import "./Reviews.css"
-import square from "../../assets/square.jpg"
 import review1 from "../../assets/review-1.jpg"
 import review2 from "../../assets/review-2.jpg"
 import review3 from "../../assets/review-3.jpg"

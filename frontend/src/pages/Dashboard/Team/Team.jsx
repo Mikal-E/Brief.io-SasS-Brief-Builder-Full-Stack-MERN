@@ -1,7 +1,22 @@
 import { useState, useEffect } from "react"
 import { API_URL } from "../../../config";
 import squarePlaceholder from "../../../assets/square.jpg"
+import teamMember1 from "../../../assets/daniel-osei.jpg"
+import teamMember2 from "../../../assets/priya-chandrasekaran.jpg"
+import teamMember3 from "../../../assets/susan-welsch.jpg"
+import teamMember4 from "../../../assets/morgan-stansfield.jpg"
+import teamMember5 from "../../../assets/tom-riordan.jpg"
 import "./Team.css"
+
+const memberPhotos = {
+
+    "dosei@brief.io": teamMember1,
+    "pchandrasekaran@brief.io": teamMember2,
+    "swelch@brief.io": teamMember3,
+    "mstansfield@brief.io": teamMember4,
+    "triordan@brief.io": teamMember5
+
+}
 
 function Team() {
 
@@ -23,7 +38,6 @@ function Team() {
 
         try {
 
-            // const response = await fetch("http://localhost:3001/api/teamMembers")
             const response = await fetch(`${API_URL}/api/teamMembers`);
             const data = await response.json()
             setMembers(data)
@@ -60,7 +74,6 @@ function Team() {
 
         try {
 
-            // const response = await fetch("http://localhost:3001/api/teamMembers", {
             const response = await fetch(`${API_URL}/api/activities`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -114,7 +127,7 @@ function Team() {
 
                         <div className="member-card" key={member._id} onClick={() => setSelectedMember(member)}>
 
-                            <img src={squarePlaceholder} alt={member.name} />
+                            <img src={memberPhotos[member.email] || squarePlaceholder} alt={member.name} />
                             <h3>{member.name}</h3>
                             <p>{member.role}</p>
 
@@ -134,7 +147,7 @@ function Team() {
 
                         <button className="profile-close-button" onClick={() => setSelectedMember(null)}>Close</button>
 
-                        <img src={squarePlaceholder} alt={selectedMember.name} />
+                        <img src={memberPhotos[selectedMember.email] || squarePlaceholder} alt={selectedMember.name} />
                         <h2>{selectedMember.name}</h2>
                         <p className="profile-title">{selectedMember.role}</p>
 
