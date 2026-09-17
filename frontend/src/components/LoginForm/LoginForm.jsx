@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useUser } from "../../context/UserContext.jsx"
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { API_URL } from "../../config"
@@ -10,6 +11,7 @@ import logoPlaceholder from "../../assets/brief-io-logo.png"
 function LoginForm() {
 
     const navigate = useNavigate();
+    const { setUser } = useUser()
 
     const [formData, setFormData] = useState({
 
@@ -59,6 +61,7 @@ function LoginForm() {
 
             localStorage.setItem("token", data.token)
             localStorage.setItem("user", JSON.stringify(data.user))
+            setUser(data.user)
             navigate("/dashboard")
 
         } catch (error) {
