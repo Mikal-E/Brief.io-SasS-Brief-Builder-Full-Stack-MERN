@@ -6,8 +6,8 @@ This is the CSS for that component. */
 
     display: flex;
     align-items: center;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 365px;
+    margin-right: 365px;
     margin-top: 150px;
     gap: 60px;
 
@@ -23,6 +23,7 @@ This is the CSS for that component. */
 
     width: 700px;
     display: block;
+    margin: auto;
     
 }
 
