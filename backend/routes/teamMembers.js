@@ -17,8 +17,7 @@ router
             res.status(500).json({ message: error.message});
             
         }
-    }
-)
+    })
 
     .post(async (req, res) => {
 
@@ -34,8 +33,7 @@ router
 
             
         }
-    }
-);
+    });
 
 /* GET team member by ID */
 
@@ -60,8 +58,7 @@ router
             res.status(500).json({ message: error.message});
             
         }
-    }
-)
+    })
 
     .patch(async (req, res) => {
 
@@ -82,8 +79,7 @@ router
             res.status(400).json({ message: error.message });
             
         }
-    }
-)
+    })
 
     .delete(async (req, res) => {
 
@@ -104,7 +100,6 @@ router
             res.status(500).json({ message: error.message});
             
         }       
-    }
-);
+    });
 
 export default router;

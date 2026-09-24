@@ -1,5 +1,4 @@
-/* Logging Middleware (Custom Middleware)
-Requirements - NOT REQUIRED. */
+/* Logging Middleware (Custom Middleware) */
 
 const logger = (req, res, next) => {
   const time = new Date();

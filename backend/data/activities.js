@@ -1,6 +1,3 @@
-/* Requirement - Populate your application's collections with sample data illustrating the use case of the collections. You must include at least five sample documents per collection.
-1 of 3 - This one activities.js */
-
 export const activities = [
 
     {

@@ -1,11 +1,11 @@
+import express from "express";
+import Brief from "../models/Brief.js";
+
 /* Analytics Routes - aggregation pipeline routes (brief volume by team member, status breakdown, avg turnaround - added on next iteration of Brief.io ecosystem's assets) 
 
 THESE ROUTES ARE FOR PLANNING AHEAD TO USE WITH Brief.io's BRIEFS DASHBOARD AND ARE OUT OF THIS SBA'S SCOPE
 
 */
-
-import express from "express";
-import Brief from "../models/Brief.js";
 
 const router = express.Router();
 
@@ -35,8 +35,7 @@ router
             res.status(500).json({ message: error.message });
             
         }
-    }
-);
+    });
 
 /* Analytics: Brief volume by team member - counts how many briefs are assigned to each team member */
 

@@ -18,7 +18,6 @@ router
             }
 
             const activities = await Activity.find(filter).populate("brief").populate("teamMember").sort({ createdAt: -1 });
-            // const activities = await Activity.find(filter);
             res.json(activities);
             
         } catch (error) {
@@ -26,8 +25,7 @@ router
             res.status(500).json({ message: error.message});
             
         }
-    }
-)
+    })
 
     .post(async (req, res) => {
 
@@ -42,8 +40,7 @@ router
             res.status(400).json({ message: error.message});
             
         }
-    }
-);
+    });
 
 /* GET activity by ID */
 
@@ -68,8 +65,7 @@ router
             res.status(500).json({ message: error.message});
             
         }
-    }
-)
+    })
 
     .patch(async (req, res) => {
 
@@ -90,8 +86,7 @@ router
             res.status(400).json({ message: error.message});
             
         }
-    }
-)
+    })
 
     .delete(async (req, res) => {
 
@@ -112,7 +107,6 @@ router
             res.status(500).json({ message: error.message});
             
         }
-    }
-);
+    });
 
 export default router;

@@ -28,8 +28,7 @@ router
             res.status(500).json({ message: error.message});
  
         }
-    }
-)
+    })
 
 /* The outer try/catch governs the brief save, and if it fails, nothing else runs. The inner try/catch isolates PDF generation specifically,
 so a PDF failure never crashes the request or blocks the brief from being saved. It flips pdfEmailStatus to failed and the response still returns 201 with the saved brief. */
@@ -61,8 +60,7 @@ so a PDF failure never crashes the request or blocks the brief from being saved.
             res.status(400).json({ message: error.message});
  
         }
-    }
-);
+    });
 
 /* GET brief by ID */
 
@@ -87,8 +85,7 @@ router
             res.status(500).json({ message: error.message});
  
         }
-    }
-)
+    })
 
     .patch(requireAuth, async (req, res) => {
 
@@ -109,8 +106,7 @@ router
             res.status(400).json({ message: error.message});
 
         }
-    }
-)
+    })
 
     .delete(requireAuth, async (req, res) => {
 
@@ -131,7 +127,6 @@ router
             res.status(500).json({ message: error.message});
             
         }
-    }
-);
+    });
 
 export default router;

@@ -1,6 +1,3 @@
-/* Requirements - Use at least three different data collections within the database (such as users, posts, or comments). Weight 5%
-2 of 3 - This one Briefs.js */
-
 import mongoose from "mongoose";
 
 const briefSchema = new mongoose.Schema(
@@ -91,9 +88,6 @@ const briefSchema = new mongoose.Schema(
     }
 
 )
-
-/* Requirements - Include sensible indexes for any and all fields that are queried frequently. For fields that may have a high write-to-read ratio, you may forgo indexes for performance considerations. Make comments of this where applicable. Weight 5%
-2 of 3 - This one Briefs.js*/
 
 briefSchema.index({ status: 1 });
 briefSchema.index({ user: 1 });
