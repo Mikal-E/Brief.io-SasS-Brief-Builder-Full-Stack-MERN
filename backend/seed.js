@@ -11,7 +11,7 @@ import { contacts } from "./data/contacts.js";
 
 dotenv.config();
 
-// Old comments below from using this logic before. Comments left for my own reference when I refactor.
+// Old comments below from using this logic before. Comments left for my own reference when I refactor and iterate.
 
 const seedDatabase = async () => {
 
@@ -20,7 +20,7 @@ const seedDatabase = async () => {
         await mongoose.connect(process.env.MONGODB_URI);
         console.log("MongoDB connected for seeding");
 
-        // await TeamMember.deleteMany(); - Added in activitie.js data and did not want to rerun this.
+        // await TeamMember.deleteMany(); - Added in activities.js data and did not want to rerun this.
         await Activity.deleteMany();
         // console.log("Old TeamMember and Brief data cleared");
         console.log("Old Activity data cleared");

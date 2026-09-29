@@ -20,7 +20,7 @@ const allowedOrigins = [
 app.use(cors({
   origin: allowedOrigins
 }))
-// app.use(cors())
+
 app.use(express.json())
  
 mongoose.connect(process.env.MONGODB_URI)
